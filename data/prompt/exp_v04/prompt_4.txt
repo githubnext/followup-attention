@@ -1,0 +1,20 @@
+d = 5
+e = 6
+f = 8
+b = False
+c = 7
+a = "string"
+b = e * d - c / c
+b = e
+f = b
+c = max( b, f, )
+a = b * b + b
+c = abs( f, f, )
+d = c - 2 + d * d
+c = b / d - f + c
+a = c - c * b / c
+c = min( c, )
+d = e
+b = b + d - e
+a = c / b / b
+if (a == 

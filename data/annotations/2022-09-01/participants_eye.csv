@@ -1,0 +1,406 @@
+ID,unique_data_id,user,task_number,Filename,answer,Annotator 1 (Matteo),A1 - Completeness,A1 - Correctness,A1 - Intelligibility,Annotator 2 (Albert),Annotator 3
+9,b0172f,UquarterU,0,hannoi_Q1.cpp,"hannoi_Q1.cpp
+# Questions: How does the algorithm moves disks from the starting rod to the
+
+# ending rod?
+
+# Answer: It checks that there are disks to move (if not, just return). It calls itself recursively - It will move the
+top disk to the aux_rod, and then move hthe top disk from the aux_Rod to the to_rod. h
+ */",5,,,,3,
+19,c35fdf,UmonkU,0,hannoi_Q1.cpp,"hannoi_Q1.cpp
+# Questions: How does the algorithm moves disks from the starting rod to the
+
+# ending rod?
+
+# Answer: The disks are moved from the first rod to the second rod and then in the following iteration the third rod is the from rod and it goes recursively until n is 0.
+ */",5,,,,3,
+31,300bd1,UdragonU,1,hannoi_Q1.cpp,"hannoi_Q1.cpp
+# Questions: How does the algorithm moves disks from the starting rod to the
+
+# ending rod?
+
+# Answer: The algorithm uses recursion to print out stuff about where disk have moved
+ */",4,,,,2,
+43,155d45,UDuckU,0,hannoi_Q1.cs,"hannoi_Q1.cs
+# Questions: How does the algorithm moves disks from the starting rod to the
+
+# ending rod?
+
+# Answer: It recursively moves disks
+ */",4,,,,,
+51,44d4f6,UboatU,0,hannoi_Q1.cs,"hannoi_Q1.cs
+# Questions: How does the algorithm moves disks from the starting rod to the
+
+# ending rod?
+
+# Answer:
+Take a disk fro the first rod, move all of the disks to the the middle rod, then move all the
+disks from the middle rod to the final rod.
+
+ */",5,,,,,
+58,f4bbec,UsurfU,0,hannoi_Q1.cs,"hannoi_Q1.cs
+# Questions: How does the algorithm moves disks from the starting rod to the
+
+# ending rod?
+
+# Answer: the algorithm works by exchanging the 'role' of the rodes (e.g: changing which
+one is the aux rod, the initial and the ending).
+ */",3,,,,,
+23,9fd0c1,UbeerU,0,hannoi_Q1.py,"hannoi_Q1.py
+# Questions: How does the algorithm moves disks from the starting rod to the
+
+# ending rod?
+
+# Answer:
+# the algorithm moves (n - 1) disks to the aux_rod with the help of to_rod from from_rod, move the
+# nth disk from from_rod to to_rod, then moves(n - 1) disk from aux_rod to to_rod with the help of
+# from_rod",5,,,,4,
+39,5403f5,UcamelionU,0,hannoi_Q1.py,"hannoi_Q1.py
+# Questions: How does the algorithm moves disks from the starting rod to the
+
+# ending rod?
+
+# Answer: This is a recursive function that moves the disks from teh left to the right. In each iteration,
+# the problem is changed to be one less rod from the left to the right.
+",4,,,,,
+1,1d5b6a,UconsumerU,0,hannoi_Q2.cpp,"hannoi_Q2.cpp
+# Questions: Which is the base case of the algorithm?
+
+# Answer:
+ */n ==0",5,5,5,5,5,
+5,4022a9,UsalvationU,0,hannoi_Q2.cs,"hannoi_Q2.cs
+# Questions: Which is the base case of the algorithm?
+
+# Answer: base case will be when n reaches 0
+ */",5,5,5,4,5,
+27,afc047,UbottleU,0,hannoi_Q2.py,"hannoi_Q2.py
+# Questions: Which is the base case of the algorithm?
+
+# Answer: n=0",5,,,,5,
+35,3d9b54,UbagU,0,hannoi_Q2.py,"hannoi_Q2.py
+# Questions: Which is the base case of the algorithm?
+
+# Answer: n = 0 ",5,,,,5,
+47,c6d8ff,UmosquitoU,0,hannoi_Q2.py,"hannoi_Q2.py
+# Questions: Which is the base case of the algorithm?
+
+# Answer: n = 0",5,,,,,
+13,6695fa,UpassionU,0,hannoi_Q3.cs,"hannoi_Q3.cs
+# Questions: which is the name of the auxiliary rod in the call
+
+# TowerOfHanoi(n, 'Mark', 'Mat', 'Luke')?
+
+# Answer: Luke
+ */
+",5,,,,5,
+16,c46f82,UimproveU,0,hannoi_Q3.py,"hannoi_Q3.py
+# Questions: which is the name of the auxiliary rod in the call
+
+# TowerOfHanoi(n, 'Mark', 'Mat', 'Luke')?
+
+# Answer: lUKE",5,,,,5,
+45,842f7a,UDuckU,3,multithread_Q1.cs,"multithread_Q1.cs
+# Questions: is it possible that consumer and producers threads
+
+# end up in a deadlock state, namely they both wait for each other to finish,
+
+# but none of them is doing anything?
+
+# Answer: yes
+*/",1,,,,,
+54,f5e35b,UboatU,3,multithread_Q1.cs,"multithread_Q1.cs
+# Questions: is it possible that consumer and producers threads
+
+# end up in a deadlock state, namely they both wait for each other to finish,
+
+# but none of them is doing anything?
+
+# Answer:no deadlock
+*/",5,,,,,
+30,d401e5,UbottleU,3,multithread_Q1.py,"multithread_Q1.py
+# Questions: is it possible that consumer and producers threads
+
+# end up in a deadlock state, namely they both wait for each other to finish,
+
+# but none of them is doing anything?
+
+# Answer: no action, start not defined
+",1,,,,,
+38,161f21,UbagU,4,multithread_Q1.py,"multithread_Q1.py
+# Questions: is it possible that consumer and producers threads
+
+# end up in a deadlock state, namely they both wait for each other to finish,
+
+# but none of them is doing anything?
+
+# Answer: no
+",5,,,,,
+34,a4a47a,UdragonU,4,multithread_Q2.cpp,"multithread_Q2.cpp
+# Questions: is there any line of code in the consumer or producer code which
+
+# will never be executed? If yes, report it below.
+
+# Answer: No
+*/",5,,,,1,
+26,d41dd8,UbeerU,3,multithread_Q2.py,"multithread_Q2.py
+# Questions: is there any line of code in the consumer or producer code which
+
+# will never be executed? If yes, report it below.
+
+# Answer:line 65?
+",2,,,,3,
+42,4c260d,UcamelionU,3,multithread_Q2.py,"multithread_Q2.py
+# Questions: is there any line of code in the consumer or producer code which
+
+# will never be executed? If yes, report it below.
+
+# Answer: Yes, the while True is an infinite loop because the ""return"" is outside the loop.
+",4,,,,,
+50,4a262b,UmosquitoU,3,multithread_Q2.py,"multithread_Q2.py
+# Questions: is there any line of code in the consumer or producer code which
+
+# will never be executed? If yes, report it below.
+
+# Answer: No, it will execute all lines
+",1,,,,,
+57,e84aa9,UseaU,3,multithread_Q3.py,"multithread_Q3.py
+# Questions: will the queue object ever raise an exception in this program?
+
+# If yes, which condition(s) should be met for the exception to be raised?
+
+# Answer: NO",1,,,,,
+14,88a0ee,UpassionU,1,Nqueens_Q1.cs,"Nqueens_Q1.cs
+# Question: What does `solveNQ(-13)` return?
+
+# Answer: Exception or error in the command line
+*/",5,,,,2,
+17,3e474f,UimproveU,1,Nqueens_Q1.py,"Nqueens_Q1.py
+# Question: What does `solveNQ(-13)` return?
+
+# Answer ERROR OR TRUE
+",3,,,,1,
+10,e33aac,UquarterU,1,Nqueens_Q2.cpp,"Nqueens_Q2.cpp
+# Question: What are valid dimensions and values for the array `board`?
+
+# Answer: we know that the board takes integers, and based off the values we set
+as well as the check issafe function, it seems that the only two values in board are 1 or 0
+corresponding to true or false. For dimensions, N must b greater than 0.
+*/",5,,,,4,
+2,ab1e99,UconsumerU,1,Nqueens_Q3.cpp,"Nqueens_Q3.cpp
+# Question: How would you expect the run time of `solveNQ(n)` to scale with `n`?
+
+# Answer: O(n)
+*/",2,5,2,5,2,
+20,e0495f,UmonkU,1,Nqueens_Q3.cpp,"Nqueens_Q3.cpp
+# Question: How would you expect the run time of `solveNQ(n)` to scale with `n`?
+
+# Answer: Time complexity is O(n^2) a
+*/",2,,,,3,
+6,56f44e,UsalvationU,1,Nqueens_Q3.cs,"Nqueens_Q3.cs
+# Question: How would you expect the run time of `solveNQ(n)` to scale with `n`?
+
+# Answer: it would increase exponentially
+*/",2,5,2,5,4,
+7,bda0b1,UsalvationU,2,tree_Q1.cs,"tree_Q1.cs
+# Question: How many calls to `constructTreeUtil` will
+
+# `constructTree([1, 2, 3], [ 1, 2, 3], 2)` make?
+
+# Answer: constructTreeUtil gets called 6 times
+*/",2,5,2,5,3,
+46,d3a4b4,UDuckU,4,tree_Q1.cs,"tree_Q1.cs
+# Question: How many calls to `constructTreeUtil` will
+
+# `constructTree([1, 2, 3], [ 1, 2, 3], 2)` make?
+
+# Answer: 1
+*/",2,,,,,
+24,81a0b9,UbeerU,1,tree_Q1.py,"tree_Q1.py
+# Question: How many calls to `constructTreeUtil` will
+
+# `constructTree([1, 2, 3], [ 1, 2, 3], 2)` make?
+
+# Answer:]
+
+# I don't know the answer",1,,,,1,
+40,debcce,UcamelionU,1,tree_Q1.py,"tree_Q1.py
+# Question: How many calls to `constructTreeUtil` will
+
+# `constructTree([1, 2, 3], [ 1, 2, 3], 2)` make?
+
+# Answer: 0",1,,,,,
+48,97a19f,UmosquitoU,1,tree_Q1.py,"tree_Q1.py
+# Question: How many calls to `constructTreeUtil` will
+
+# `constructTree([1, 2, 3], [ 1, 2, 3], 2)` make?
+
+# Answer: 3(?)",2,,,,,
+55,500208,UseaU,1,tree_Q1.py,"tree_Q1.py
+# Question: How many calls to `constructTreeUtil` will
+
+# `constructTree([1, 2, 3], [ 1, 2, 3], 2)` make?
+
+# Answer: 9",2,,,,,
+22,403482,UmonkU,3,tree_Q2.cpp,"tree_Q2.cpp
+# Question: Under which conditions could the check `if i <= h` in
+
+# `constructTreeUtil` be false?
+
+# Answer: at the end of the tree
+*/",2,,,,2,
+32,b5c173,UdragonU,2,tree_Q2.cpp,"tree_Q2.cpp
+# Question: Under which conditions could the check `if i <= h` in
+
+# `constructTreeUtil` be false?
+
+# Answer: If the break statement in line 43 happens
+*/",2,,,,4,
+52,cbdc06,UboatU,1,tree_Q2.cs,"tree_Q2.cs
+# Question: Under which conditions could the check `if i <= h` in
+
+# `constructTreeUtil` be false?
+
+# Answer: condition cannot be false
+*/",3,,,,,
+59,9e5778,UsurfU,2,tree_Q2.cs,"tree_Q2.cs
+# Question: Under which conditions could the check `if i <= h` in
+
+# `constructTreeUtil` be false?
+
+# Answer: It would be false in the case that there are no more elements left to traverse
+*/",,,,,,
+28,5a70af,UbottleU,1,tree_Q2.py,"tree_Q2.py
+# Question: Under which conditions could the check `if i <= h` in
+
+# `constructTreeUtil` be false?
+
+# Answer: always false",2,,,,2,
+36,4.80E+07,UbagU,2,tree_Q2.py,"tree_Q2.py
+# Question: Under which conditions could the check `if i <= h` in
+
+# `constructTreeUtil` be false?
+
+# Answer: after keep adding the right node ",,,,,2,
+3,38606b,UconsumerU,2,tree_Q3.cpp,"tree_Q3.cpp
+# Question: A part of the code you don't have direct access to has called
+
+# `constructTree` with unknown parameters. What can you find out about
+
+# those parameters?
+
+# Answer:
+*/ pre[] is the preorder traversal of the tree and post[] is the postorder traversal of the tree. Both are arrays. ",4,5,5,5,4,
+11,448383,UquarterU,2,tree_Q3.cpp,"tree_Q3.cpp
+# Question: A part of the code you don't have direct access to has called
+
+# `constructTree` with unknown parameters. What can you find out about
+
+# those parameters?
+
+# Answer: based off the function name, it looks like constructTree is supposed to create
+a tree. It takes in two arrays, pre and post. Pre and Post seem to be preorder and postorder of traversal
+of the tree. It also takes in a size, which is size of the tree (number of nodes)
+*/",5,,,,5,
+12,7740fd,UquarterU,3,triangle_Q1.cpp,"triangle_Q1.cpp
+# Questions: Which of the functions have side effects (namely it modifies some
+
+# state variable value outside its local environment?
+
+# Answer: the function order has side effects, it reassigns the value of a, b, and c to put them
+in sorted order.
+*/",5,,,,5,
+21,c7ca22,UmonkU,2,triangle_Q1.cpp,"triangle_Q1.cpp
+# Questions: Which of the functions have side effects (namely it modifies some
+
+# state variable value outside its local environment?
+
+# Answer: order
+*/",5,,,,4,
+33,3b0e57,UdragonU,3,triangle_Q1.cpp,"triangle_Q1.cpp
+# Questions: Which of the functions have side effects (namely it modifies some
+
+# state variable value outside its local environment?
+
+# Answer: order, classify triangle
+*/",4,,,,5,
+18,4.40E+61,UimproveU,2,triangle_Q1.py,"triangle_Q1.py
+# Questions: Which of the functions have side effects (namely it modifies some
+
+# state variable value outside its local environment?
+
+# Answer: NONE",5,,,,4,
+29,675fc1,UbottleU,2,triangle_Q1.py,"triangle_Q1.py
+# Questions: Which of the functions have side effects (namely it modifies some
+
+# state variable value outside its local environment?
+
+# Answer: 0",5,,,,4,
+37,df2957,UbagU,3,triangle_Q1.py,"triangle_Q1.py
+# Questions: Which of the functions have side effects (namely it modifies some
+
+# state variable value outside its local environment?
+
+# Answer: no function",5,,,,4,
+8,7a600a,UsalvationU,3,triangle_Q2.cs,"triangle_Q2.cs
+# Questions: Which output will you get for the three points [1, 2], [1, 3],
+
+# and [1, 4]?
+
+# Answer:Triangle is obtuse and isoceles
+*/",5,,,,2,
+44,5bf279,UDuckU,2,triangle_Q2.cs,"triangle_Q2.cs
+# Questions: Which output will you get for the three points [1, 2], [1, 3],
+
+# and [1, 4]?
+
+# Answer: ""Triangle is obtuse and equilateral",3,,,,,
+53,b595bc,UboatU,2,triangle_Q2.cs,"triangle_Q2.cs
+# Questions: Which output will you get for the three points [1, 2], [1, 3],
+
+# and [1, 4]?
+
+# Answer:
+
+Triangle is obtuse and Scalene
+*/",3,,,,,
+4,09601c,UconsumerU,3,triangle_Q3.cpp,"triangle_Q3.cpp
+# Question: What could happen if the call to `order()` were omitted from
+
+# `classifyTriangle`?
+
+# Answer:
+*/ Order is irrelevant.",1,5,1,5,1,
+15,6831ef,UpassionU,2,triangle_Q3.cs,"triangle_Q3.cs
+# Question: What could happen if the call to `order()` were omitted from
+
+# `classifyTriangle`?
+
+# Answer: if we do not order the points we wouldn't get a triangle.
+*/",2,,,,3,
+25,08147e,UbeerU,2,triangle_Q3.py,"triangle_Q3.py
+# Question: What could happen if the call to `order()` were omitted from
+
+# `classifyTriangle`?
+
+# Answer:
+
+# I think it might affect the accuracy of answers because the condition if statement is used
+# spefically for each side",4,,,,3,
+41,88a31c,UcamelionU,2,triangle_Q3.py,"triangle_Q3.py
+# Question: What could happen if the call to `order()` were omitted from
+
+# `classifyTriangle`?
+
+# Answer: Classification would be wrong for angle because there is only one comparison instead of compaing ",4,,,,,
+49,b6cb6e,UmosquitoU,2,triangle_Q3.py,"triangle_Q3.py
+# Question: What could happen if the call to `order()` were omitted from
+
+# `classifyTriangle`?
+
+# Answer: Wrongly identify whether a triangle is acute/obtuse, isoceles/scalene etc",3,,,,,
+56,2babb5,UseaU,2,triangle_Q3.py,"triangle_Q3.py
+# Question: What could happen if the call to `order()` were omitted from
+
+# `classifyTriangle`?
+
+# Answer: Angle classification would change but the side classification would not ",5,,,,,

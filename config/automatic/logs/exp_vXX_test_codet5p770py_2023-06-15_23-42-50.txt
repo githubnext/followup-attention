@@ -1,0 +1,82 @@
+Using config file information.
+Traceback (most recent call last):
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/eaftan/copilot-attention/attwizard/script/batch_attention_extraction.py", line 177, in <module>
+    cli()
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/eaftan/copilot-attention/attwizard/script/batch_attention_extraction.py", line 171, in queryextract
+    process_data(config)
+  File "/home/eaftan/copilot-attention/attwizard/script/batch_attention_extraction.py", line 135, in process_data
+    create_prediction(
+  File "/home/eaftan/copilot-attention/attwizard/script/batch_attention_extraction.py", line 48, in create_prediction
+    model, tokenizer = load_tokenizer_and_model(
+  File "/home/eaftan/copilot-attention/attwizard/script/utils_model.py", line 124, in load_tokenizer_and_model
+    raise ValueError("Unknown model name.")
+ValueError: Unknown model name.
+Using config file information.
+Traceback (most recent call last):
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/analyzer.py", line 308, in <module>
+    cli()
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/analyzer.py", line 245, in getanswers
+    all_generated_text = read_data_in_parallel(
+  File "/home/eaftan/copilot-attention/attwizard/script/utils.py", line 35, in read_data_in_parallel
+    for f in os.listdir(base_folder)
+FileNotFoundError: [Errno 2] No such file or directory: 'data/model_output/exp_vXX_test/codet5p770py/generated_sequence'
+^CTraceback (most recent call last):
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/analyzer.py", line 13, in <module>
+    import torch
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/torch/__init__.py", line 960, in <module>
+    from . import _meta_registrations
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/torch/_meta_registrations.py", line 2, in <module>
+    from torch._prims import utils
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/torch/_prims/__init__.py", line 4, in <module>
+    import torch._prims.utils as utils
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/torch/_prims/utils.py", line 11, in <module>
+    if torch.cuda.is_available():
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/torch/cuda/__init__.py", line 83, in is_available
+    return torch._C._cuda_getDeviceCount() > 0
+KeyboardInterrupt
+^CTraceback (most recent call last):
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/analyzer.py", line 13, in <module>
+    import torch
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/torch/__init__.py", line 202, in <module>
+    from torch._C import *  # noqa: F403
+RuntimeError: KeyboardInterrupt: 

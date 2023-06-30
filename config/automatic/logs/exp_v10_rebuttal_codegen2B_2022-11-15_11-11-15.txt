@@ -1,0 +1,109 @@
+Using config file information.
+Some weights of the model checkpoint at /mnt/huggingface_models/Salesforce_codegen-2B-multi/codegen-2B-multi were not used when initializing CodeGenForCausalLM: ['transformer.h.1.attn.causal_mask', 'transformer.h.11.attn.causal_mask', 'transformer.h.14.attn.causal_mask', 'transformer.h.17.attn.causal_mask', 'transformer.h.10.attn.causal_mask', 'transformer.h.12.attn.causal_mask', 'transformer.h.18.attn.causal_mask', 'transformer.h.30.attn.causal_mask', 'transformer.h.27.attn.causal_mask', 'transformer.h.24.attn.causal_mask', 'transformer.h.26.attn.causal_mask', 'transformer.h.19.attn.causal_mask', 'transformer.h.9.attn.causal_mask', 'transformer.h.21.attn.causal_mask', 'transformer.h.15.attn.causal_mask', 'transformer.h.0.attn.causal_mask', 'transformer.h.23.attn.causal_mask', 'transformer.h.31.attn.causal_mask', 'transformer.h.25.attn.causal_mask', 'transformer.h.2.attn.causal_mask', 'transformer.h.7.attn.causal_mask', 'transformer.h.3.attn.causal_mask', 'transformer.h.29.attn.causal_mask', 'transformer.h.8.attn.causal_mask', 'transformer.h.28.attn.causal_mask', 'transformer.h.4.attn.causal_mask', 'transformer.h.22.attn.causal_mask', 'transformer.h.5.attn.causal_mask', 'transformer.h.20.attn.causal_mask', 'transformer.h.16.attn.causal_mask', 'transformer.h.13.attn.causal_mask', 'transformer.h.6.attn.causal_mask']
+- This IS expected if you are initializing CodeGenForCausalLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing CodeGenForCausalLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+  0%|                                                                                                                 | 0/45 [00:00<?, ?it/s]Before calling model.generate()
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+  0%|                                                                                                                 | 0/45 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/eaftan/copilot-attention/attwizard/script/batch_attention_extraction.py", line 177, in <module>
+    cli()
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/eaftan/copilot-attention/attwizard/script/batch_attention_extraction.py", line 171, in queryextract
+    process_data(config)
+  File "/home/eaftan/copilot-attention/attwizard/script/batch_attention_extraction.py", line 135, in process_data
+    create_prediction(
+  File "/home/eaftan/copilot-attention/attwizard/script/batch_attention_extraction.py", line 69, in create_prediction
+    model_output, metadata = run_model_single_instance(
+  File "/home/eaftan/copilot-attention/attwizard/script/utils_model.py", line 142, in run_model_single_instance
+    model_output = model.generate(
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/transformers/generation_utils.py", line 1320, in generate
+    return self.sample(
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/transformers/generation_utils.py", line 1938, in sample
+    outputs = self(
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/eaftan/copilot-attention/attwizard/models/modeling_codegen.py", line 631, in forward
+    transformer_outputs = self.transformer(
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/eaftan/copilot-attention/attwizard/models/modeling_codegen.py", line 448, in forward
+    inputs_embeds = self.wte(input_ids)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/torch/nn/modules/sparse.py", line 158, in forward
+    return F.embedding(
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/torch/nn/functional.py", line 2199, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument index in method wrapper__index_select)
+Using config file information.
+Traceback (most recent call last):
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/analyzer.py", line 297, in <module>
+    cli()
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/analyzer.py", line 234, in getanswers
+    all_generated_text = read_data_in_parallel(
+  File "/home/eaftan/copilot-attention/attwizard/script/utils.py", line 35, in read_data_in_parallel
+    for f in os.listdir(base_folder)
+FileNotFoundError: [Errno 2] No such file or directory: 'data/model_output/exp_v10/codegen2B_rebuttal/generated_sequence'
+Using config file information.
+n of data read:  0
+WARNING: No data found.
+Using config file information.
+Processing analysis pass: followup
+Traceback (most recent call last):
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/analyzer.py", line 297, in <module>
+    cli()
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/analyzer.py", line 209, in deriveall
+    derive_for_experiment(
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/analyzer.py", line 96, in derive_for_experiment
+    target_filetype = filetypes[0]
+IndexError: list index out of range

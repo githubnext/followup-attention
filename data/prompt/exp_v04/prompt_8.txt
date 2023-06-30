@@ -1,0 +1,20 @@
+d = 2
+e = 9
+f = 6
+b = 0
+c = 2
+a = 6
+d = abs( f, )
+e = c
+a = b
+d = max( d, e, )
+c = c * e / b
+f = min( f, )
+a = b
+e = c * d * c + d
+d = min( e, )
+a = c
+f = len( b, )
+e = b - d * e
+c = d - e / c
+if (a == 

@@ -1,0 +1,903 @@
+Reading config file:
+{'attention_parameters': {'horizontal_attention_span': 4,
+                          'vertical_attention_span': 1},
+ 'batches': [{'batch_no': 1,
+              'folder_participants': './data/eye_tracking_studies/dataset_human_sessions/batch_A',
+              'folder_questions': './eye_tracking/samples_batch_1'},
+             {'batch_no': 2,
+              'folder_participants': './data/eye_tracking_studies/dataset_human_sessions/batch_B',
+              'folder_questions': './eye_tracking/samples_batch_2022_08_03'}],
+ 'folder_output': './data/eye_tracking_attention/eye_vXX',
+ 'folder_participants': None,
+ 'folder_questions': None,
+ 'followup_attention': {'decays': [0.1],
+                        'force_model_tokens': True,
+                        'levels': ['token'],
+                        'model_folder': '/mnt/huggingface_models',
+                        'model_tokenizer': 'Salesforce/codegen-350M-mono',
+                        'normalization': None,
+                        'save_images': False},
+ 'manual_tab_replacements': [{'find': "towerOfHanoi(n, 'A', 'C', 'B');\treturn "
+                                      '0;',
+                              'replace': "towerOfHanoi(n, 'A', 'C', 'B'); "
+                                         'return 0;'},
+                             {'find': '\t\t\t\t\t   {0, 0, 0, 0},',
+                              'replace': '                       {0, 0, 0, '
+                                         '0},'},
+                             {'find': '\t\t\t\t\t   {0, 0, 0, 0},',
+                              'replace': '                       {0, 0, 0, '
+                                         '0},'},
+                             {'find': '\t\t\t\t\t   {0, 0, 0, 0}};',
+                              'replace': '                       {0, 0, 0, '
+                                         '0}};'}],
+ 'participants': [{'batch_no': 1,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UconsumerU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 1,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1723,
+                                                 'x_start_screen_abs': 592,
+                                                 'y_end_screen_abs': 967,
+                                                 'y_start_screen_abs': 179},
+                   'name': 'UsalvationU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'L'},
+                  {'batch_no': 1,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UquarterU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 1,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UpassionU',
+                   'tasks': [0, 1, 2],
+                   'zoom': 'M'},
+                  {'batch_no': 1,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1723,
+                                                 'x_start_screen_abs': 592,
+                                                 'y_end_screen_abs': 967,
+                                                 'y_start_screen_abs': 179},
+                   'name': 'UimproveU',
+                   'tasks': [0, 1, 2],
+                   'zoom': 'L'},
+                  {'batch_no': 1,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UmonkU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1792,
+                                                 'x_start_screen_abs': 482,
+                                                 'y_end_screen_abs': 1006,
+                                                 'y_start_screen_abs': 147},
+                   'name': 'UbeerU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UbottleU',
+                   'tasks': [0, 1],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1790,
+                                                 'x_start_screen_abs': 482,
+                                                 'y_end_screen_abs': 1016,
+                                                 'y_start_screen_abs': 147},
+                   'name': 'UbottleU',
+                   'tasks': [2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UdragonU',
+                   'tasks': [1, 2, 3, 4],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1790,
+                                                 'x_start_screen_abs': 482,
+                                                 'y_end_screen_abs': 1006,
+                                                 'y_start_screen_abs': 147},
+                   'name': 'UbagU',
+                   'tasks': [0, 2, 3, 4],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UcamelionU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UDuckU',
+                   'tasks': [0, 2, 3, 4],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UmosquitoU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UboatU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UseaU',
+                   'tasks': [1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UsurfU',
+                   'tasks': [0, 2],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UfallU',
+                   'tasks': [0, 1, 3, 4],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UjumpU',
+                   'tasks': [0, 1],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UrideU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UsleepU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UclimbU',
+                   'tasks': [0, 1, 2, 3, 4],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UeatU',
+                   'tasks': [0, 1],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UcryU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UflyU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UscoopU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'}],
+ 'screen_distance_mm': 300,
+ 'screen_resolution': {'pixel_screen_height': 1080, 'pixel_screen_width': 1920},
+ 'screen_size': {'height_mm': 296.46, 'width_mm': 527.04},
+ 'tokenization': {'model_names': ['Salesforce/codegen-350M-mono'],
+                  'models_folder': '/mnt/huggingface_models'},
+ 'zoom_dependant_parameters': {'L': {'bottom_right_offsets': [90, -25],
+                                     'n_col': 71,
+                                     'n_lines': 20,
+                                     'path_marker_bottom_right': './data/eye_tracking_studies/markers/bottom_right_marker_zoomed.png',
+                                     'path_marker_top_left': './data/eye_tracking_studies/markers/top_left_marker_zoomed.png',
+                                     'top_left_offsets': [220, 125]},
+                               'M': {'bottom_right_offsets': [107, 6],
+                                     'n_col': 97,
+                                     'n_lines': 26,
+                                     'path_marker_bottom_right': './data/eye_tracking_studies/markers/bottom_right_marker_cropped.png',
+                                     'path_marker_top_left': './data/eye_tracking_studies/markers/top_left_marker.png',
+                                     'top_left_offsets': [182, 109]}}}
+Extract attention weights from eye tracker data.
+Extracting all participants data.
+================================================================================
+Extracting: UconsumerU (zoom: M - task: 0)
+1
+File of the task: cpp/hannoi_Q2.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UconsumerU (zoom: M - task: 1)
+1
+File of the task: cpp/Nqueens_Q3.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UconsumerU (zoom: M - task: 2)
+1
+File of the task: cpp/tree_Q3.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UconsumerU (zoom: M - task: 3)
+1
+File of the task: cpp/triangle_Q3.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UsalvationU (zoom: L - task: 0)
+1
+File of the task: csharp/hannoi_Q2.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UsalvationU (zoom: L - task: 1)
+1
+File of the task: csharp/Nqueens_Q3.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UsalvationU (zoom: L - task: 2)
+1
+File of the task: csharp/tree_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UsalvationU (zoom: L - task: 3)
+1
+File of the task: csharp/triangle_Q2.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[ACreating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UquarterU (zoom: M - task: 0)
+1
+File of the task: cpp/hannoi_Q1.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UquarterU (zoom: M - task: 1)
+1
+File of the task: cpp/Nqueens_Q2.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UquarterU (zoom: M - task: 2)
+1
+File of the task: cpp/tree_Q3.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UquarterU (zoom: M - task: 3)
+1
+File of the task: cpp/triangle_Q1.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UpassionU (zoom: M - task: 0)
+1
+File of the task: csharp/hannoi_Q3.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UpassionU (zoom: M - task: 1)
+1
+File of the task: csharp/Nqueens_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UpassionU (zoom: M - task: 2)
+1
+File of the task: csharp/triangle_Q3.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UimproveU (zoom: L - task: 0)
+1
+File of the task: python/hannoi_Q3.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UimproveU (zoom: L - task: 1)
+1
+File of the task: python/Nqueens_Q1.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UimproveU (zoom: L - task: 2)
+1
+File of the task: python/triangle_Q1.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UmonkU (zoom: M - task: 0)
+1
+File of the task: cpp/hannoi_Q1.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UmonkU (zoom: M - task: 1)
+1
+File of the task: cpp/Nqueens_Q3.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UmonkU (zoom: M - task: 2)
+1
+File of the task: cpp/triangle_Q1.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UmonkU (zoom: M - task: 3)
+1
+File of the task: cpp/tree_Q2.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UbeerU (zoom: M - task: 0)
+2
+File of the task: python/hannoi_Q1.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UbeerU (zoom: M - task: 1)
+2
+File of the task: python/tree_Q1.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UbeerU (zoom: M - task: 2)
+2
+File of the task: python/triangle_Q3.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UbeerU (zoom: M - task: 3)
+2
+File of the task: python/multithread_Q2.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UbottleU (zoom: M - task: 0)
+2
+File of the task: python/hannoi_Q2.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UbottleU (zoom: M - task: 1)
+2
+File of the task: python/tree_Q2.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UbottleU (zoom: M - task: 2)
+2
+File of the task: python/triangle_Q1.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UbottleU (zoom: M - task: 3)
+2
+File of the task: python/multithread_Q1.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UdragonU (zoom: M - task: 1)
+2
+File of the task: cpp/hannoi_Q1.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UdragonU (zoom: M - task: 2)
+2
+File of the task: cpp/tree_Q2.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UdragonU (zoom: M - task: 3)
+2
+File of the task: cpp/triangle_Q1.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UdragonU (zoom: M - task: 4)
+2
+File of the task: cpp/multithread_Q2.cpp
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UbagU (zoom: M - task: 0)
+2
+File of the task: python/hannoi_Q2.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UbagU (zoom: M - task: 2)
+2
+File of the task: python/tree_Q2.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UbagU (zoom: M - task: 3)
+2
+File of the task: python/triangle_Q1.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UbagU (zoom: M - task: 4)
+2
+File of the task: python/multithread_Q1.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UcamelionU (zoom: M - task: 0)
+2
+File of the task: python/hannoi_Q1.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UcamelionU (zoom: M - task: 1)
+2
+File of the task: python/tree_Q1.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UcamelionU (zoom: M - task: 2)
+2
+File of the task: python/triangle_Q3.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UcamelionU (zoom: M - task: 3)
+2
+File of the task: python/multithread_Q2.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UDuckU (zoom: M - task: 0)
+2
+File of the task: csharp/hannoi_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UDuckU (zoom: M - task: 2)
+2
+File of the task: csharp/triangle_Q2.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UDuckU (zoom: M - task: 3)
+2
+File of the task: csharp/multithread_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UDuckU (zoom: M - task: 4)
+2
+File of the task: csharp/tree_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UmosquitoU (zoom: M - task: 0)
+2
+File of the task: python/hannoi_Q2.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UmosquitoU (zoom: M - task: 1)
+2
+File of the task: python/tree_Q1.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UmosquitoU (zoom: M - task: 2)
+2
+File of the task: python/triangle_Q3.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UmosquitoU (zoom: M - task: 3)
+2
+File of the task: python/multithread_Q2.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UboatU (zoom: M - task: 0)
+2
+File of the task: csharp/hannoi_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UboatU (zoom: M - task: 1)
+2
+File of the task: csharp/tree_Q2.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UboatU (zoom: M - task: 2)
+2
+File of the task: csharp/triangle_Q2.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UboatU (zoom: M - task: 3)
+2
+File of the task: csharp/multithread_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UseaU (zoom: M - task: 1)
+2
+File of the task: python/tree_Q1.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UseaU (zoom: M - task: 2)
+2
+File of the task: python/triangle_Q3.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UseaU (zoom: M - task: 3)
+2
+File of the task: python/multithread_Q3.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UsurfU (zoom: M - task: 0)
+2
+File of the task: csharp/hannoi_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UsurfU (zoom: M - task: 2)
+2
+File of the task: csharp/tree_Q2.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UfallU (zoom: M - task: 0)
+2
+File of the task: python/hannoi_Q1.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UfallU (zoom: M - task: 1)
+2
+File of the task: python/multithread_Q2.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UfallU (zoom: M - task: 3)
+2
+File of the task: python/tree_Q3.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UfallU (zoom: M - task: 4)
+2
+File of the task: python/triangle_Q3.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UjumpU (zoom: M - task: 0)
+2
+File of the task: python/hannoi_Q3.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UjumpU (zoom: M - task: 1)
+2
+File of the task: python/multithread_Q1.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UrideU (zoom: M - task: 0)
+2
+File of the task: csharp/hannoi_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UrideU (zoom: M - task: 1)
+2
+File of the task: csharp/multithread_Q3.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UrideU (zoom: M - task: 2)
+2
+File of the task: csharp/tree_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UrideU (zoom: M - task: 3)
+2
+File of the task: csharp/triangle_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UsleepU (zoom: M - task: 0)
+2
+File of the task: python/hannoi_Q2.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UsleepU (zoom: M - task: 1)
+2
+File of the task: python/multithread_Q2.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UsleepU (zoom: M - task: 2)
+2
+File of the task: python/tree_Q1.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UsleepU (zoom: M - task: 3)
+2
+File of the task: python/triangle_Q3.py
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UclimbU (zoom: M - task: 0)
+2
+File of the task: csharp/hannoi_Q2.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UclimbU (zoom: M - task: 1)
+2
+File of the task: csharp/Nqueens_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UclimbU (zoom: M - task: 2)
+2
+File of the task: csharp/tree_Q2.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UclimbU (zoom: M - task: 3)
+2
+File of the task: csharp/triangle_Q2.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UclimbU (zoom: M - task: 4)
+2
+File of the task: csharp/multithread_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UeatU (zoom: M - task: 0)
+2
+File of the task: csharp/hannoi_Q2.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UeatU (zoom: M - task: 1)
+2
+File of the task: csharp/multithread_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UcryU (zoom: M - task: 0)
+2
+File of the task: csharp/hannoi_Q3.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UcryU (zoom: M - task: 1)
+2
+File of the task: csharp/multithread_Q2.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UcryU (zoom: M - task: 2)
+2
+File of the task: csharp/tree_Q3.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UcryU (zoom: M - task: 3)
+2
+File of the task: csharp/triangle_Q3.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UflyU (zoom: M - task: 0)
+2
+File of the task: csharp/hannoi_Q2.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UflyU (zoom: M - task: 1)
+2
+File of the task: csharp/tree_Q2.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UflyU (zoom: M - task: 2)
+2
+File of the task: csharp/triangle_Q2.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UflyU (zoom: M - task: 3)
+2
+File of the task: csharp/Nqueens_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UscoopU (zoom: M - task: 0)
+2
+File of the task: csharp/hannoi_Q3.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UscoopU (zoom: M - task: 1)
+2
+File of the task: csharp/multithread_Q1.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UscoopU (zoom: M - task: 2)
+2
+File of the task: csharp/tree_Q3.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events
+================================================================================
+Extracting: UscoopU (zoom: M - task: 3)
+2
+File of the task: csharp/triangle_Q3.cs
+Creating att. heatmap on all chars, including additional space char artificially add in between lines.
+Creating att. heatmap including only charswhich are also present in the original source file
+Save the user interactions as char-level events

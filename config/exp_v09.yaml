@@ -1,0 +1,72 @@
+# This folder describes the parameters to run an attention extraction job
+
+# DESCRIPTION
+# This experiment creates an artificial setting with two functions (form the
+# human eval dataset) and one test prompt.
+# the attention should go exclusively to the statements of the function under
+# test
+
+input_data_folder: ./data/prompt/exp_v09
+ground_truth_folder: ./data/ground_truth_attention/exp_v09
+output_data_folder: ./data/model_output/exp_v09
+local_model_folder: /mnt/huggingface_models
+
+
+
+# if the stop_signal_line is not null it means that, if the stop_signal_line
+# is in the prompt, all the lines after that will be ignored
+stop_signal_line: "Answer:"
+
+# The model used in the experiment are those uncommented.
+# The others listed here have been tested (and are available on gpt-j-3 VM)
+# if they are not available on your machine use the download_model script.
+models:
+  - Salesforce/codegen-16B-multi
+#  - Salesforce/codegen-16B-mono
+#  - Salesforce/codegen-350M-mono
+#  - EleutherAI/gpt-neo-125M
+
+
+
+# define the propertis of the prompt if you wish to generate them
+# automatically
+prompt_creation_strategy:
+  name: 'two_functions_one_test'
+  type: 'creator'
+  attention_level: 'line'
+  n_prompts: 20
+  kwargs:
+    seed: 42
+    folder_with_seed_functions: ./data/prompts_collection/reverse_human_eval
+    start_of_test_statement: '# Write a test'
+
+
+
+# We query the model over a series of snippet and we saves the model output as:
+# - generated text
+# - attention matrix (typically condensed on both layer and head dim)
+# - metadata (e.g. info on tokenization used, text prompt and generated)
+generation:  # refers to the generative model
+  # UNUSED number_of_seeds: 1
+  number_of_tokens: 100  # use -1 for open-ended generation
+  max_time_in_seconds: 60  # use -1 for infinite time
+  temperature: 0.2
+
+
+extract_attention: true
+
+attention:
+  # min, max, mean, sum, keep
+  strategy_reduce_head: keep
+  # min, max, mean, sum, keep
+  strategy_reduce_layer: keep
+  # do not normalize
+  strategy_normalize_tokens: None
+
+save_attention_matrix: true
+# UNUSED number_of_source_code_heatmaps: 2
+
+
+# this is typically to very large, it would saturate the memory too quickly.
+save_raw_model_output: false
+

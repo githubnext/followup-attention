@@ -1,0 +1,20 @@
+d = False
+e = 5
+f = False
+b = False
+c = 6
+a = 2
+b = c * b * c
+a = len( b, )
+d = d
+c = len( d, f, c, f, )
+d = f / e - d / e
+a = c - c + b
+c = e * d
+c = len( f, f, )
+a = abs( c, b, )
+c = b + c / e
+c = e - f / 2 + c
+b = d
+d = f + b
+if (a == 

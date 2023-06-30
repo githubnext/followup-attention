@@ -1,0 +1,29 @@
+def string_xor(a: str, b: str) -> str:
+    """ Input are two strings a and b consisting only of 1s and 0s.
+    Perform binary XOR on these inputs and return result also as a string.
+    """
+    def xor(i, j):
+        if i == j:
+            return '0'
+        else:
+            return '1'
+
+    return ''.join(xor(x, y) for x, y in zip(a, b))
+
+
+def fizz_buzz(n: int):
+    """Return the number of times the digit 7 appears in integers less than n which are divisible by 11 or 13.
+    """
+    ns = []
+    for i in range(n):
+        if i % 11 == 0 or i % 13 == 0:
+            ns.append(i)
+    s = ''.join(list(map(str, ns)))
+    ans = 0
+    for c in s:
+        ans += (c == '7')
+    return ans
+
+
+# Write a test for the function string_xor below
+assert string_xor(

@@ -1,0 +1,17 @@
+# Configuration
+
+
+
+#### MODEL DOWNLOAD ###
+
+# This section specifies which huggingface models to download
+# Insert the hggingface url of the repositories you want to download
+models_to_download:
+  - EleutherAI/gpt-j-6B
+  #- Salesforce/codegen-16B-multi
+  #- facebook/incoder-6B
+  # - Salesforce/codegen-350M-mono
+  #- EleutherAI/gpt-neo-125M
+  # - EleutherAI/gpt-j-6B
+
+local_model_folder: /mnt/huggingface_models

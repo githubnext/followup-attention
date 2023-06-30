@@ -1,0 +1,547 @@
+# This config decsribe how human and models are compared and on what
+# This experiments explores different rank configurations
+
+
+human_att_folder: ./data/eye_tracking_attention/eye_v10
+machine_att_folder: ./data/model_output/exp_v10/codegen
+output_comparison_folder: ./data/comparisons/cmp_v03
+
+
+comparisons:
+# the type can be:
+# - vectors: if we compare vectors of N elements as the tokens in the prompt
+# - matrix: if we compare matrices of size N x N where N are the promt tokens
+# - transform_functions: the functions to apply to the data before they are
+#   compared. Note that if more than one transformation is there they are
+#   applied sequentially in the given order.
+#   Note that, beside a name, each transformation can have also a "kwargs" key
+#   with the additional argument that the function might take.
+
+  # SPEARMAN RANK
+  # TOKEN TOKEN
+  - name: tt_spearman_followup
+    type: matrix
+    comparison_function: spearman_rank_by_line
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: followup
+      file_extension: '.npy'
+  - name: tt_spearman_naivemax
+    type: matrix
+    comparison_function: spearman_rank_by_line
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: naive_max
+      file_extension: '.npy'
+  - name: tt_spearman_copycat
+    type: matrix
+    comparison_function: spearman_rank_by_line
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_copy_cat_matrix
+      file_extension: '.npy'
+  - name: tt_spearman_uniform
+    type: matrix
+    comparison_function: spearman_rank_by_line
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_uniform_matrix
+      file_extension: '.npy'
+  # TOKEN-LINE
+  - name: tl_spearman_followup
+    type: matrix
+    comparison_function: spearman_rank_by_line
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: followup
+      file_extension: '.npy'
+  - name: tl_spearman_naivemax
+    type: matrix
+    comparison_function: spearman_rank_by_line
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: naive_max
+      file_extension: '.npy'
+  - name: tl_spearman_copycat
+    type: matrix
+    comparison_function: spearman_rank_by_line
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_copy_cat_matrix
+      file_extension: '.npy'
+  - name: tl_spearman_uniform
+    type: matrix
+    comparison_function: spearman_rank_by_line
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_uniform_matrix
+      file_extension: '.npy'
+
+
+  # PERFECT MATCH
+  # TOKEN TOKEN
+  - name: tt_perfmatch_followup
+    type: matrix
+    comparison_function: perfect_match
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: followup
+      file_extension: '.npy'
+  - name: tt_perfmatch_naivemax
+    type: matrix
+    comparison_function: perfect_match
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: naive_max
+      file_extension: '.npy'
+  - name: tt_perfmatch_copycat
+    type: matrix
+    comparison_function: perfect_match
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_copy_cat_matrix
+      file_extension: '.npy'
+  - name: tt_perfmatch_uniform
+    type: matrix
+    comparison_function: perfect_match
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_uniform_matrix
+      file_extension: '.npy'
+  # TOKEN-LINE
+  - name: tl_perfmatch_followup
+    type: matrix
+    comparison_function: perfect_match
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: followup
+      file_extension: '.npy'
+  - name: tl_perfmatch_naivemax
+    type: matrix
+    comparison_function: perfect_match
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: naive_max
+      file_extension: '.npy'
+  - name: tl_perfmatch_copycat
+    type: matrix
+    comparison_function: perfect_match
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_copy_cat_matrix
+      file_extension: '.npy'
+  - name: tl_perfmatch_uniform
+    type: matrix
+    comparison_function: perfect_match
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_uniform_matrix
+      file_extension: '.npy'
+
+  # TOP_3
+  # TOKEN TOKEN
+  - name: tt_top3_followup
+    type: matrix
+    comparison_function: top_3_overlap
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: followup
+      file_extension: '.npy'
+  - name: tt_top3_naivemax
+    type: matrix
+    comparison_function: top_3_overlap
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: naive_max
+      file_extension: '.npy'
+  - name: tt_top3_copycat
+    type: matrix
+    comparison_function: top_3_overlap
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_copy_cat_matrix
+      file_extension: '.npy'
+  - name: tt_top3_uniform
+    type: matrix
+    comparison_function: top_3_overlap
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_uniform_matrix
+      file_extension: '.npy'
+  # TOKEN-LINE
+  - name: tl_top3_followup
+    type: matrix
+    comparison_function: top_3_overlap
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: followup
+      file_extension: '.npy'
+  - name: tl_top3_naivemax
+    type: matrix
+    comparison_function: top_3_overlap
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: naive_max
+      file_extension: '.npy'
+  - name: tl_top3_copycat
+    type: matrix
+    comparison_function: top_3_overlap
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_copy_cat_matrix
+      file_extension: '.npy'
+  - name: tl_top3_uniform
+    type: matrix
+    comparison_function: top_3_overlap
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_uniform_matrix
+      file_extension: '.npy'
+
+  # TOP_10
+  # TOKEN TOKEN
+  - name: tt_top10_followup
+    type: matrix
+    comparison_function: top_10_overlap
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: followup
+      file_extension: '.npy'
+  - name: tt_top10_naivemax
+    type: matrix
+    comparison_function: top_10_overlap
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: naive_max
+      file_extension: '.npy'
+  - name: tt_top10_copycat
+    type: matrix
+    comparison_function: top_10_overlap
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_copy_cat_matrix
+      file_extension: '.npy'
+  - name: tt_top10_uniform
+    type: matrix
+    comparison_function: top_10_overlap
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_uniform_matrix
+      file_extension: '.npy'
+  # TOKEN-LINE
+  - name: tl_top10_followup
+    type: matrix
+    comparison_function: top_10_overlap
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: followup
+      file_extension: '.npy'
+  - name: tl_top10_naivemax
+    type: matrix
+    comparison_function: top_10_overlap
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: naive_max
+      file_extension: '.npy'
+  - name: tl_top10_copycat
+    type: matrix
+    comparison_function: top_10_overlap
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_copy_cat_matrix
+      file_extension: '.npy'
+  - name: tl_top10_uniform
+    type: matrix
+    comparison_function: top_10_overlap
+    transformations:
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: normalize_both_matrices_by_line
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens
+      file_extension: '.npy'
+    machine:
+      subfolder: att_uniform_matrix
+      file_extension: '.npy'

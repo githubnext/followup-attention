@@ -1,0 +1,3 @@
+models_to_download:
+  - Salesforce/codegen-350M-multi
+local_model_folder: /mnt/huggingface_models

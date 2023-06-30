@@ -1,0 +1,439 @@
+Reading config file:
+{'attention_parameters': {'horizontal_attention_span': 4,
+                          'vertical_attention_span': 1},
+ 'batches': [{'batch_no': 1,
+              'folder_participants': './data/eye_tracking_studies/batch_1',
+              'folder_questions': './eye_tracking/samples_batch_1'},
+             {'batch_no': 2,
+              'folder_participants': './data/eye_tracking_studies/batch_2022_08_03',
+              'folder_questions': './eye_tracking/samples_batch_2022_08_03'},
+             {'batch_no': 3,
+              'folder_participants': './data/eye_tracking_studies/batch_2022_08_10',
+              'folder_questions': './eye_tracking/samples_batch_2022_08_03'},
+             {'batch_no': 4,
+              'folder_participants': './data/eye_tracking_studies/batch_2022_08_23',
+              'folder_questions': './eye_tracking/samples_batch_2022_08_03'},
+             {'batch_no': 5,
+              'folder_participants': './data/eye_tracking_studies/batch_2022_08_26',
+              'folder_questions': './eye_tracking/samples_batch_2022_08_03'}],
+ 'folder_output': './data/eye_tracking_attention/eye_v10',
+ 'folder_participants': None,
+ 'folder_questions': None,
+ 'followup_attention': {'decays': [0.1],
+                        'force_model_tokens': True,
+                        'levels': ['token'],
+                        'model_folder': '/mnt/huggingface_models',
+                        'model_tokenizer': 'Salesforce/codegen-6B-multi',
+                        'normalization': None,
+                        'save_images': False},
+ 'manual_tab_replacements': [{'find': "towerOfHanoi(n, 'A', 'C', 'B');\treturn "
+                                      '0;',
+                              'replace': "towerOfHanoi(n, 'A', 'C', 'B'); "
+                                         'return 0;'},
+                             {'find': '\t\t\t\t\t   {0, 0, 0, 0},',
+                              'replace': '                       {0, 0, 0, '
+                                         '0},'},
+                             {'find': '\t\t\t\t\t   {0, 0, 0, 0},',
+                              'replace': '                       {0, 0, 0, '
+                                         '0},'},
+                             {'find': '\t\t\t\t\t   {0, 0, 0, 0}};',
+                              'replace': '                       {0, 0, 0, '
+                                         '0}};'}],
+ 'participants': [{'batch_no': 1,
+                   'name': 'UconsumerU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 1,
+                   'name': 'UsalvationU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'L'},
+                  {'batch_no': 1,
+                   'name': 'UquarterU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 1,
+                   'name': 'UpassionU',
+                   'tasks': [0, 1, 2],
+                   'zoom': 'M'},
+                  {'batch_no': 1,
+                   'name': 'UimproveU',
+                   'tasks': [0, 1, 2],
+                   'zoom': 'L'},
+                  {'batch_no': 1,
+                   'name': 'UmonkU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'name': 'UbeerU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'name': 'UbottleU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'name': 'UdragonU',
+                   'tasks': [1, 2, 3, 4],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'name': 'UbagU',
+                   'tasks': [0, 2, 3, 4],
+                   'zoom': 'M'},
+                  {'batch_no': 3,
+                   'name': 'UcamelionU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 3,
+                   'name': 'UDuckU',
+                   'tasks': [0, 2, 3, 4],
+                   'zoom': 'M'},
+                  {'batch_no': 3,
+                   'name': 'UmosquitoU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 4,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UboatU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 4,
+                   'name': 'UseaU',
+                   'tasks': [1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 4,
+                   'name': 'UsurfU',
+                   'tasks': [0, 2],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UfallU',
+                   'tasks': [0, 1, 3, 4],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UjumpU',
+                   'tasks': [0, 1],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UrideU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UsleepU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UclimbU',
+                   'tasks': [0, 1, 2, 3, 4],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UeatU',
+                   'tasks': [0, 1],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UcryU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UflyU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UscoopU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'}],
+ 'screen_distance_mm': 300,
+ 'screen_resolution': {'pixel_screen_height': 1080, 'pixel_screen_width': 1920},
+ 'screen_size': {'height_mm': 296.46, 'width_mm': 527.04},
+ 'tokenization': {'model_names': ['Salesforce/codegen-6B-multi'],
+                  'models_folder': '/mnt/huggingface_models'},
+ 'zoom_dependant_parameters': {'L': {'bottom_right_offsets': [90, -25],
+                                     'n_col': 71,
+                                     'n_lines': 20,
+                                     'path_marker_bottom_right': './data/eye_tracking_studies/markers/bottom_right_marker_zoomed.png',
+                                     'path_marker_top_left': './data/eye_tracking_studies/markers/top_left_marker_zoomed.png',
+                                     'top_left_offsets': [220, 125]},
+                               'M': {'bottom_right_offsets': [107, 6],
+                                     'n_col': 97,
+                                     'n_lines': 26,
+                                     'path_marker_bottom_right': './data/eye_tracking_studies/markers/bottom_right_marker_cropped.png',
+                                     'path_marker_top_left': './data/eye_tracking_studies/markers/top_left_marker.png',
+                                     'top_left_offsets': [182, 109]}}}
+Derive a token level attention from the char level attention (TOKEN-LEVEL).
+Processing 0480e5.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/0480e5.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/0480e5.npy
+Processing 08147e.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/08147e.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/08147e.npy
+Processing 09601c.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/09601c.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/09601c.npy
+Processing 0d7601.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/0d7601.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/0d7601.npy
+Processing 1181b7.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/1181b7.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/1181b7.npy
+Processing 155d45.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/155d45.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/155d45.npy
+Processing 161f21.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/161f21.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/161f21.npy
+Processing 1d5b6a.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/1d5b6a.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/1d5b6a.npy
+Processing 2babb5.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/2babb5.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/2babb5.npy
+Processing 300bd1.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/300bd1.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/300bd1.npy
+Processing 38606b.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/38606b.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/38606b.npy
+Processing 3b0e57.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/3b0e57.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/3b0e57.npy
+Processing 3b39e2.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/3b39e2.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/3b39e2.npy
+Processing 3d9b54.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/3d9b54.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/3d9b54.npy
+Processing 3e474f.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/3e474f.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/3e474f.npy
+Processing 4022a9.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/4022a9.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/4022a9.npy
+Processing 403482.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/403482.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/403482.npy
+Processing 43e18c.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/43e18c.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/43e18c.npy
+Processing 448383.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/448383.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/448383.npy
+Processing 44d4f6.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/44d4f6.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/44d4f6.npy
+Processing 44e060.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/44e060.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/44e060.npy
+Processing 4a262b.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/4a262b.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/4a262b.npy
+Processing 4a5896.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/4a5896.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/4a5896.npy
+Processing 4c260d.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/4c260d.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/4c260d.npy
+Processing 500208.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/500208.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/500208.npy
+Processing 5403f5.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/5403f5.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/5403f5.npy
+Processing 545804.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/545804.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/545804.npy
+Processing 548472.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/548472.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/548472.npy
+Processing 56f44e.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/56f44e.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/56f44e.npy
+Processing 5a70af.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/5a70af.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/5a70af.npy
+Processing 5bf279.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/5bf279.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/5bf279.npy
+Processing 639da1.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/639da1.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/639da1.npy
+Processing 653139.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/653139.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/653139.npy
+Processing 6695fa.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/6695fa.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/6695fa.npy
+Processing 675fc1.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/675fc1.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/675fc1.npy
+Processing 6831ef.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/6831ef.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/6831ef.npy
+Processing 7740fd.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/7740fd.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/7740fd.npy
+Processing 7a600a.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/7a600a.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/7a600a.npy
+Processing 81a0b9.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/81a0b9.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/81a0b9.npy
+Processing 842f7a.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/842f7a.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/842f7a.npy
+Processing 88a0ee.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/88a0ee.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/88a0ee.npy
+Processing 88a31c.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/88a31c.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/88a31c.npy
+Processing 93d2e1.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/93d2e1.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/93d2e1.npy
+Processing 95024d.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/95024d.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/95024d.npy
+Processing 97a19f.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/97a19f.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/97a19f.npy
+Processing 98a211.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/98a211.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/98a211.npy
+Processing 9bcda0.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/9bcda0.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/9bcda0.npy
+Processing 9e5778.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/9e5778.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/9e5778.npy
+Processing 9fd0c1.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/9fd0c1.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/9fd0c1.npy
+Processing a4a47a.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/a4a47a.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/a4a47a.npy
+Processing ab1e99.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/ab1e99.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/ab1e99.npy
+Processing ab3a90.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/ab3a90.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/ab3a90.npy
+Processing aecca4.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/aecca4.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/aecca4.npy
+Processing afc047.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/afc047.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/afc047.npy
+Processing b0172f.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/b0172f.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/b0172f.npy
+Processing b3a349.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/b3a349.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/b3a349.npy
+Processing b595bc.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/b595bc.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/b595bc.npy
+Processing b5c173.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/b5c173.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/b5c173.npy
+Processing b6cb6e.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/b6cb6e.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/b6cb6e.npy
+Processing b7971a.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/b7971a.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/b7971a.npy
+Processing b7c85e.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/b7c85e.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/b7c85e.npy
+Processing b84310.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/b84310.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/b84310.npy
+Processing b8a651.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/b8a651.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/b8a651.npy
+Processing b93c2f.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/b93c2f.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/b93c2f.npy
+Processing bda0b1.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/bda0b1.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/bda0b1.npy
+Processing be9283.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/be9283.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/be9283.npy
+Processing bf760e.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/bf760e.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/bf760e.npy
+Processing c35fdf.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/c35fdf.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/c35fdf.npy
+Processing c46e6d.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/c46e6d.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/c46e6d.npy
+Processing c46f82.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/c46f82.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/c46f82.npy
+Processing c6d8ff.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/c6d8ff.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/c6d8ff.npy
+Processing c7ca22.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/c7ca22.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/c7ca22.npy
+Processing cbdc06.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/cbdc06.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/cbdc06.npy
+Processing d214ff.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/d214ff.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/d214ff.npy
+Processing d27bf6.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/d27bf6.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/d27bf6.npy
+Processing d3a4b4.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/d3a4b4.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/d3a4b4.npy
+Processing d401e5.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/d401e5.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/d401e5.npy
+Processing d41dd8.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/d41dd8.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/d41dd8.npy
+Processing d485dd.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/d485dd.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/d485dd.npy
+Processing d86a8d.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/d86a8d.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/d86a8d.npy
+Processing dc14ad.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/dc14ad.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/dc14ad.npy
+Processing debcce.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/debcce.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/debcce.npy
+Processing df2957.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/df2957.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/df2957.npy
+Processing df7ddd.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/df7ddd.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/df7ddd.npy
+Processing e0495f.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/e0495f.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/e0495f.npy
+Processing e33aac.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/e33aac.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/e33aac.npy
+Processing e63ddf.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/e63ddf.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/e63ddf.npy
+Processing e84aa9.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/e84aa9.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/e84aa9.npy
+Processing f4bbec.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/f4bbec.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/f4bbec.npy
+Processing f5e35b.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/f5e35b.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/f5e35b.npy
+Processing f7b913.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/f7b913.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/f7b913.npy
+Processing f936ca.npy
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/metadata/f936ca.json
+Saved ./data/eye_tracking_attention/eye_v10/att_weights_Salesforce_codegen-6B-multi/f936ca.npy

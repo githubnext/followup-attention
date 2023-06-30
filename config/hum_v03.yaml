@@ -1,0 +1,37 @@
+# This represents the first pilot batch with AMTurk with 10 participants
+
+# this file should contain something like
+# mongodb://root:password@mongodb.com:27017/
+# without any new line
+path_mongo_db_url: "/home/paltenmo/Documents/url_with_credentials_mongodb_study_db.txt"
+
+# where to store the evaluation of the users
+evaluation_folder: data/hum_v03/user_evaluation
+
+# google sheet behind the google form
+spreadsheet_id: '1FHCdXedqxYlz1d8sZ3JRWXb2LMfnCkMclUj6VZM9zX8'
+spreadsheet_range: 'Form Responses 1!A1:K100000'
+# follow this guide to generate your credentials:
+# https://daily-dev-tips.com/posts/python-read-data-from-a-google-sheet/
+path_google_credentials: "/home/paltenmo/Documents/credentials_google_form.json"
+
+# amazon mechanical turk
+target_hit_id: '3DFYDSXB2WB1EMZ49GFNFC5VPCCUJ5'  # null means using the most recent
+path_amturk_credentials: "/home/paltenmo/Documents/credentials_amturk.csv"
+
+# number of hours to wait before considering a new record
+n_hours_min_age: 4
+
+# the records, one for each completed submission
+raw_data_folder: data/hum_v03/human_attention_raw
+
+# the attention weights, one for each completed submission
+att_weights_folder: data/hum_v03/human_attention_weights
+
+# heatmap of attention on code tokens, one for each completed submission
+att_heatmap_folder: data/hum_v03/human_attention_heatmap
+
+# folder with metadata on the source files seen by the humans
+# this is represented in a yaml file with info such as the tokenization,
+# the buggy line, the prompt given to the human, etc
+task_metadata_folder: /home/paltenmo/Documents/GITHUB_INTERN/CodeProjects/github-HRR/tasks/sensemaking_char

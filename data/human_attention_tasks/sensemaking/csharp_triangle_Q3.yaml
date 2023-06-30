@@ -1,0 +1,3812 @@
+editable_line_number: 111
+guideline:
+  preface: Inspect the given code and answer to the question at the end of the file
+    using the highlighted line.
+hint: Read the comment at the beginning of the file.
+tokens:
+- column: 0
+  excluded: false
+  idx: 0
+  line: 1
+  token: /
+- column: 1
+  excluded: false
+  idx: 1
+  line: 1
+  token: '********************************'
+- column: 33
+  excluded: false
+  idx: 2
+  line: 1
+  token: '********************************'
+- column: 65
+  excluded: false
+  idx: 3
+  line: 1
+  token: '********'
+- column: 73
+  excluded: false
+  idx: 4
+  line: 1
+  token: '***'
+- column: 76
+  excluded: false
+  idx: 5
+  line: 1
+  token: /
+- column: 77
+  excluded: false
+  idx: 6
+  line: 1
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 7
+  line: 2
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 8
+  line: 3
+  token: /*
+- column: 2
+  excluded: false
+  idx: 9
+  line: 3
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 10
+  line: 4
+  token: '#'
+- column: 1
+  excluded: false
+  idx: 11
+  line: 4
+  token: ' The'
+- column: 5
+  excluded: false
+  idx: 12
+  line: 4
+  token: ' following'
+- column: 15
+  excluded: false
+  idx: 13
+  line: 4
+  token: ' code'
+- column: 20
+  excluded: false
+  idx: 14
+  line: 4
+  token: ' reasons'
+- column: 28
+  excluded: false
+  idx: 15
+  line: 4
+  token: ' about'
+- column: 34
+  excluded: false
+  idx: 16
+  line: 4
+  token: ' triangles'
+- column: 44
+  excluded: false
+  idx: 17
+  line: 4
+  token: ' in'
+- column: 47
+  excluded: false
+  idx: 18
+  line: 4
+  token: ' the'
+- column: 51
+  excluded: false
+  idx: 19
+  line: 4
+  token: ' ge'
+- column: 54
+  excluded: false
+  idx: 20
+  line: 4
+  token: omet
+- column: 58
+  excluded: false
+  idx: 21
+  line: 4
+  token: rical
+- column: 63
+  excluded: false
+  idx: 22
+  line: 4
+  token: ' sense'
+- column: 69
+  excluded: false
+  idx: 23
+  line: 4
+  token: .
+- column: 70
+  excluded: false
+  idx: 24
+  line: 4
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 25
+  line: 5
+  token: '*/'
+- column: 2
+  excluded: false
+  idx: 26
+  line: 5
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 27
+  line: 7
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 28
+  line: 8
+  token: using
+- column: 5
+  excluded: false
+  idx: 29
+  line: 8
+  token: ' System'
+- column: 12
+  excluded: false
+  idx: 30
+  line: 8
+  token: ;
+- column: 13
+  excluded: false
+  idx: 31
+  line: 8
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 32
+  line: 9
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 33
+  line: 10
+  token: class
+- column: 5
+  excluded: false
+  idx: 34
+  line: 10
+  token: ' G'
+- column: 7
+  excluded: false
+  idx: 35
+  line: 10
+  token: FG
+- column: 9
+  excluded: false
+  idx: 36
+  line: 10
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 37
+  line: 11
+  token: '{'
+- column: 1
+  excluded: false
+  idx: 38
+  line: 11
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 39
+  line: 12
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 40
+  line: 12
+  token: public
+- column: 10
+  excluded: false
+  idx: 41
+  line: 12
+  token: ' class'
+- column: 16
+  excluded: false
+  idx: 42
+  line: 12
+  token: ' point'
+- column: 22
+  excluded: false
+  idx: 43
+  line: 12
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 44
+  line: 13
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 45
+  line: 13
+  token: '{'
+- column: 5
+  excluded: false
+  idx: 46
+  line: 13
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 47
+  line: 14
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 48
+  line: 14
+  token: public
+- column: 14
+  excluded: false
+  idx: 49
+  line: 14
+  token: ' int'
+- column: 18
+  excluded: false
+  idx: 50
+  line: 14
+  token: ' x'
+- column: 20
+  excluded: false
+  idx: 51
+  line: 14
+  token: ','
+- column: 21
+  excluded: false
+  idx: 52
+  line: 14
+  token: ' y'
+- column: 23
+  excluded: false
+  idx: 53
+  line: 14
+  token: ;
+- column: 24
+  excluded: false
+  idx: 54
+  line: 14
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 55
+  line: 15
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 56
+  line: 15
+  token: public
+- column: 14
+  excluded: false
+  idx: 57
+  line: 15
+  token: ' point'
+- column: 20
+  excluded: false
+  idx: 58
+  line: 15
+  token: ()
+- column: 22
+  excluded: false
+  idx: 59
+  line: 15
+  token: ' {'
+- column: 24
+  excluded: false
+  idx: 60
+  line: 15
+  token: ' }'
+- column: 26
+  excluded: false
+  idx: 61
+  line: 15
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 62
+  line: 17
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 63
+  line: 17
+  token: public
+- column: 14
+  excluded: false
+  idx: 64
+  line: 17
+  token: ' point'
+- column: 20
+  excluded: false
+  idx: 65
+  line: 17
+  token: (
+- column: 21
+  excluded: false
+  idx: 66
+  line: 17
+  token: int
+- column: 24
+  excluded: false
+  idx: 67
+  line: 17
+  token: ' x'
+- column: 26
+  excluded: false
+  idx: 68
+  line: 17
+  token: ','
+- column: 27
+  excluded: false
+  idx: 69
+  line: 17
+  token: ' int'
+- column: 31
+  excluded: false
+  idx: 70
+  line: 17
+  token: ' y'
+- column: 33
+  excluded: false
+  idx: 71
+  line: 17
+  token: )
+- column: 34
+  excluded: false
+  idx: 72
+  line: 17
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 73
+  line: 18
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 74
+  line: 18
+  token: '{'
+- column: 9
+  excluded: false
+  idx: 75
+  line: 18
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 76
+  line: 19
+  token: '            '
+- column: 12
+  excluded: false
+  idx: 77
+  line: 19
+  token: this
+- column: 16
+  excluded: false
+  idx: 78
+  line: 19
+  token: .
+- column: 17
+  excluded: false
+  idx: 79
+  line: 19
+  token: x
+- column: 18
+  excluded: false
+  idx: 80
+  line: 19
+  token: ' ='
+- column: 20
+  excluded: false
+  idx: 81
+  line: 19
+  token: ' x'
+- column: 22
+  excluded: false
+  idx: 82
+  line: 19
+  token: ;
+- column: 23
+  excluded: false
+  idx: 83
+  line: 19
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 84
+  line: 20
+  token: '            '
+- column: 12
+  excluded: false
+  idx: 85
+  line: 20
+  token: this
+- column: 16
+  excluded: false
+  idx: 86
+  line: 20
+  token: .
+- column: 17
+  excluded: false
+  idx: 87
+  line: 20
+  token: y
+- column: 18
+  excluded: false
+  idx: 88
+  line: 20
+  token: ' ='
+- column: 20
+  excluded: false
+  idx: 89
+  line: 20
+  token: ' y'
+- column: 22
+  excluded: false
+  idx: 90
+  line: 20
+  token: ;
+- column: 23
+  excluded: false
+  idx: 91
+  line: 20
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 92
+  line: 21
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 93
+  line: 21
+  token: '}'
+- column: 9
+  excluded: false
+  idx: 94
+  line: 21
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 95
+  line: 22
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 96
+  line: 22
+  token: '};'
+- column: 6
+  excluded: false
+  idx: 97
+  line: 22
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 98
+  line: 24
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 99
+  line: 24
+  token: static
+- column: 10
+  excluded: false
+  idx: 100
+  line: 24
+  token: ' int'
+- column: 14
+  excluded: false
+  idx: 101
+  line: 24
+  token: ' square'
+- column: 21
+  excluded: false
+  idx: 102
+  line: 24
+  token: (
+- column: 22
+  excluded: false
+  idx: 103
+  line: 24
+  token: int
+- column: 25
+  excluded: false
+  idx: 104
+  line: 24
+  token: ' x'
+- column: 27
+  excluded: false
+  idx: 105
+  line: 24
+  token: )
+- column: 28
+  excluded: false
+  idx: 106
+  line: 24
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 107
+  line: 25
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 108
+  line: 25
+  token: '{'
+- column: 5
+  excluded: false
+  idx: 109
+  line: 25
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 110
+  line: 26
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 111
+  line: 26
+  token: return
+- column: 14
+  excluded: false
+  idx: 112
+  line: 26
+  token: ' x'
+- column: 16
+  excluded: false
+  idx: 113
+  line: 26
+  token: ' *'
+- column: 18
+  excluded: false
+  idx: 114
+  line: 26
+  token: ' x'
+- column: 20
+  excluded: false
+  idx: 115
+  line: 26
+  token: ;
+- column: 21
+  excluded: false
+  idx: 116
+  line: 26
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 117
+  line: 27
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 118
+  line: 27
+  token: '}'
+- column: 5
+  excluded: false
+  idx: 119
+  line: 27
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 120
+  line: 28
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 121
+  line: 28
+  token: static
+- column: 10
+  excluded: false
+  idx: 122
+  line: 28
+  token: ' int'
+- column: 14
+  excluded: false
+  idx: 123
+  line: 28
+  token: ' a'
+- column: 16
+  excluded: false
+  idx: 124
+  line: 28
+  token: ','
+- column: 17
+  excluded: false
+  idx: 125
+  line: 28
+  token: ' b'
+- column: 19
+  excluded: false
+  idx: 126
+  line: 28
+  token: ','
+- column: 20
+  excluded: false
+  idx: 127
+  line: 28
+  token: ' c'
+- column: 22
+  excluded: false
+  idx: 128
+  line: 28
+  token: ;
+- column: 23
+  excluded: false
+  idx: 129
+  line: 28
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 130
+  line: 30
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 131
+  line: 30
+  token: static
+- column: 10
+  excluded: false
+  idx: 132
+  line: 30
+  token: ' void'
+- column: 15
+  excluded: false
+  idx: 133
+  line: 30
+  token: ' order'
+- column: 21
+  excluded: false
+  idx: 134
+  line: 30
+  token: ()
+- column: 23
+  excluded: false
+  idx: 135
+  line: 30
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 136
+  line: 31
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 137
+  line: 31
+  token: '{'
+- column: 5
+  excluded: false
+  idx: 138
+  line: 31
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 139
+  line: 32
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 140
+  line: 32
+  token: int
+- column: 11
+  excluded: false
+  idx: 141
+  line: 32
+  token: '[]'
+- column: 13
+  excluded: false
+  idx: 142
+  line: 32
+  token: ' copy'
+- column: 18
+  excluded: false
+  idx: 143
+  line: 32
+  token: ' ='
+- column: 20
+  excluded: false
+  idx: 144
+  line: 32
+  token: ' new'
+- column: 24
+  excluded: false
+  idx: 145
+  line: 32
+  token: ' int'
+- column: 28
+  excluded: false
+  idx: 146
+  line: 32
+  token: '['
+- column: 29
+  excluded: false
+  idx: 147
+  line: 32
+  token: '3'
+- column: 30
+  excluded: false
+  idx: 148
+  line: 32
+  token: '];'
+- column: 32
+  excluded: false
+  idx: 149
+  line: 32
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 150
+  line: 33
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 151
+  line: 33
+  token: copy
+- column: 12
+  excluded: false
+  idx: 152
+  line: 33
+  token: '['
+- column: 13
+  excluded: false
+  idx: 153
+  line: 33
+  token: '0'
+- column: 14
+  excluded: false
+  idx: 154
+  line: 33
+  token: ']'
+- column: 15
+  excluded: false
+  idx: 155
+  line: 33
+  token: ' ='
+- column: 17
+  excluded: false
+  idx: 156
+  line: 33
+  token: ' a'
+- column: 19
+  excluded: false
+  idx: 157
+  line: 33
+  token: ;
+- column: 20
+  excluded: false
+  idx: 158
+  line: 33
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 159
+  line: 34
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 160
+  line: 34
+  token: copy
+- column: 12
+  excluded: false
+  idx: 161
+  line: 34
+  token: '['
+- column: 13
+  excluded: false
+  idx: 162
+  line: 34
+  token: '1'
+- column: 14
+  excluded: false
+  idx: 163
+  line: 34
+  token: ']'
+- column: 15
+  excluded: false
+  idx: 164
+  line: 34
+  token: ' ='
+- column: 17
+  excluded: false
+  idx: 165
+  line: 34
+  token: ' b'
+- column: 19
+  excluded: false
+  idx: 166
+  line: 34
+  token: ;
+- column: 20
+  excluded: false
+  idx: 167
+  line: 34
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 168
+  line: 35
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 169
+  line: 35
+  token: copy
+- column: 12
+  excluded: false
+  idx: 170
+  line: 35
+  token: '['
+- column: 13
+  excluded: false
+  idx: 171
+  line: 35
+  token: '2'
+- column: 14
+  excluded: false
+  idx: 172
+  line: 35
+  token: ']'
+- column: 15
+  excluded: false
+  idx: 173
+  line: 35
+  token: ' ='
+- column: 17
+  excluded: false
+  idx: 174
+  line: 35
+  token: ' c'
+- column: 19
+  excluded: false
+  idx: 175
+  line: 35
+  token: ;
+- column: 20
+  excluded: false
+  idx: 176
+  line: 35
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 177
+  line: 36
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 178
+  line: 36
+  token: Array
+- column: 13
+  excluded: false
+  idx: 179
+  line: 36
+  token: .
+- column: 14
+  excluded: false
+  idx: 180
+  line: 36
+  token: Sort
+- column: 18
+  excluded: false
+  idx: 181
+  line: 36
+  token: (
+- column: 19
+  excluded: false
+  idx: 182
+  line: 36
+  token: copy
+- column: 23
+  excluded: false
+  idx: 183
+  line: 36
+  token: );
+- column: 25
+  excluded: false
+  idx: 184
+  line: 36
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 185
+  line: 37
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 186
+  line: 37
+  token: a
+- column: 9
+  excluded: false
+  idx: 187
+  line: 37
+  token: ' ='
+- column: 11
+  excluded: false
+  idx: 188
+  line: 37
+  token: ' copy'
+- column: 16
+  excluded: false
+  idx: 189
+  line: 37
+  token: '['
+- column: 17
+  excluded: false
+  idx: 190
+  line: 37
+  token: '0'
+- column: 18
+  excluded: false
+  idx: 191
+  line: 37
+  token: '];'
+- column: 20
+  excluded: false
+  idx: 192
+  line: 37
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 193
+  line: 38
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 194
+  line: 38
+  token: b
+- column: 9
+  excluded: false
+  idx: 195
+  line: 38
+  token: ' ='
+- column: 11
+  excluded: false
+  idx: 196
+  line: 38
+  token: ' copy'
+- column: 16
+  excluded: false
+  idx: 197
+  line: 38
+  token: '['
+- column: 17
+  excluded: false
+  idx: 198
+  line: 38
+  token: '1'
+- column: 18
+  excluded: false
+  idx: 199
+  line: 38
+  token: '];'
+- column: 20
+  excluded: false
+  idx: 200
+  line: 38
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 201
+  line: 39
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 202
+  line: 39
+  token: c
+- column: 9
+  excluded: false
+  idx: 203
+  line: 39
+  token: ' ='
+- column: 11
+  excluded: false
+  idx: 204
+  line: 39
+  token: ' copy'
+- column: 16
+  excluded: false
+  idx: 205
+  line: 39
+  token: '['
+- column: 17
+  excluded: false
+  idx: 206
+  line: 39
+  token: '2'
+- column: 18
+  excluded: false
+  idx: 207
+  line: 39
+  token: '];'
+- column: 20
+  excluded: false
+  idx: 208
+  line: 39
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 209
+  line: 40
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 210
+  line: 40
+  token: '}'
+- column: 5
+  excluded: false
+  idx: 211
+  line: 40
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 212
+  line: 42
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 213
+  line: 42
+  token: static
+- column: 10
+  excluded: false
+  idx: 214
+  line: 42
+  token: ' int'
+- column: 14
+  excluded: false
+  idx: 215
+  line: 42
+  token: ' e'
+- column: 16
+  excluded: false
+  idx: 216
+  line: 42
+  token: ucl
+- column: 19
+  excluded: false
+  idx: 217
+  line: 42
+  token: id
+- column: 21
+  excluded: false
+  idx: 218
+  line: 42
+  token: Dist
+- column: 25
+  excluded: false
+  idx: 219
+  line: 42
+  token: Square
+- column: 31
+  excluded: false
+  idx: 220
+  line: 42
+  token: (
+- column: 32
+  excluded: false
+  idx: 221
+  line: 42
+  token: point
+- column: 37
+  excluded: false
+  idx: 222
+  line: 42
+  token: ' p'
+- column: 39
+  excluded: false
+  idx: 223
+  line: 42
+  token: '1'
+- column: 40
+  excluded: false
+  idx: 224
+  line: 42
+  token: ','
+- column: 41
+  excluded: false
+  idx: 225
+  line: 42
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 226
+  line: 43
+  token: '                               '
+- column: 31
+  excluded: false
+  idx: 227
+  line: 43
+  token: ' point'
+- column: 37
+  excluded: false
+  idx: 228
+  line: 43
+  token: ' p'
+- column: 39
+  excluded: false
+  idx: 229
+  line: 43
+  token: '2'
+- column: 40
+  excluded: false
+  idx: 230
+  line: 43
+  token: )
+- column: 41
+  excluded: false
+  idx: 231
+  line: 43
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 232
+  line: 44
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 233
+  line: 44
+  token: '{'
+- column: 5
+  excluded: false
+  idx: 234
+  line: 44
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 235
+  line: 45
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 236
+  line: 45
+  token: return
+- column: 14
+  excluded: false
+  idx: 237
+  line: 45
+  token: ' square'
+- column: 21
+  excluded: false
+  idx: 238
+  line: 45
+  token: (
+- column: 22
+  excluded: false
+  idx: 239
+  line: 45
+  token: p
+- column: 23
+  excluded: false
+  idx: 240
+  line: 45
+  token: '1'
+- column: 24
+  excluded: false
+  idx: 241
+  line: 45
+  token: .
+- column: 25
+  excluded: false
+  idx: 242
+  line: 45
+  token: x
+- column: 26
+  excluded: false
+  idx: 243
+  line: 45
+  token: ' -'
+- column: 28
+  excluded: false
+  idx: 244
+  line: 45
+  token: ' p'
+- column: 30
+  excluded: false
+  idx: 245
+  line: 45
+  token: '2'
+- column: 31
+  excluded: false
+  idx: 246
+  line: 45
+  token: .
+- column: 32
+  excluded: false
+  idx: 247
+  line: 45
+  token: x
+- column: 33
+  excluded: false
+  idx: 248
+  line: 45
+  token: )
+- column: 34
+  excluded: false
+  idx: 249
+  line: 45
+  token: ' +'
+- column: 36
+  excluded: false
+  idx: 250
+  line: 45
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 251
+  line: 46
+  token: '            '
+- column: 12
+  excluded: false
+  idx: 252
+  line: 46
+  token: square
+- column: 18
+  excluded: false
+  idx: 253
+  line: 46
+  token: (
+- column: 19
+  excluded: false
+  idx: 254
+  line: 46
+  token: p
+- column: 20
+  excluded: false
+  idx: 255
+  line: 46
+  token: '1'
+- column: 21
+  excluded: false
+  idx: 256
+  line: 46
+  token: .
+- column: 22
+  excluded: false
+  idx: 257
+  line: 46
+  token: y
+- column: 23
+  excluded: false
+  idx: 258
+  line: 46
+  token: ' -'
+- column: 25
+  excluded: false
+  idx: 259
+  line: 46
+  token: ' p'
+- column: 27
+  excluded: false
+  idx: 260
+  line: 46
+  token: '2'
+- column: 28
+  excluded: false
+  idx: 261
+  line: 46
+  token: .
+- column: 29
+  excluded: false
+  idx: 262
+  line: 46
+  token: y
+- column: 30
+  excluded: false
+  idx: 263
+  line: 46
+  token: );
+- column: 32
+  excluded: false
+  idx: 264
+  line: 46
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 265
+  line: 47
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 266
+  line: 47
+  token: '}'
+- column: 5
+  excluded: false
+  idx: 267
+  line: 47
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 268
+  line: 49
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 269
+  line: 49
+  token: static
+- column: 10
+  excluded: false
+  idx: 270
+  line: 49
+  token: ' String'
+- column: 17
+  excluded: false
+  idx: 271
+  line: 49
+  token: ' get'
+- column: 21
+  excluded: false
+  idx: 272
+  line: 49
+  token: Side
+- column: 25
+  excluded: false
+  idx: 273
+  line: 49
+  token: Class
+- column: 30
+  excluded: false
+  idx: 274
+  line: 49
+  token: ification
+- column: 39
+  excluded: false
+  idx: 275
+  line: 49
+  token: (
+- column: 40
+  excluded: false
+  idx: 276
+  line: 49
+  token: int
+- column: 43
+  excluded: false
+  idx: 277
+  line: 49
+  token: ' a'
+- column: 45
+  excluded: false
+  idx: 278
+  line: 49
+  token: ','
+- column: 46
+  excluded: false
+  idx: 279
+  line: 49
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 280
+  line: 50
+  token: '                               '
+- column: 31
+  excluded: false
+  idx: 281
+  line: 50
+  token: '         '
+- column: 40
+  excluded: false
+  idx: 282
+  line: 50
+  token: int
+- column: 43
+  excluded: false
+  idx: 283
+  line: 50
+  token: ' b'
+- column: 45
+  excluded: false
+  idx: 284
+  line: 50
+  token: ','
+- column: 46
+  excluded: false
+  idx: 285
+  line: 50
+  token: ' int'
+- column: 50
+  excluded: false
+  idx: 286
+  line: 50
+  token: ' c'
+- column: 52
+  excluded: false
+  idx: 287
+  line: 50
+  token: )
+- column: 53
+  excluded: false
+  idx: 288
+  line: 50
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 289
+  line: 51
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 290
+  line: 51
+  token: '{'
+- column: 5
+  excluded: false
+  idx: 291
+  line: 51
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 292
+  line: 52
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 293
+  line: 52
+  token: if
+- column: 10
+  excluded: false
+  idx: 294
+  line: 52
+  token: ' ('
+- column: 12
+  excluded: false
+  idx: 295
+  line: 52
+  token: a
+- column: 13
+  excluded: false
+  idx: 296
+  line: 52
+  token: ' =='
+- column: 16
+  excluded: false
+  idx: 297
+  line: 52
+  token: ' b'
+- column: 18
+  excluded: false
+  idx: 298
+  line: 52
+  token: ' &&'
+- column: 21
+  excluded: false
+  idx: 299
+  line: 52
+  token: ' b'
+- column: 23
+  excluded: false
+  idx: 300
+  line: 52
+  token: ' =='
+- column: 26
+  excluded: false
+  idx: 301
+  line: 52
+  token: ' c'
+- column: 28
+  excluded: false
+  idx: 302
+  line: 52
+  token: )
+- column: 29
+  excluded: false
+  idx: 303
+  line: 52
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 304
+  line: 53
+  token: '            '
+- column: 12
+  excluded: false
+  idx: 305
+  line: 53
+  token: return
+- column: 18
+  excluded: false
+  idx: 306
+  line: 53
+  token: ' "'
+- column: 20
+  excluded: false
+  idx: 307
+  line: 53
+  token: Equ
+- column: 23
+  excluded: false
+  idx: 308
+  line: 53
+  token: ilateral
+- column: 31
+  excluded: false
+  idx: 309
+  line: 53
+  token: '";'
+- column: 33
+  excluded: false
+  idx: 310
+  line: 53
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 311
+  line: 55
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 312
+  line: 55
+  token: else
+- column: 12
+  excluded: false
+  idx: 313
+  line: 55
+  token: ' if'
+- column: 15
+  excluded: false
+  idx: 314
+  line: 55
+  token: ' ('
+- column: 17
+  excluded: false
+  idx: 315
+  line: 55
+  token: a
+- column: 18
+  excluded: false
+  idx: 316
+  line: 55
+  token: ' =='
+- column: 21
+  excluded: false
+  idx: 317
+  line: 55
+  token: ' b'
+- column: 23
+  excluded: false
+  idx: 318
+  line: 55
+  token: ' ||'
+- column: 26
+  excluded: false
+  idx: 319
+  line: 55
+  token: ' b'
+- column: 28
+  excluded: false
+  idx: 320
+  line: 55
+  token: ' =='
+- column: 31
+  excluded: false
+  idx: 321
+  line: 55
+  token: ' c'
+- column: 33
+  excluded: false
+  idx: 322
+  line: 55
+  token: )
+- column: 34
+  excluded: false
+  idx: 323
+  line: 55
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 324
+  line: 56
+  token: '            '
+- column: 12
+  excluded: false
+  idx: 325
+  line: 56
+  token: return
+- column: 18
+  excluded: false
+  idx: 326
+  line: 56
+  token: ' "'
+- column: 20
+  excluded: false
+  idx: 327
+  line: 56
+  token: Is
+- column: 22
+  excluded: false
+  idx: 328
+  line: 56
+  token: os
+- column: 24
+  excluded: false
+  idx: 329
+  line: 56
+  token: ce
+- column: 26
+  excluded: false
+  idx: 330
+  line: 56
+  token: les
+- column: 29
+  excluded: false
+  idx: 331
+  line: 56
+  token: '";'
+- column: 31
+  excluded: false
+  idx: 332
+  line: 56
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 333
+  line: 58
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 334
+  line: 58
+  token: else
+- column: 12
+  excluded: false
+  idx: 335
+  line: 58
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 336
+  line: 59
+  token: '            '
+- column: 12
+  excluded: false
+  idx: 337
+  line: 59
+  token: return
+- column: 18
+  excluded: false
+  idx: 338
+  line: 59
+  token: ' "'
+- column: 20
+  excluded: false
+  idx: 339
+  line: 59
+  token: Sc
+- column: 22
+  excluded: false
+  idx: 340
+  line: 59
+  token: al
+- column: 24
+  excluded: false
+  idx: 341
+  line: 59
+  token: ene
+- column: 27
+  excluded: false
+  idx: 342
+  line: 59
+  token: '";'
+- column: 29
+  excluded: false
+  idx: 343
+  line: 59
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 344
+  line: 60
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 345
+  line: 60
+  token: '}'
+- column: 5
+  excluded: false
+  idx: 346
+  line: 60
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 347
+  line: 62
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 348
+  line: 62
+  token: static
+- column: 10
+  excluded: false
+  idx: 349
+  line: 62
+  token: ' String'
+- column: 17
+  excluded: false
+  idx: 350
+  line: 62
+  token: ' get'
+- column: 21
+  excluded: false
+  idx: 351
+  line: 62
+  token: Ang
+- column: 24
+  excluded: false
+  idx: 352
+  line: 62
+  token: le
+- column: 26
+  excluded: false
+  idx: 353
+  line: 62
+  token: Class
+- column: 31
+  excluded: false
+  idx: 354
+  line: 62
+  token: ification
+- column: 40
+  excluded: false
+  idx: 355
+  line: 62
+  token: (
+- column: 41
+  excluded: false
+  idx: 356
+  line: 62
+  token: int
+- column: 44
+  excluded: false
+  idx: 357
+  line: 62
+  token: ' a'
+- column: 46
+  excluded: false
+  idx: 358
+  line: 62
+  token: ','
+- column: 47
+  excluded: false
+  idx: 359
+  line: 62
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 360
+  line: 63
+  token: '                               '
+- column: 31
+  excluded: false
+  idx: 361
+  line: 63
+  token: '         '
+- column: 40
+  excluded: false
+  idx: 362
+  line: 63
+  token: int
+- column: 43
+  excluded: false
+  idx: 363
+  line: 63
+  token: ' b'
+- column: 45
+  excluded: false
+  idx: 364
+  line: 63
+  token: ','
+- column: 46
+  excluded: false
+  idx: 365
+  line: 63
+  token: ' int'
+- column: 50
+  excluded: false
+  idx: 366
+  line: 63
+  token: ' c'
+- column: 52
+  excluded: false
+  idx: 367
+  line: 63
+  token: )
+- column: 53
+  excluded: false
+  idx: 368
+  line: 63
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 369
+  line: 64
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 370
+  line: 64
+  token: '{'
+- column: 5
+  excluded: false
+  idx: 371
+  line: 64
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 372
+  line: 65
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 373
+  line: 65
+  token: if
+- column: 10
+  excluded: false
+  idx: 374
+  line: 65
+  token: ' ('
+- column: 12
+  excluded: false
+  idx: 375
+  line: 65
+  token: a
+- column: 13
+  excluded: false
+  idx: 376
+  line: 65
+  token: ' +'
+- column: 15
+  excluded: false
+  idx: 377
+  line: 65
+  token: ' b'
+- column: 17
+  excluded: false
+  idx: 378
+  line: 65
+  token: ' >'
+- column: 19
+  excluded: false
+  idx: 379
+  line: 65
+  token: ' c'
+- column: 21
+  excluded: false
+  idx: 380
+  line: 65
+  token: )
+- column: 22
+  excluded: false
+  idx: 381
+  line: 65
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 382
+  line: 66
+  token: '            '
+- column: 12
+  excluded: false
+  idx: 383
+  line: 66
+  token: return
+- column: 18
+  excluded: false
+  idx: 384
+  line: 66
+  token: ' "'
+- column: 20
+  excluded: false
+  idx: 385
+  line: 66
+  token: ac
+- column: 22
+  excluded: false
+  idx: 386
+  line: 66
+  token: ute
+- column: 25
+  excluded: false
+  idx: 387
+  line: 66
+  token: '";'
+- column: 27
+  excluded: false
+  idx: 388
+  line: 66
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 389
+  line: 68
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 390
+  line: 68
+  token: else
+- column: 12
+  excluded: false
+  idx: 391
+  line: 68
+  token: ' if'
+- column: 15
+  excluded: false
+  idx: 392
+  line: 68
+  token: ' ('
+- column: 17
+  excluded: false
+  idx: 393
+  line: 68
+  token: a
+- column: 18
+  excluded: false
+  idx: 394
+  line: 68
+  token: ' +'
+- column: 20
+  excluded: false
+  idx: 395
+  line: 68
+  token: ' b'
+- column: 22
+  excluded: false
+  idx: 396
+  line: 68
+  token: ' =='
+- column: 25
+  excluded: false
+  idx: 397
+  line: 68
+  token: ' c'
+- column: 27
+  excluded: false
+  idx: 398
+  line: 68
+  token: )
+- column: 28
+  excluded: false
+  idx: 399
+  line: 68
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 400
+  line: 69
+  token: '            '
+- column: 12
+  excluded: false
+  idx: 401
+  line: 69
+  token: return
+- column: 18
+  excluded: false
+  idx: 402
+  line: 69
+  token: ' "'
+- column: 20
+  excluded: false
+  idx: 403
+  line: 69
+  token: right
+- column: 25
+  excluded: false
+  idx: 404
+  line: 69
+  token: '";'
+- column: 27
+  excluded: false
+  idx: 405
+  line: 69
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 406
+  line: 71
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 407
+  line: 71
+  token: else
+- column: 12
+  excluded: false
+  idx: 408
+  line: 71
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 409
+  line: 72
+  token: '            '
+- column: 12
+  excluded: false
+  idx: 410
+  line: 72
+  token: return
+- column: 18
+  excluded: false
+  idx: 411
+  line: 72
+  token: ' "'
+- column: 20
+  excluded: false
+  idx: 412
+  line: 72
+  token: ob
+- column: 22
+  excluded: false
+  idx: 413
+  line: 72
+  token: t
+- column: 23
+  excluded: false
+  idx: 414
+  line: 72
+  token: use
+- column: 26
+  excluded: false
+  idx: 415
+  line: 72
+  token: '";'
+- column: 28
+  excluded: false
+  idx: 416
+  line: 72
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 417
+  line: 73
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 418
+  line: 73
+  token: '}'
+- column: 5
+  excluded: false
+  idx: 419
+  line: 73
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 420
+  line: 75
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 421
+  line: 75
+  token: static
+- column: 10
+  excluded: false
+  idx: 422
+  line: 75
+  token: ' void'
+- column: 15
+  excluded: false
+  idx: 423
+  line: 75
+  token: ' classify'
+- column: 24
+  excluded: false
+  idx: 424
+  line: 75
+  token: Tri
+- column: 27
+  excluded: false
+  idx: 425
+  line: 75
+  token: angle
+- column: 32
+  excluded: false
+  idx: 426
+  line: 75
+  token: (
+- column: 33
+  excluded: false
+  idx: 427
+  line: 75
+  token: point
+- column: 38
+  excluded: false
+  idx: 428
+  line: 75
+  token: ' p'
+- column: 40
+  excluded: false
+  idx: 429
+  line: 75
+  token: '1'
+- column: 41
+  excluded: false
+  idx: 430
+  line: 75
+  token: ','
+- column: 42
+  excluded: false
+  idx: 431
+  line: 75
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 432
+  line: 76
+  token: '                               '
+- column: 31
+  excluded: false
+  idx: 433
+  line: 76
+  token: ' point'
+- column: 37
+  excluded: false
+  idx: 434
+  line: 76
+  token: ' p'
+- column: 39
+  excluded: false
+  idx: 435
+  line: 76
+  token: '2'
+- column: 40
+  excluded: false
+  idx: 436
+  line: 76
+  token: ','
+- column: 41
+  excluded: false
+  idx: 437
+  line: 76
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 438
+  line: 77
+  token: '                               '
+- column: 31
+  excluded: false
+  idx: 439
+  line: 77
+  token: ' point'
+- column: 37
+  excluded: false
+  idx: 440
+  line: 77
+  token: ' p'
+- column: 39
+  excluded: false
+  idx: 441
+  line: 77
+  token: '3'
+- column: 40
+  excluded: false
+  idx: 442
+  line: 77
+  token: )
+- column: 41
+  excluded: false
+  idx: 443
+  line: 77
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 444
+  line: 78
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 445
+  line: 78
+  token: '{'
+- column: 5
+  excluded: false
+  idx: 446
+  line: 78
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 447
+  line: 79
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 448
+  line: 79
+  token: a
+- column: 9
+  excluded: false
+  idx: 449
+  line: 79
+  token: ' ='
+- column: 11
+  excluded: false
+  idx: 450
+  line: 79
+  token: ' e'
+- column: 13
+  excluded: false
+  idx: 451
+  line: 79
+  token: ucl
+- column: 16
+  excluded: false
+  idx: 452
+  line: 79
+  token: id
+- column: 18
+  excluded: false
+  idx: 453
+  line: 79
+  token: Dist
+- column: 22
+  excluded: false
+  idx: 454
+  line: 79
+  token: Square
+- column: 28
+  excluded: false
+  idx: 455
+  line: 79
+  token: (
+- column: 29
+  excluded: false
+  idx: 456
+  line: 79
+  token: p
+- column: 30
+  excluded: false
+  idx: 457
+  line: 79
+  token: '1'
+- column: 31
+  excluded: false
+  idx: 458
+  line: 79
+  token: ','
+- column: 32
+  excluded: false
+  idx: 459
+  line: 79
+  token: ' p'
+- column: 34
+  excluded: false
+  idx: 460
+  line: 79
+  token: '2'
+- column: 35
+  excluded: false
+  idx: 461
+  line: 79
+  token: );
+- column: 37
+  excluded: false
+  idx: 462
+  line: 79
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 463
+  line: 80
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 464
+  line: 80
+  token: b
+- column: 9
+  excluded: false
+  idx: 465
+  line: 80
+  token: ' ='
+- column: 11
+  excluded: false
+  idx: 466
+  line: 80
+  token: ' e'
+- column: 13
+  excluded: false
+  idx: 467
+  line: 80
+  token: ucl
+- column: 16
+  excluded: false
+  idx: 468
+  line: 80
+  token: id
+- column: 18
+  excluded: false
+  idx: 469
+  line: 80
+  token: Dist
+- column: 22
+  excluded: false
+  idx: 470
+  line: 80
+  token: Square
+- column: 28
+  excluded: false
+  idx: 471
+  line: 80
+  token: (
+- column: 29
+  excluded: false
+  idx: 472
+  line: 80
+  token: p
+- column: 30
+  excluded: false
+  idx: 473
+  line: 80
+  token: '1'
+- column: 31
+  excluded: false
+  idx: 474
+  line: 80
+  token: ','
+- column: 32
+  excluded: false
+  idx: 475
+  line: 80
+  token: ' p'
+- column: 34
+  excluded: false
+  idx: 476
+  line: 80
+  token: '3'
+- column: 35
+  excluded: false
+  idx: 477
+  line: 80
+  token: );
+- column: 37
+  excluded: false
+  idx: 478
+  line: 80
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 479
+  line: 81
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 480
+  line: 81
+  token: c
+- column: 9
+  excluded: false
+  idx: 481
+  line: 81
+  token: ' ='
+- column: 11
+  excluded: false
+  idx: 482
+  line: 81
+  token: ' e'
+- column: 13
+  excluded: false
+  idx: 483
+  line: 81
+  token: ucl
+- column: 16
+  excluded: false
+  idx: 484
+  line: 81
+  token: id
+- column: 18
+  excluded: false
+  idx: 485
+  line: 81
+  token: Dist
+- column: 22
+  excluded: false
+  idx: 486
+  line: 81
+  token: Square
+- column: 28
+  excluded: false
+  idx: 487
+  line: 81
+  token: (
+- column: 29
+  excluded: false
+  idx: 488
+  line: 81
+  token: p
+- column: 30
+  excluded: false
+  idx: 489
+  line: 81
+  token: '2'
+- column: 31
+  excluded: false
+  idx: 490
+  line: 81
+  token: ','
+- column: 32
+  excluded: false
+  idx: 491
+  line: 81
+  token: ' p'
+- column: 34
+  excluded: false
+  idx: 492
+  line: 81
+  token: '3'
+- column: 35
+  excluded: false
+  idx: 493
+  line: 81
+  token: );
+- column: 37
+  excluded: false
+  idx: 494
+  line: 81
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 495
+  line: 83
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 496
+  line: 83
+  token: order
+- column: 13
+  excluded: false
+  idx: 497
+  line: 83
+  token: ();
+- column: 16
+  excluded: false
+  idx: 498
+  line: 83
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 499
+  line: 85
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 500
+  line: 85
+  token: Console
+- column: 15
+  excluded: false
+  idx: 501
+  line: 85
+  token: .
+- column: 16
+  excluded: false
+  idx: 502
+  line: 85
+  token: Write
+- column: 21
+  excluded: false
+  idx: 503
+  line: 85
+  token: Line
+- column: 25
+  excluded: false
+  idx: 504
+  line: 85
+  token: ("
+- column: 27
+  excluded: false
+  idx: 505
+  line: 85
+  token: Tri
+- column: 30
+  excluded: false
+  idx: 506
+  line: 85
+  token: angle
+- column: 35
+  excluded: false
+  idx: 507
+  line: 85
+  token: ' is'
+- column: 38
+  excluded: false
+  idx: 508
+  line: 85
+  token: ' "'
+- column: 40
+  excluded: false
+  idx: 509
+  line: 85
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 510
+  line: 86
+  token: '                    '
+- column: 20
+  excluded: false
+  idx: 511
+  line: 86
+  token: +
+- column: 21
+  excluded: false
+  idx: 512
+  line: 86
+  token: ' get'
+- column: 25
+  excluded: false
+  idx: 513
+  line: 86
+  token: Ang
+- column: 28
+  excluded: false
+  idx: 514
+  line: 86
+  token: le
+- column: 30
+  excluded: false
+  idx: 515
+  line: 86
+  token: Class
+- column: 35
+  excluded: false
+  idx: 516
+  line: 86
+  token: ification
+- column: 44
+  excluded: false
+  idx: 517
+  line: 86
+  token: (
+- column: 45
+  excluded: false
+  idx: 518
+  line: 86
+  token: a
+- column: 46
+  excluded: false
+  idx: 519
+  line: 86
+  token: ','
+- column: 47
+  excluded: false
+  idx: 520
+  line: 86
+  token: ' b'
+- column: 49
+  excluded: false
+  idx: 521
+  line: 86
+  token: ','
+- column: 50
+  excluded: false
+  idx: 522
+  line: 86
+  token: ' c'
+- column: 52
+  excluded: false
+  idx: 523
+  line: 86
+  token: )
+- column: 53
+  excluded: false
+  idx: 524
+  line: 86
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 525
+  line: 87
+  token: '                    '
+- column: 20
+  excluded: false
+  idx: 526
+  line: 87
+  token: +
+- column: 21
+  excluded: false
+  idx: 527
+  line: 87
+  token: ' "'
+- column: 23
+  excluded: false
+  idx: 528
+  line: 87
+  token: ' and'
+- column: 27
+  excluded: false
+  idx: 529
+  line: 87
+  token: ' "'
+- column: 29
+  excluded: false
+  idx: 530
+  line: 87
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 531
+  line: 88
+  token: '                    '
+- column: 20
+  excluded: false
+  idx: 532
+  line: 88
+  token: +
+- column: 21
+  excluded: false
+  idx: 533
+  line: 88
+  token: ' get'
+- column: 25
+  excluded: false
+  idx: 534
+  line: 88
+  token: Side
+- column: 29
+  excluded: false
+  idx: 535
+  line: 88
+  token: Class
+- column: 34
+  excluded: false
+  idx: 536
+  line: 88
+  token: ification
+- column: 43
+  excluded: false
+  idx: 537
+  line: 88
+  token: (
+- column: 44
+  excluded: false
+  idx: 538
+  line: 88
+  token: a
+- column: 45
+  excluded: false
+  idx: 539
+  line: 88
+  token: ','
+- column: 46
+  excluded: false
+  idx: 540
+  line: 88
+  token: ' b'
+- column: 48
+  excluded: false
+  idx: 541
+  line: 88
+  token: ','
+- column: 49
+  excluded: false
+  idx: 542
+  line: 88
+  token: ' c'
+- column: 51
+  excluded: false
+  idx: 543
+  line: 88
+  token: ));
+- column: 54
+  excluded: false
+  idx: 544
+  line: 88
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 545
+  line: 89
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 546
+  line: 89
+  token: '}'
+- column: 5
+  excluded: false
+  idx: 547
+  line: 89
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 548
+  line: 91
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 549
+  line: 91
+  token: public
+- column: 10
+  excluded: false
+  idx: 550
+  line: 91
+  token: ' static'
+- column: 17
+  excluded: false
+  idx: 551
+  line: 91
+  token: ' void'
+- column: 22
+  excluded: false
+  idx: 552
+  line: 91
+  token: ' Main'
+- column: 27
+  excluded: false
+  idx: 553
+  line: 91
+  token: (
+- column: 28
+  excluded: false
+  idx: 554
+  line: 91
+  token: String
+- column: 34
+  excluded: false
+  idx: 555
+  line: 91
+  token: '[]'
+- column: 36
+  excluded: false
+  idx: 556
+  line: 91
+  token: ' args'
+- column: 41
+  excluded: false
+  idx: 557
+  line: 91
+  token: )
+- column: 42
+  excluded: false
+  idx: 558
+  line: 91
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 559
+  line: 92
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 560
+  line: 92
+  token: '{'
+- column: 5
+  excluded: false
+  idx: 561
+  line: 92
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 562
+  line: 93
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 563
+  line: 93
+  token: point
+- column: 13
+  excluded: false
+  idx: 564
+  line: 93
+  token: ' p'
+- column: 15
+  excluded: false
+  idx: 565
+  line: 93
+  token: '1'
+- column: 16
+  excluded: false
+  idx: 566
+  line: 93
+  token: ','
+- column: 17
+  excluded: false
+  idx: 567
+  line: 93
+  token: ' p'
+- column: 19
+  excluded: false
+  idx: 568
+  line: 93
+  token: '2'
+- column: 20
+  excluded: false
+  idx: 569
+  line: 93
+  token: ','
+- column: 21
+  excluded: false
+  idx: 570
+  line: 93
+  token: ' p'
+- column: 23
+  excluded: false
+  idx: 571
+  line: 93
+  token: '3'
+- column: 24
+  excluded: false
+  idx: 572
+  line: 93
+  token: ;
+- column: 25
+  excluded: false
+  idx: 573
+  line: 93
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 574
+  line: 94
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 575
+  line: 94
+  token: p
+- column: 9
+  excluded: false
+  idx: 576
+  line: 94
+  token: '1'
+- column: 10
+  excluded: false
+  idx: 577
+  line: 94
+  token: ' ='
+- column: 12
+  excluded: false
+  idx: 578
+  line: 94
+  token: ' new'
+- column: 16
+  excluded: false
+  idx: 579
+  line: 94
+  token: ' point'
+- column: 22
+  excluded: false
+  idx: 580
+  line: 94
+  token: (
+- column: 23
+  excluded: false
+  idx: 581
+  line: 94
+  token: '3'
+- column: 24
+  excluded: false
+  idx: 582
+  line: 94
+  token: ','
+- column: 25
+  excluded: false
+  idx: 583
+  line: 94
+  token: ' 0'
+- column: 27
+  excluded: false
+  idx: 584
+  line: 94
+  token: );
+- column: 29
+  excluded: false
+  idx: 585
+  line: 94
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 586
+  line: 95
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 587
+  line: 95
+  token: p
+- column: 9
+  excluded: false
+  idx: 588
+  line: 95
+  token: '2'
+- column: 10
+  excluded: false
+  idx: 589
+  line: 95
+  token: ' ='
+- column: 12
+  excluded: false
+  idx: 590
+  line: 95
+  token: ' new'
+- column: 16
+  excluded: false
+  idx: 591
+  line: 95
+  token: ' point'
+- column: 22
+  excluded: false
+  idx: 592
+  line: 95
+  token: (
+- column: 23
+  excluded: false
+  idx: 593
+  line: 95
+  token: '0'
+- column: 24
+  excluded: false
+  idx: 594
+  line: 95
+  token: ','
+- column: 25
+  excluded: false
+  idx: 595
+  line: 95
+  token: ' 4'
+- column: 27
+  excluded: false
+  idx: 596
+  line: 95
+  token: );
+- column: 29
+  excluded: false
+  idx: 597
+  line: 95
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 598
+  line: 96
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 599
+  line: 96
+  token: p
+- column: 9
+  excluded: false
+  idx: 600
+  line: 96
+  token: '3'
+- column: 10
+  excluded: false
+  idx: 601
+  line: 96
+  token: ' ='
+- column: 12
+  excluded: false
+  idx: 602
+  line: 96
+  token: ' new'
+- column: 16
+  excluded: false
+  idx: 603
+  line: 96
+  token: ' point'
+- column: 22
+  excluded: false
+  idx: 604
+  line: 96
+  token: (
+- column: 23
+  excluded: false
+  idx: 605
+  line: 96
+  token: '4'
+- column: 24
+  excluded: false
+  idx: 606
+  line: 96
+  token: ','
+- column: 25
+  excluded: false
+  idx: 607
+  line: 96
+  token: ' 7'
+- column: 27
+  excluded: false
+  idx: 608
+  line: 96
+  token: );
+- column: 29
+  excluded: false
+  idx: 609
+  line: 96
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 610
+  line: 97
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 611
+  line: 97
+  token: class
+- column: 13
+  excluded: false
+  idx: 612
+  line: 97
+  token: ify
+- column: 16
+  excluded: false
+  idx: 613
+  line: 97
+  token: Tri
+- column: 19
+  excluded: false
+  idx: 614
+  line: 97
+  token: angle
+- column: 24
+  excluded: false
+  idx: 615
+  line: 97
+  token: (
+- column: 25
+  excluded: false
+  idx: 616
+  line: 97
+  token: p
+- column: 26
+  excluded: false
+  idx: 617
+  line: 97
+  token: '1'
+- column: 27
+  excluded: false
+  idx: 618
+  line: 97
+  token: ','
+- column: 28
+  excluded: false
+  idx: 619
+  line: 97
+  token: ' p'
+- column: 30
+  excluded: false
+  idx: 620
+  line: 97
+  token: '2'
+- column: 31
+  excluded: false
+  idx: 621
+  line: 97
+  token: ','
+- column: 32
+  excluded: false
+  idx: 622
+  line: 97
+  token: ' p'
+- column: 34
+  excluded: false
+  idx: 623
+  line: 97
+  token: '3'
+- column: 35
+  excluded: false
+  idx: 624
+  line: 97
+  token: );
+- column: 37
+  excluded: false
+  idx: 625
+  line: 97
+  token: '
+
+
+    '
+- column: 0
+  excluded: false
+  idx: 626
+  line: 99
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 627
+  line: 99
+  token: p
+- column: 9
+  excluded: false
+  idx: 628
+  line: 99
+  token: '1'
+- column: 10
+  excluded: false
+  idx: 629
+  line: 99
+  token: ' ='
+- column: 12
+  excluded: false
+  idx: 630
+  line: 99
+  token: ' new'
+- column: 16
+  excluded: false
+  idx: 631
+  line: 99
+  token: ' point'
+- column: 22
+  excluded: false
+  idx: 632
+  line: 99
+  token: (
+- column: 23
+  excluded: false
+  idx: 633
+  line: 99
+  token: '0'
+- column: 24
+  excluded: false
+  idx: 634
+  line: 99
+  token: ','
+- column: 25
+  excluded: false
+  idx: 635
+  line: 99
+  token: ' 0'
+- column: 27
+  excluded: false
+  idx: 636
+  line: 99
+  token: );
+- column: 29
+  excluded: false
+  idx: 637
+  line: 99
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 638
+  line: 100
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 639
+  line: 100
+  token: p
+- column: 9
+  excluded: false
+  idx: 640
+  line: 100
+  token: '2'
+- column: 10
+  excluded: false
+  idx: 641
+  line: 100
+  token: ' ='
+- column: 12
+  excluded: false
+  idx: 642
+  line: 100
+  token: ' new'
+- column: 16
+  excluded: false
+  idx: 643
+  line: 100
+  token: ' point'
+- column: 22
+  excluded: false
+  idx: 644
+  line: 100
+  token: (
+- column: 23
+  excluded: false
+  idx: 645
+  line: 100
+  token: '1'
+- column: 24
+  excluded: false
+  idx: 646
+  line: 100
+  token: ','
+- column: 25
+  excluded: false
+  idx: 647
+  line: 100
+  token: ' 1'
+- column: 27
+  excluded: false
+  idx: 648
+  line: 100
+  token: );
+- column: 29
+  excluded: false
+  idx: 649
+  line: 100
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 650
+  line: 101
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 651
+  line: 101
+  token: p
+- column: 9
+  excluded: false
+  idx: 652
+  line: 101
+  token: '3'
+- column: 10
+  excluded: false
+  idx: 653
+  line: 101
+  token: ' ='
+- column: 12
+  excluded: false
+  idx: 654
+  line: 101
+  token: ' new'
+- column: 16
+  excluded: false
+  idx: 655
+  line: 101
+  token: ' point'
+- column: 22
+  excluded: false
+  idx: 656
+  line: 101
+  token: (
+- column: 23
+  excluded: false
+  idx: 657
+  line: 101
+  token: '1'
+- column: 24
+  excluded: false
+  idx: 658
+  line: 101
+  token: ','
+- column: 25
+  excluded: false
+  idx: 659
+  line: 101
+  token: ' 2'
+- column: 27
+  excluded: false
+  idx: 660
+  line: 101
+  token: );
+- column: 29
+  excluded: false
+  idx: 661
+  line: 101
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 662
+  line: 102
+  token: '        '
+- column: 8
+  excluded: false
+  idx: 663
+  line: 102
+  token: class
+- column: 13
+  excluded: false
+  idx: 664
+  line: 102
+  token: ify
+- column: 16
+  excluded: false
+  idx: 665
+  line: 102
+  token: Tri
+- column: 19
+  excluded: false
+  idx: 666
+  line: 102
+  token: angle
+- column: 24
+  excluded: false
+  idx: 667
+  line: 102
+  token: (
+- column: 25
+  excluded: false
+  idx: 668
+  line: 102
+  token: p
+- column: 26
+  excluded: false
+  idx: 669
+  line: 102
+  token: '1'
+- column: 27
+  excluded: false
+  idx: 670
+  line: 102
+  token: ','
+- column: 28
+  excluded: false
+  idx: 671
+  line: 102
+  token: ' p'
+- column: 30
+  excluded: false
+  idx: 672
+  line: 102
+  token: '2'
+- column: 31
+  excluded: false
+  idx: 673
+  line: 102
+  token: ','
+- column: 32
+  excluded: false
+  idx: 674
+  line: 102
+  token: ' p'
+- column: 34
+  excluded: false
+  idx: 675
+  line: 102
+  token: '3'
+- column: 35
+  excluded: false
+  idx: 676
+  line: 102
+  token: );
+- column: 37
+  excluded: false
+  idx: 677
+  line: 102
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 678
+  line: 103
+  token: '    '
+- column: 4
+  excluded: false
+  idx: 679
+  line: 103
+  token: '}'
+- column: 5
+  excluded: false
+  idx: 680
+  line: 103
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 681
+  line: 104
+  token: '}'
+- column: 1
+  excluded: false
+  idx: 682
+  line: 104
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 683
+  line: 105
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 684
+  line: 106
+  token: /*
+- column: 2
+  excluded: false
+  idx: 685
+  line: 106
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 686
+  line: 107
+  token: '#'
+- column: 1
+  excluded: false
+  idx: 687
+  line: 107
+  token: ' Question'
+- column: 10
+  excluded: false
+  idx: 688
+  line: 107
+  token: ':'
+- column: 11
+  excluded: false
+  idx: 689
+  line: 107
+  token: ' What'
+- column: 16
+  excluded: false
+  idx: 690
+  line: 107
+  token: ' could'
+- column: 22
+  excluded: false
+  idx: 691
+  line: 107
+  token: ' happen'
+- column: 29
+  excluded: false
+  idx: 692
+  line: 107
+  token: ' if'
+- column: 32
+  excluded: false
+  idx: 693
+  line: 107
+  token: ' the'
+- column: 36
+  excluded: false
+  idx: 694
+  line: 107
+  token: ' call'
+- column: 41
+  excluded: false
+  idx: 695
+  line: 107
+  token: ' to'
+- column: 44
+  excluded: false
+  idx: 696
+  line: 107
+  token: ' `'
+- column: 46
+  excluded: false
+  idx: 697
+  line: 107
+  token: order
+- column: 51
+  excluded: false
+  idx: 698
+  line: 107
+  token: ()
+- column: 53
+  excluded: false
+  idx: 699
+  line: 107
+  token: '`'
+- column: 54
+  excluded: false
+  idx: 700
+  line: 107
+  token: ' were'
+- column: 59
+  excluded: false
+  idx: 701
+  line: 107
+  token: ' omitted'
+- column: 67
+  excluded: false
+  idx: 702
+  line: 107
+  token: ' from'
+- column: 72
+  excluded: false
+  idx: 703
+  line: 107
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 704
+  line: 108
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 705
+  line: 109
+  token: '#'
+- column: 1
+  excluded: false
+  idx: 706
+  line: 109
+  token: ' `'
+- column: 3
+  excluded: false
+  idx: 707
+  line: 109
+  token: class
+- column: 8
+  excluded: false
+  idx: 708
+  line: 109
+  token: ify
+- column: 11
+  excluded: false
+  idx: 709
+  line: 109
+  token: Tri
+- column: 14
+  excluded: false
+  idx: 710
+  line: 109
+  token: angle
+- column: 19
+  excluded: false
+  idx: 711
+  line: 109
+  token: '`'
+- column: 20
+  excluded: false
+  idx: 712
+  line: 109
+  token: '?'
+- column: 21
+  excluded: false
+  idx: 713
+  line: 109
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 714
+  line: 110
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 715
+  line: 111
+  token: '#'
+- column: 1
+  excluded: false
+  idx: 716
+  line: 111
+  token: ' Answer'
+- column: 8
+  excluded: false
+  idx: 717
+  line: 111
+  token: ':'
+- column: 9
+  excluded: false
+  idx: 718
+  line: 111
+  token: '
+
+    '
+- column: 0
+  excluded: false
+  idx: 719
+  line: 112
+  token: '*/'

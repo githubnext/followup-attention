@@ -1,0 +1,45 @@
+def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    """ From a supplied list of numbers (of length at least two) select and return two that are the closest to each
+    other and return them in order (smaller number, larger number).
+    """
+    closest_pair = None
+    distance = None
+
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                if distance is None:
+                    distance = abs(elem - elem2)
+                    closest_pair = tuple(sorted([elem, elem2]))
+                else:
+                    new_distance = abs(elem - elem2)
+                    if new_distance < distance:
+                        distance = new_distance
+                        closest_pair = tuple(sorted([elem, elem2]))
+
+    return closest_pair
+
+
+def is_multiply_prime(a):
+    """Write a function that returns true if the given number is the multiplication of 3 prime numbers
+    and false otherwise.
+    Knowing that (a) is less then 100. 
+    """
+    def is_prime(n):
+        for j in range(2,n):
+            if n%j == 0:
+                return False
+        return True
+
+    for i in range(2,101):
+        if not is_prime(i): continue
+        for j in range(2,101):
+            if not is_prime(j): continue
+            for k in range(2,101):
+                if not is_prime(k): continue
+                if i*j*k == a: return True
+    return False
+
+
+# Write a test for the function find_closest_elements below
+assert find_closest_elements(

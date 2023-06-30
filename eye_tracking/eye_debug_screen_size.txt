@@ -1,0 +1,904 @@
+Reading config file:
+{'attention_parameters': {'horizontal_attention_span': 4,
+                          'vertical_attention_span': 1},
+ 'batches': [{'batch_no': 1,
+              'folder_participants': './data/eye_tracking_studies/batch_1',
+              'folder_questions': './eye_tracking/samples_batch_1'},
+             {'batch_no': 2,
+              'folder_participants': './data/eye_tracking_studies/batch_2022_08_03',
+              'folder_questions': './eye_tracking/samples_batch_2022_08_03'},
+             {'batch_no': 3,
+              'folder_participants': './data/eye_tracking_studies/batch_2022_08_10',
+              'folder_questions': './eye_tracking/samples_batch_2022_08_03'},
+             {'batch_no': 4,
+              'folder_participants': './data/eye_tracking_studies/batch_2022_08_23',
+              'folder_questions': './eye_tracking/samples_batch_2022_08_03'},
+             {'batch_no': 5,
+              'folder_participants': './data/eye_tracking_studies/batch_2022_08_26',
+              'folder_questions': './eye_tracking/samples_batch_2022_08_03'}],
+ 'folder_output': './data/eye_tracking_attention/eye_debug_screen_size',
+ 'folder_participants': None,
+ 'folder_questions': None,
+ 'followup_attention': {'decays': [0.1],
+                        'force_model_tokens': True,
+                        'levels': ['token'],
+                        'model_folder': '/mnt/huggingface_models',
+                        'model_tokenizer': 'EleutherAI/gpt-j-6B',
+                        'normalization': None,
+                        'save_images': False},
+ 'manual_tab_replacements': [{'find': "towerOfHanoi(n, 'A', 'C', 'B');\treturn "
+                                      '0;',
+                              'replace': "towerOfHanoi(n, 'A', 'C', 'B'); "
+                                         'return 0;'},
+                             {'find': '\t\t\t\t\t   {0, 0, 0, 0},',
+                              'replace': '                       {0, 0, 0, '
+                                         '0},'},
+                             {'find': '\t\t\t\t\t   {0, 0, 0, 0},',
+                              'replace': '                       {0, 0, 0, '
+                                         '0},'},
+                             {'find': '\t\t\t\t\t   {0, 0, 0, 0}};',
+                              'replace': '                       {0, 0, 0, '
+                                         '0}};'}],
+ 'participants': [{'batch_no': 1,
+                   'name': 'UconsumerU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 1,
+                   'name': 'UsalvationU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'L'},
+                  {'batch_no': 1,
+                   'name': 'UquarterU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 1,
+                   'name': 'UpassionU',
+                   'tasks': [0, 1, 2],
+                   'zoom': 'M'},
+                  {'batch_no': 1,
+                   'name': 'UimproveU',
+                   'tasks': [0, 1, 2],
+                   'zoom': 'L'},
+                  {'batch_no': 1,
+                   'name': 'UmonkU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'name': 'UbeerU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'name': 'UbottleU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'name': 'UdragonU',
+                   'tasks': [1, 2, 3, 4],
+                   'zoom': 'M'},
+                  {'batch_no': 2,
+                   'name': 'UbagU',
+                   'tasks': [0, 2, 3, 4],
+                   'zoom': 'M'},
+                  {'batch_no': 3,
+                   'name': 'UcamelionU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 3,
+                   'name': 'UDuckU',
+                   'tasks': [0, 2, 3, 4],
+                   'zoom': 'M'},
+                  {'batch_no': 3,
+                   'name': 'UmosquitoU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 4,
+                   'manual_screen_coordinates': {'x_end_screen_abs': 1785,
+                                                 'x_start_screen_abs': 493,
+                                                 'y_end_screen_abs': 1000,
+                                                 'y_start_screen_abs': 151},
+                   'name': 'UboatU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 4,
+                   'name': 'UseaU',
+                   'tasks': [1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 4,
+                   'name': 'UsurfU',
+                   'tasks': [0, 2],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UfallU',
+                   'tasks': [0, 1, 3, 4],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UjumpU',
+                   'tasks': [0, 1],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UrideU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UsleepU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UclimbU',
+                   'tasks': [0, 1, 2, 3, 4],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UeatU',
+                   'tasks': [0, 1],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UcryU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UflyU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'},
+                  {'batch_no': 5,
+                   'name': 'UscoopU',
+                   'tasks': [0, 1, 2, 3],
+                   'zoom': 'M'}],
+ 'screen_distance_mm': 300,
+ 'screen_resolution': {'pixel_screen_height': 1080, 'pixel_screen_width': 1920},
+ 'screen_size': {'height_mm': 296.46, 'width_mm': 527.04},
+ 'tokenization': {'model_names': ['EleutherAI/gpt-j-6B'],
+                  'models_folder': '/mnt/huggingface_models'},
+ 'zoom_dependant_parameters': {'L': {'bottom_right_offsets': [90, -25],
+                                     'n_col': 71,
+                                     'n_lines': 20,
+                                     'path_marker_bottom_right': './data/eye_tracking_studies/markers/bottom_right_marker_zoomed.png',
+                                     'path_marker_top_left': './data/eye_tracking_studies/markers/top_left_marker_zoomed.png',
+                                     'top_left_offsets': [220, 125]},
+                               'M': {'bottom_right_offsets': [107, 6],
+                                     'n_col': 97,
+                                     'n_lines': 26,
+                                     'path_marker_bottom_right': './data/eye_tracking_studies/markers/bottom_right_marker_cropped.png',
+                                     'path_marker_top_left': './data/eye_tracking_studies/markers/top_left_marker.png',
+                                     'top_left_offsets': [182, 109]}}}
+Extract attention weights from eye tracker data.
+Extracting all participants data.
+================================================================================
+Extracting: UconsumerU (zoom: M - task: 0)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UconsumerU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UconsumerU (zoom: M - task: 1)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UconsumerU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UconsumerU (zoom: M - task: 2)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UconsumerU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UconsumerU (zoom: M - task: 3)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UconsumerU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UsalvationU (zoom: L - task: 0)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 592, 'y_start_screen_abs': 179, 'x_end_screen_abs': 1723, 'y_end_screen_abs': 967}
+user_name: UsalvationU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 592, 'y_start_screen_abs': 179, 'x_end_screen_abs': 1723, 'y_end_screen_abs': 967}
+================================================================================
+Extracting: UsalvationU (zoom: L - task: 1)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 592, 'y_start_screen_abs': 179, 'x_end_screen_abs': 1723, 'y_end_screen_abs': 967}
+user_name: UsalvationU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 592, 'y_start_screen_abs': 179, 'x_end_screen_abs': 1723, 'y_end_screen_abs': 967}
+================================================================================
+Extracting: UsalvationU (zoom: L - task: 2)
+1
+No video for task 2.
+Using the coordinate of the video of task 1 instead
+code_screen_coordinate_abs: {'x_start_screen_abs': 592, 'y_start_screen_abs': 179, 'x_end_screen_abs': 1723, 'y_end_screen_abs': 967}
+user_name: UsalvationU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 592, 'y_start_screen_abs': 179, 'x_end_screen_abs': 1723, 'y_end_screen_abs': 967}
+================================================================================
+Extracting: UsalvationU (zoom: L - task: 3)
+1
+No video for task 3.
+Using the coordinate of the video of task 1 instead
+code_screen_coordinate_abs: {'x_start_screen_abs': 592, 'y_start_screen_abs': 179, 'x_end_screen_abs': 1723, 'y_end_screen_abs': 967}
+user_name: UsalvationU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 592, 'y_start_screen_abs': 179, 'x_end_screen_abs': 1723, 'y_end_screen_abs': 967}
+================================================================================
+Extracting: UquarterU (zoom: M - task: 0)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UquarterU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UquarterU (zoom: M - task: 1)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UquarterU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UquarterU (zoom: M - task: 2)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UquarterU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UquarterU (zoom: M - task: 3)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UquarterU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UpassionU (zoom: M - task: 0)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UpassionU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UpassionU (zoom: M - task: 1)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UpassionU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UpassionU (zoom: M - task: 2)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UpassionU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UimproveU (zoom: L - task: 0)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 592, 'y_start_screen_abs': 179, 'x_end_screen_abs': 1723, 'y_end_screen_abs': 967}
+user_name: UimproveU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 592, 'y_start_screen_abs': 179, 'x_end_screen_abs': 1723, 'y_end_screen_abs': 967}
+================================================================================
+Extracting: UimproveU (zoom: L - task: 1)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 592, 'y_start_screen_abs': 179, 'x_end_screen_abs': 1723, 'y_end_screen_abs': 967}
+user_name: UimproveU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 592, 'y_start_screen_abs': 179, 'x_end_screen_abs': 1723, 'y_end_screen_abs': 967}
+================================================================================
+Extracting: UimproveU (zoom: L - task: 2)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 592, 'y_start_screen_abs': 179, 'x_end_screen_abs': 1723, 'y_end_screen_abs': 967}
+user_name: UimproveU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 592, 'y_start_screen_abs': 179, 'x_end_screen_abs': 1723, 'y_end_screen_abs': 967}
+================================================================================
+Extracting: UmonkU (zoom: M - task: 0)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UmonkU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UmonkU (zoom: M - task: 1)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UmonkU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UmonkU (zoom: M - task: 2)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UmonkU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UmonkU (zoom: M - task: 3)
+1
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UmonkU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UbeerU (zoom: M - task: 0)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1792, 'y_end_screen_abs': 1006}
+user_name: UbeerU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1792, 'y_end_screen_abs': 1006}
+================================================================================
+Extracting: UbeerU (zoom: M - task: 1)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1792, 'y_end_screen_abs': 1006}
+user_name: UbeerU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1792, 'y_end_screen_abs': 1006}
+================================================================================
+Extracting: UbeerU (zoom: M - task: 2)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1792, 'y_end_screen_abs': 1006}
+user_name: UbeerU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1792, 'y_end_screen_abs': 1006}
+================================================================================
+Extracting: UbeerU (zoom: M - task: 3)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1792, 'y_end_screen_abs': 1006}
+user_name: UbeerU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1792, 'y_end_screen_abs': 1006}
+================================================================================
+Extracting: UbottleU (zoom: M - task: 0)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UbottleU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UbottleU (zoom: M - task: 1)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UbottleU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UbottleU (zoom: M - task: 2)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1790, 'y_end_screen_abs': 1016}
+user_name: UbottleU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1790, 'y_end_screen_abs': 1016}
+================================================================================
+Extracting: UbottleU (zoom: M - task: 3)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1790, 'y_end_screen_abs': 1016}
+user_name: UbottleU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1790, 'y_end_screen_abs': 1016}
+================================================================================
+Extracting: UdragonU (zoom: M - task: 1)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UdragonU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UdragonU (zoom: M - task: 2)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UdragonU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UdragonU (zoom: M - task: 3)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UdragonU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UdragonU (zoom: M - task: 4)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UdragonU
+task_number: 4
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UbagU (zoom: M - task: 0)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1790, 'y_end_screen_abs': 1006}
+user_name: UbagU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1790, 'y_end_screen_abs': 1006}
+================================================================================
+Extracting: UbagU (zoom: M - task: 2)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1790, 'y_end_screen_abs': 1006}
+user_name: UbagU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1790, 'y_end_screen_abs': 1006}
+================================================================================
+Extracting: UbagU (zoom: M - task: 3)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1790, 'y_end_screen_abs': 1006}
+user_name: UbagU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1790, 'y_end_screen_abs': 1006}
+================================================================================
+Extracting: UbagU (zoom: M - task: 4)
+2
+code_screen_coordinate_abs: {'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1790, 'y_end_screen_abs': 1006}
+user_name: UbagU
+task_number: 4
+code_screen_coordinate_abs
+{'x_start_screen_abs': 482, 'y_start_screen_abs': 147, 'x_end_screen_abs': 1790, 'y_end_screen_abs': 1006}
+================================================================================
+Extracting: UcamelionU (zoom: M - task: 0)
+3
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UcamelionU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UcamelionU (zoom: M - task: 1)
+3
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UcamelionU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UcamelionU (zoom: M - task: 2)
+3
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UcamelionU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UcamelionU (zoom: M - task: 3)
+3
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UcamelionU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UDuckU (zoom: M - task: 0)
+3
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UDuckU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UDuckU (zoom: M - task: 2)
+3
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UDuckU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UDuckU (zoom: M - task: 3)
+3
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UDuckU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UDuckU (zoom: M - task: 4)
+3
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UDuckU
+task_number: 4
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UmosquitoU (zoom: M - task: 0)
+3
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UmosquitoU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UmosquitoU (zoom: M - task: 1)
+3
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UmosquitoU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UmosquitoU (zoom: M - task: 2)
+3
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UmosquitoU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UmosquitoU (zoom: M - task: 3)
+3
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UmosquitoU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UboatU (zoom: M - task: 0)
+4
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1438, 'y_end_screen_abs': 1000}
+user_name: UboatU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1438, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UboatU (zoom: M - task: 1)
+4
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1438, 'y_end_screen_abs': 1000}
+user_name: UboatU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1438, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UboatU (zoom: M - task: 2)
+4
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1438, 'y_end_screen_abs': 1000}
+user_name: UboatU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1438, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UboatU (zoom: M - task: 3)
+4
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 244, 'y_end_screen_abs': 376}
+user_name: UboatU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 244, 'y_end_screen_abs': 376}
+================================================================================
+Extracting: UseaU (zoom: M - task: 1)
+4
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UseaU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UseaU (zoom: M - task: 2)
+4
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UseaU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UseaU (zoom: M - task: 3)
+4
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UseaU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UsurfU (zoom: M - task: 0)
+4
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UsurfU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UsurfU (zoom: M - task: 2)
+4
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UsurfU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UfallU (zoom: M - task: 0)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UfallU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UfallU (zoom: M - task: 1)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UfallU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UfallU (zoom: M - task: 3)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UfallU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UfallU (zoom: M - task: 4)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UfallU
+task_number: 4
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UjumpU (zoom: M - task: 0)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UjumpU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UjumpU (zoom: M - task: 1)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UjumpU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UrideU (zoom: M - task: 0)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UrideU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UrideU (zoom: M - task: 1)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UrideU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UrideU (zoom: M - task: 2)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UrideU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UrideU (zoom: M - task: 3)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UrideU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UsleepU (zoom: M - task: 0)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UsleepU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UsleepU (zoom: M - task: 1)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UsleepU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UsleepU (zoom: M - task: 2)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UsleepU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UsleepU (zoom: M - task: 3)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UsleepU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UclimbU (zoom: M - task: 0)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UclimbU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UclimbU (zoom: M - task: 1)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UclimbU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UclimbU (zoom: M - task: 2)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UclimbU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UclimbU (zoom: M - task: 3)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UclimbU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UclimbU (zoom: M - task: 4)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UclimbU
+task_number: 4
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UeatU (zoom: M - task: 0)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UeatU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UeatU (zoom: M - task: 1)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UeatU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UcryU (zoom: M - task: 0)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UcryU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UcryU (zoom: M - task: 1)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UcryU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UcryU (zoom: M - task: 2)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UcryU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UcryU (zoom: M - task: 3)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UcryU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UflyU (zoom: M - task: 0)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UflyU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UflyU (zoom: M - task: 1)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UflyU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UflyU (zoom: M - task: 2)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UflyU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UflyU (zoom: M - task: 3)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UflyU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UscoopU (zoom: M - task: 0)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UscoopU
+task_number: 0
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UscoopU (zoom: M - task: 1)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UscoopU
+task_number: 1
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UscoopU (zoom: M - task: 2)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UscoopU
+task_number: 2
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+================================================================================
+Extracting: UscoopU (zoom: M - task: 3)
+5
+code_screen_coordinate_abs: {'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}
+user_name: UscoopU
+task_number: 3
+code_screen_coordinate_abs
+{'x_start_screen_abs': 493, 'y_start_screen_abs': 151, 'x_end_screen_abs': 1785, 'y_end_screen_abs': 1000}

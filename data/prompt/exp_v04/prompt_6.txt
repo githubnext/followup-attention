@@ -1,0 +1,20 @@
+d = "string"
+e = False
+f = False
+b = 7
+c = 4
+a = 9
+d = min( b, e, d, d, )
+e = len( c, b, b, 6, )
+f = max( c, e, )
+a = b * b
+e = abs( b, )
+a = b * b - b
+d = abs( f, d, )
+d = e - c * f * e
+e = e / f + c
+a = c / b - c * c
+d = abs( e, e, c, b, )
+d = len( e, c, )
+b = c
+if (a == 

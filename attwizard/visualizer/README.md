@@ -1,0 +1,1 @@
+This folder contains the plotting methods of both attention data from the models and the attention data derived from eye tracking data.

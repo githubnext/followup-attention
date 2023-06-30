@@ -1,0 +1,11 @@
+var_0 = 94
+var_1 = 96
+var_2 = 18
+var_3 = 89
+var_4 = 88
+var_5 = 31
+derived_0 = var_2 * var_1
+derived_1 = var_2 / derived_0
+derived_2 = var_2 - var_5
+derived_3 = derived_0 / var_0
+print(derived_3) # prints the value "

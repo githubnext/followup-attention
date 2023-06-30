@@ -1,0 +1,20 @@
+d = False
+e = 7
+f = 8
+b = 5
+c = 1
+a = 5
+d = c + 5 - d - 5
+d = c + f - b * f
+f = len( c, e, b, )
+e = f
+e = min( b, b, 2, )
+a = c - b + c
+b = f + d
+a = min( b, )
+c = abs( b, c, f, )
+c = e
+a = max( c, c, )
+b = c / d - e
+f = abs( b, )
+if (a == 

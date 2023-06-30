@@ -1,0 +1,85 @@
+# Jupyter notebook auxiliary files
+.ipynb_checkpoints
+*.pyc
+.vscode
+
+secret_user_mapping.txt
+
+# Cache of pre-trained model weights
+huggingface_models/gpt-neo/*.bin
+huggingface_models/bert-base-uncased/*.bin
+huggingface_models/**/**/*.bin
+
+
+# Participants Data
+data/old_data/*
+data/eye_tracking_studies/batch_*
+data/eye_tracking_studies/dataset_*
+data/eye_tracking_studies/anonymization
+tmp/*
+
+# Comparisons data
+data/comparisons/*
+data/comparisons/cmp_v03/*
+data/hrr/*
+data/iclr2023data/*
+
+# BLOBFUSE RAMDISKS
+ramdisks/*
+
+# THROWAWAY SCRIPTS
+tmp_utils/*
+
+# Large model output data
+data/model_output/**/**.npy
+# All post processed data in containers
+# EYE TRACKING
+data/eye_tracking_attention/**/**
+# MODEL OUTPUT
+data/model_output/**/**
+
+
+# avoid uploading entire attention weights
+**.pt
+**/credentials.json
+
+# Latex auxiliary files
+acmart.pdf
+acmguide.pdf
+samples/sample-*.pdf
+examples.pdf
+supplementary_material.pdf
+*.log
+*.aux
+*.cfg
+*.glo
+*.idx
+*.toc
+*.ilg
+*.ind
+*.out
+*.lof
+*.lot
+*.bbl
+*.blg
+*.gls
+*.cut
+*.hd
+*.dvi
+*.ps
+*.thm
+*.tgz
+*.zip
+!paper-quantum-bugs.zip
+*.rpi
+*~
+*.bcf
+*.run.xml
+samples/ACM-Reference-Format.bst
+samples/*.tex
+
+
+main.pdf
+*.gz
+*.fls
+*.fdb_latexmk

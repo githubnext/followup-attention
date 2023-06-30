@@ -1,0 +1,27 @@
+Using config file information.
+Loading metadata...
+n of data read:  3
+Traceback (most recent call last):
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/comparator.py", line 430, in <module>
+    cli()
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/comparator.py", line 341, in compare
+    human_metadata = read_data_in_parallel(
+  File "/home/eaftan/copilot-attention/attwizard/script/utils.py", line 35, in read_data_in_parallel
+    for f in os.listdir(base_folder)
+FileNotFoundError: [Errno 2] No such file or directory: './data/eye_tracking_attention/eye_vXX_test/metadata'

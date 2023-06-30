@@ -1,0 +1,28 @@
+def fibfib(n: int):
+    """The FibFib number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:
+    Please write a function to efficiently compute the n-th element of the fibfib number sequence.
+    """
+    if n == 0:
+        return 0
+    if n == 1:
+        return 0
+    if n == 2:
+        return 1
+    return fibfib(n - 1) + fibfib(n - 2) + fibfib(n - 3)
+
+
+def cycpattern_check(a , b):
+    """You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word
+
+    """
+    l = len(b)
+    pat = b + b
+    for i in range(len(a) - l + 1):
+        for j in range(l + 1):
+            if a[i:i+l] == pat[j:j+l]:
+                return True
+    return False
+
+
+# Write a test for the function cycpattern_check below
+assert cycpattern_check(

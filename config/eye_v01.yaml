@@ -1,0 +1,95 @@
+# Config Setting for processing Eye-Tracking Data
+
+# important input/output directories
+
+# where to find the participants' data
+folder_participants: ./data/eye_tracking_studies/batch_1
+
+# where to find the source code snippets attended by the participants
+folder_questions: ./eye_tracking/samples_batch_1
+
+# where to save the resulting attention weights and outputs.
+folder_output: ./data/eye_tracking_attention/eye_v01
+
+
+# Participants under study.
+# Their data should be placed in the folder_participants directory.
+# The name is the name of the subdirectory
+# The zoom refers to the zoom with which the user run the experiment.
+# The tasks is a list of integer referring to the indices of the fixation.csv
+# files and the corresponding .avi video file.
+participants:
+  - name: UconsumerU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+  - name: UsalvationU
+    zoom: L
+    tasks: [0, 1, 2, 3]
+  - name: UquarterU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+  - name: UpassionU
+    zoom: M
+    tasks: [0, 1, 2]
+  - name: UimproveU
+    zoom: L
+    tasks: [0, 1, 2]
+  - name: UmonkU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+  #- name: UcharterU  # Using old version of files (no question at the end)
+  #  zoom: L
+  #  tasks: [1, 2, 3, 4]
+  #- name: UpopU  # Using old version of files (no question at the end)
+  #  zoom: L
+  #  tasks: [1, 2, 3]
+  #- name: UinviteU   # short clip videos
+  #- name: UovenU
+
+# these parameters influence how to distribute the attention in one (x, y)
+# point of the screen to the neighboring characters.
+# This should consider the fovea region, the distance from the screen and the
+# screen size.
+attention_parameters:
+  horizontal_attention_span: 6
+  vertical_attention_span: 1
+
+
+# Since the first experiments contained tab characters which were displayed
+# in an ambiguous way by vscode (aka some tabs counted as 4 spaces and others
+# counted as 1 space).
+manual_tab_replacements:
+  - find: "towerOfHanoi(n, 'A', 'C', 'B');\treturn 0;"
+    replace: "towerOfHanoi(n, 'A', 'C', 'B'); return 0;"
+  - find: "					   {0, 0, 0, 0},"
+    replace: "                       {0, 0, 0, 0},"
+  - find: "					   {0, 0, 0, 0},"
+    replace: "                       {0, 0, 0, 0},"
+  - find: "					   {0, 0, 0, 0}};"
+    replace: "                       {0, 0, 0, 0}};"
+
+
+# resolution of the screen
+screen_resolution:
+  pixel_screen_width: 1920
+  pixel_screen_height: 1080
+
+
+# parameters to detect the size of the screen via template matching method
+# based on computer vision
+zoom_dependant_parameters:
+  M:  # zoom level keyword
+    path_marker_top_left: ./data/eye_tracking_studies/markers/top_left_marker.png
+    path_marker_bottom_right: ./data/eye_tracking_studies/markers/bottom_right_marker.png
+    top_left_offsets: [182, 109]
+    bottom_right_offsets: [107, 6]
+    # number of visible lines and columns given this zoom level
+    n_lines: 26
+    n_col: 97
+  L:
+    path_marker_top_left: ./data/eye_tracking_studies/markers/top_left_marker_zoomed.png
+    path_marker_bottom_right: ./data/eye_tracking_studies/markers/bottom_right_marker_zoomed.png
+    top_left_offsets: [220, 125]
+    bottom_right_offsets: [90, -25]
+    n_lines: 20
+    n_col: 71

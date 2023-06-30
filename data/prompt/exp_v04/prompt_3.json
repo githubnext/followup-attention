@@ -1,0 +1,1 @@
+{"relevant_variable": "a", "supporting_variables": ["b", "c"], "useless_variables": ["d", "e", "f"], "attention_level": "statement", "attention_weights": [false, false, false, false, false, true, false, true, false, false, false, true, false, false, true, false, false, false, false, true], "prediction_level": "next_token"}

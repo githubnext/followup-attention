@@ -1,0 +1,18 @@
+# This represents the first pilot batch with AMTurk with 10 participants
+
+# secret
+mongo_db_url: mongodb://mattepalte:abcd12abcd@aci-human-att-database-1234.northeurope.azurecontainer.io:27017/
+
+# the records, one for each completed submission
+raw_data_folder: data/hum_v02/human_attention_raw
+
+# the attention weights, one for each completed submission
+att_weights_folder: data/hum_v02/human_attention_weights
+
+# hetmaps of attention on code tokens, one for each completed submission
+att_heatmap_folder: data/hum_v02/human_attention_heatmap
+
+# folder with metadata on the source files seen by the humans
+# this is represented in a yaml file with info such as the tokenization,
+# the buggy line, the prompt given to the human, etc
+task_metadata_folder: /home/paltenmo/Documents/GITHUB_INTERN/CodeProjects/github-HRR/tasks/sensemaking_char

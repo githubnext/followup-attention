@@ -1,0 +1,322 @@
+# This config decsribe how human and models are compared and on what
+
+# CHANGELOG:
+# This is version is the first to allow the speicification of multiple
+# machine subfolders so to condense all the comparisosn with the same human
+# data and the same distance metric in a single comaprison.
+# A new csv for each machine subfolder is created (use the suffix to give
+# them unique names).
+
+
+human_att_folder: ./data/eye_tracking_attention/eye_v10
+machine_att_folder: ./data/model_output/exp_v10/gpt-j
+output_comparison_folder: ./data/comparisons/cmp_v05_gptj
+
+
+comparisons:
+# the type can be:
+# - vectors: if we compare vectors of N elements as the tokens in the prompt
+# - matrix: if we compare matrices of size N x N where N are the promt tokens
+# - transform_functions: the functions to apply to the data before they are
+#   compared. Note that if more than one transformation is there they are
+#   applied sequentially in the given order.
+#   Note that, beside a name, each transformation can have also a "kwargs" key
+#   with the additional argument that the function might take.
+  - name: plain_weights
+    type: vector
+    comparison_function: spearman_rank
+    transformations:
+      - name: convert_to_char_level
+        kwargs:
+          mapping_from_token_to_char: equal_share
+      - name: convert_vect_to_probabilities
+    human:
+      subfolder: att_weights
+      file_extension: '.npy'
+      tokenizer: EleutherAI/gpt-j-6B
+      model_folder: /mnt/huggingface_models
+      suffix: _humans
+      transformations: []
+    machine:
+      - subfolder: vector_naive_max_plus_mean_of_followers
+        suffix: _meanfollowers
+        file_extension: '.npy'
+      - subfolder: vector_naive_mean_plus_mean_of_followers
+        suffix: _mean_meanfollowers
+        file_extension: '.npy'
+
+  # # ==========================================================================
+  # # MSE MATRIX - TOKEN TOKEN
+  # # ==========================================================================
+  # - name: tt_mse
+  #   type: matrix
+  #   comparison_function: mse_line_by_line
+  #   comparison_output_column: mse_list
+  #   comparison_output_subcolumns: ['value', 'token_index']
+  #   transformations:
+  #     - name: keep_only_tokens_seen_by_model
+  #     - name: normalize_both_matrices_by_line
+  #   human:
+  #     subfolder: decay_0.1_EleutherAI_gpt-j-6B/data_followup_tokens_tokens
+  #     file_extension: '.npy'
+  #     tokenizer: EleutherAI/gpt-j-6B
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #   machine:
+  #     - subfolder: followup
+  #       suffix: _followup
+  #       file_extension: '.npy'
+  #     - subfolder: naive_max
+  #       suffix: _naivemax
+  #       file_extension: '.npy'
+  #     - subfolder: att_uniform_matrix
+  #       suffix: _uniform
+  #       file_extension: '.npy'
+  #     - subfolder: att_copy_cat_matrix
+  #       suffix: _copycat
+  #       file_extension: '.npy'
+
+  # # ==========================================================================
+  # # RANK - TOKEN TOKEN
+  # # ==========================================================================
+  # - name: tt_rank
+  #   type: matrix
+  #   comparison_function: rank
+  #   comparison_output_column: rank_list
+  #   comparison_output_subcolumns: ['value', 'token_index']
+  #   transformations:
+  #     - name: keep_only_tokens_seen_by_model
+  #   human:
+  #     subfolder: decay_0.1_EleutherAI_gpt-j-6B/data_followup_tokens_tokens
+  #     file_extension: '.npy'
+  #     tokenizer: EleutherAI/gpt-j-6B
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #   machine:
+  #     - subfolder: followup
+  #       suffix: _followup
+  #       file_extension: '.npy'
+  #     - subfolder: naive_max
+  #       suffix: _naivemax
+  #       file_extension: '.npy'
+  #     - subfolder: att_uniform_matrix
+  #       suffix: _uniform
+  #       file_extension: '.npy'
+  #     - subfolder: att_copy_cat_matrix
+  #       suffix: _copycat
+  #       file_extension: '.npy'
+
+  # # ==========================================================================
+  # # MSE MATRIX - TOKEN LINE
+  # # ==========================================================================
+  # - name: tl_mse
+  #   type: matrix
+  #   comparison_function: mse_line_by_line
+  #   comparison_output_column: mse_list
+  #   comparison_output_subcolumns: ['value', 'token_index']
+  #   transformations:
+  #     - name: convert_to_token_to_lines
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #     - name: keep_only_lines_seen_by_model
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #     - name: normalize_both_matrices_by_line
+  #   human:
+  #     subfolder: decay_0.1_EleutherAI_gpt-j-6B/data_followup_tokens_tokens
+  #     file_extension: '.npy'
+  #     tokenizer: EleutherAI/gpt-j-6B
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #   machine:
+  #     - subfolder: followup
+  #       suffix: _followup
+  #       file_extension: '.npy'
+  #     - subfolder: naive_max
+  #       suffix: _naivemax
+  #       file_extension: '.npy'
+  #     - subfolder: att_uniform_matrix
+  #       suffix: _uniform
+  #       file_extension: '.npy'
+  #     - subfolder: att_copy_cat_matrix
+  #       suffix: _copycat
+  #       file_extension: '.npy'
+
+  # # ==========================================================================
+  # # RANK MATRIX - TOKEN LINE
+  # # ==========================================================================
+  # - name: tl_rank
+  #   type: matrix
+  #   comparison_function: rank
+  #   comparison_output_column: rank_list
+  #   comparison_output_subcolumns: ['value', 'token_index']
+  #   transformations:
+  #     - name: convert_to_token_to_lines
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #     - name: keep_only_lines_seen_by_model
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #   human:
+  #     subfolder: decay_0.1_EleutherAI_gpt-j-6B/data_followup_tokens_tokens
+  #     file_extension: '.npy'
+  #     tokenizer: EleutherAI/gpt-j-6B
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #   machine:
+  #     - subfolder: followup
+  #       suffix: _followup
+  #       file_extension: '.npy'
+  #     - subfolder: naive_max
+  #       suffix: _naivemax
+  #       file_extension: '.npy'
+  #     - subfolder: att_uniform_matrix
+  #       suffix: _uniform
+  #       file_extension: '.npy'
+  #     - subfolder: att_copy_cat_matrix
+  #       suffix: _copycat
+  #       file_extension: '.npy'
+
+  # # ==========================================================================
+  # # SPEARMAN RANK MATRIX - TOKEN
+  # # ==========================================================================
+  # - name: tt_spearman
+  #   type: matrix
+  #   comparison_function: spearman_rank_by_line
+  #   comparison_output_column: spearman_res_list
+  #   comparison_output_subcolumns: ['corr', 'pval', 'token_index']
+  #   transformations:
+  #     - name: keep_only_tokens_seen_by_model
+  #   human:
+  #     subfolder: decay_0.1_EleutherAI_gpt-j-6B/data_followup_tokens_tokens
+  #     file_extension: '.npy'
+  #     tokenizer: EleutherAI/gpt-j-6B
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #   machine:
+  #     - subfolder: followup
+  #       suffix: _followup
+  #       file_extension: '.npy'
+  #     - subfolder: naive_max
+  #       suffix: _naivemax
+  #       file_extension: '.npy'
+  #     - subfolder: att_uniform_matrix
+  #       suffix: _uniform
+  #       file_extension: '.npy'
+  #     - subfolder: att_copy_cat_matrix
+  #       suffix: _copycat
+  #       file_extension: '.npy'
+  # # ==========================================================================
+  # # SPEARMAN RANK MATRIX - LINE
+  # # ==========================================================================
+  # - name: tl_spearman
+  #   type: matrix
+  #   comparison_function: spearman_rank_by_line
+  #   comparison_output_column: spearman_res_list
+  #   comparison_output_subcolumns: ['corr', 'pval', 'token_index']
+  #   transformations:
+  #     - name: convert_to_token_to_lines
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #     - name: keep_only_lines_seen_by_model
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #   human:
+  #     subfolder: decay_0.1_EleutherAI_gpt-j-6B/data_followup_tokens_tokens
+  #     file_extension: '.npy'
+  #     tokenizer: EleutherAI/gpt-j-6B
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #   machine:
+  #     - subfolder: followup
+  #       suffix: _followup
+  #       file_extension: '.npy'
+  #     - subfolder: naive_max
+  #       suffix: _naivemax
+  #       file_extension: '.npy'
+  #     - subfolder: att_uniform_matrix
+  #       suffix: _uniform
+  #       file_extension: '.npy'
+  #     - subfolder: att_copy_cat_matrix
+  #       suffix: _copycat
+  #       file_extension: '.npy'
+
+  # # ==========================================================================
+  # # TOP 10 MATRIX - TOKEN
+  # # ==========================================================================
+  # - name: tt_top10
+  #   type: matrix
+  #   comparison_function: top_10_overlap
+  #   comparison_output_column: top_10_list
+  #   comparison_output_subcolumns: ['value', 'token_index']
+  #   transformations:
+  #     - name: keep_only_tokens_seen_by_model
+  #   human:
+  #     subfolder: decay_0.1_EleutherAI_gpt-j-6B/data_followup_tokens_tokens
+  #     file_extension: '.npy'
+  #     tokenizer: EleutherAI/gpt-j-6B
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #   machine:
+  #     - subfolder: followup
+  #       suffix: _followup
+  #       file_extension: '.npy'
+  #     - subfolder: naive_max
+  #       suffix: _naivemax
+  #       file_extension: '.npy'
+  #     - subfolder: att_uniform_matrix
+  #       suffix: _uniform
+  #       file_extension: '.npy'
+  #     - subfolder: att_copy_cat_matrix
+  #       suffix: _copycat
+  #       file_extension: '.npy'
+  # # ==========================================================================
+  # # TOP 3 - LINE
+  # # ==========================================================================
+  # - name: tl_top3
+  #   type: matrix
+  #   comparison_function: top_3_overlap
+  #   comparison_output_column: top_3_list
+  #   comparison_output_subcolumns: ['value', 'token_index']
+  #   transformations:
+  #     - name: convert_to_token_to_lines
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #     - name: keep_only_lines_seen_by_model
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #   human:
+  #     subfolder: decay_0.1_EleutherAI_gpt-j-6B/data_followup_tokens_tokens
+  #     file_extension: '.npy'
+  #     tokenizer: EleutherAI/gpt-j-6B
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #   machine:
+  #     - subfolder: followup
+  #       suffix: _followup
+  #       file_extension: '.npy'
+  #     - subfolder: naive_max
+  #       suffix: _naivemax
+  #       file_extension: '.npy'
+  #     - subfolder: att_uniform_matrix
+  #       suffix: _uniform
+  #       file_extension: '.npy'
+  #     - subfolder: att_copy_cat_matrix
+  #       suffix: _copycat
+  #       file_extension: '.npy'

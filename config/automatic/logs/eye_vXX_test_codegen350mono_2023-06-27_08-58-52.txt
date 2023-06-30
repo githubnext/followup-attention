@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/eaftan/copilot-attention/eye_tracking/post_processing.py", line 5, in <module>
+    import seaborn as sns
+ModuleNotFoundError: No module named 'seaborn'
+Traceback (most recent call last):
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/eaftan/copilot-attention/eye_tracking/post_processing.py", line 5, in <module>
+    import seaborn as sns
+ModuleNotFoundError: No module named 'seaborn'
+Traceback (most recent call last):
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/eaftan/copilot-attention/eye_tracking/post_processing.py", line 5, in <module>
+    import seaborn as sns
+ModuleNotFoundError: No module named 'seaborn'

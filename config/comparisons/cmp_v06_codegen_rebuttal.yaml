@@ -1,0 +1,704 @@
+# This config decsribe how human and models are compared and on what
+
+# CHANGELOG:
+# This is version is the first to allow the speicification of multiple
+# machine subfolders so to condense all the comparisosn with the same human
+# data and the same distance metric in a single comaprison.
+# A new csv for each machine subfolder is created (use the suffix to give
+# them unique names).
+
+
+human_att_folder: ./data/eye_tracking_attention/eye_v10
+machine_att_folder: ./data/model_output/exp_v10/codegen
+output_comparison_folder: ./data/comparisons/cmp_v06/codegen_rebuttal
+
+
+comparisons:
+# the type can be:
+# - vectors: if we compare vectors of N elements as the tokens in the prompt
+# - matrix: if we compare matrices of size N x N where N are the promt tokens
+# - transform_functions: the functions to apply to the data before they are
+#   compared. Note that if more than one transformation is there they are
+#   applied sequentially in the given order.
+#   Note that, beside a name, each transformation can have also a "kwargs" key
+#   with the additional argument that the function might take.
+  - name: plain_weights
+    type: vector
+    comparison_function: spearman_rank
+    transformations:
+      - name: convert_to_char_level
+        kwargs:
+          mapping_from_token_to_char: equal_share
+      - name: convert_vect_to_probabilities
+    human:
+      subfolder: att_weights
+      file_extension: '.npy'
+      tokenizer: facebook/incoder-6B
+      model_folder: /mnt/huggingface_models
+      suffix: _humans
+      transformations: []
+    machine:
+      - subfolder: vector_naive_max_plus_mean_of_followers
+        suffix: _meanfollowers
+        file_extension: '.npy'
+      - subfolder: vector_naive_mean_plus_mean_of_followers
+        suffix: _mean_meanfollowers
+        file_extension: '.npy'
+
+  # - name: plain_weights_tokens
+  #   type: vector
+  #   comparison_function: spearman_rank
+  #   transformations:
+  #     - name: truncate_human_visible_tokens
+  #     - name: convert_vect_to_probabilities
+  #   human:
+  #     subfolder: att_weights_Salesforce_codegen-16B-multi
+  #     file_extension: '.npy'
+  #     tokenizer: Salesforce/codegen-16B-multi
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #     transformations: []
+  #   machine:
+  #     - subfolder: vector_naive_max_plus_mean_of_followers
+  #       suffix: _meanfollowers
+  #       file_extension: '.npy'
+  #     - subfolder: vector_naive_mean_plus_mean_of_followers
+  #       suffix: _mean_meanfollowers
+  #       file_extension: '.npy'
+
+  # - name: plain_weights_tokens_norm
+  #   type: vector
+  #   comparison_function: spearman_rank
+  #   transformations:
+  #     - name: truncate_human_visible_tokens
+  #     - name: norm_by_token_length_human
+  #   human:
+  #     subfolder: att_weights_Salesforce_codegen-16B-multi
+  #     file_extension: '.npy'
+  #     tokenizer: Salesforce/codegen-16B-multi
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #     transformations: []
+  #   machine:
+  #     - subfolder: vector_naive_max_plus_mean_of_followers
+  #       suffix: _meanfollowers
+  #       file_extension: '.npy'
+  #     - subfolder: vector_naive_mean_plus_mean_of_followers
+  #       suffix: _mean_meanfollowers
+  #       file_extension: '.npy'
+
+  # - name: plain_weights_tokens_at_least_a_letter
+  #   type: vector
+  #   comparison_function: spearman_rank
+  #   transformations:
+  #     - name: truncate_human_visible_tokens
+  #     - name: at_least_one_letter
+  #   human:
+  #     subfolder: att_weights_Salesforce_codegen-16B-multi
+  #     file_extension: '.npy'
+  #     tokenizer: Salesforce/codegen-16B-multi
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #     transformations: []
+  #   machine:
+  #     - subfolder: vector_naive_max_plus_mean_of_followers
+  #       suffix: _meanfollowers
+  #       file_extension: '.npy'
+  #     - subfolder: vector_naive_mean_plus_mean_of_followers
+  #       suffix: _mean_meanfollowers
+  #       file_extension: '.npy'
+
+  # # ==========================================================================
+  # # SPEARMAN RANK - LINE
+  # # ==========================================================================
+  # - name: tl_spearman
+  #   type: matrix
+  #   comparison_function: spearman_rank_by_line
+  #   comparison_output_column: spearman_res_list
+  #   comparison_output_subcolumns: ['corr', 'pval', 'token_index']
+  #   transformations:
+  #     - name: convert_to_token_to_lines
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #     - name: keep_only_lines_seen_by_model
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #   human:
+  #     subfolder: decay_0.1_Salesforce_codegen-16B-multi/data_followup_tokens_tokens_model
+  #     file_extension: '.npy'
+  #     tokenizer: facebook/incoder-6B
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #   machine:
+  #   # Gaussian baseline
+  #     - subfolder: att_gaussian_neighbors_10
+  #       suffix: _gauss_neigh_10
+  #       file_extension: '.npy'
+  #     - subfolder: att_gaussian_neighbors_20
+  #       suffix: _gauss_neigh_20
+  #       file_extension: '.npy'
+  #     - subfolder: att_gaussian_neighbors_30
+  #       suffix: _gauss_neigh_30
+  #       file_extension: '.npy'
+  #     - subfolder: att_gaussian_neighbors_200
+  #       suffix: _gauss_neigh_200
+  #       file_extension: '.npy'
+  #     - subfolder: att_gaussian_neighbors_400
+  #       suffix: _gauss_neigh_400
+  #       file_extension: '.npy'
+  #     - subfolder: att_gaussian_neighbors_600
+  #       suffix: _gauss_neigh_600
+  #       file_extension: '.npy'
+  #   # # Raw weights
+  #   #   - subfolder: raw_weights_last_layer
+  #   #     suffix: _raw_weights_last_layer
+  #   #     file_extension: '.npy'
+  #   #   - subfolder: raw_weights_first_layer
+  #   #     suffix: _raw_weights_first_layer
+  #   #     file_extension: '.npy'
+  #   # Rollout
+  #     - subfolder: rollout_condensed_all
+  #       suffix: _rollout_condensed_all
+  #       file_extension: '.npy'
+  #   # Ablation: number of generated tokens
+  #     - subfolder: followup_max_10_all_layers
+  #       suffix: _followup_max_10_all_layers
+  #       file_extension: '.npy'
+  #     - subfolder: followup_max_50_all_layers
+  #       suffix: _followup_max_50_all_layers
+  #       file_extension: '.npy'
+  #   # Ablation: which layers
+  #     - subfolder: followup_first_layer
+  #       suffix: _followup_fst_layer
+  #       file_extension: '.npy'
+  #     - subfolder: followup_last_layer
+  #       suffix: _followup_lst_layer
+  #       file_extension: '.npy'
+  #     - subfolder: followup_first_half_summed
+  #       suffix: _followup_fst_half
+  #       file_extension: '.npy'
+  #     - subfolder: followup_last_half_summed
+  #       suffix: _followup_lst_half
+  #       file_extension: '.npy'
+  #   # Post-Processing
+  #     - subfolder: followup
+  #       suffix: _followup
+  #       file_extension: '.npy'
+  #     - subfolder: naive_max
+  #       suffix: _naivemax
+  #       file_extension: '.npy'
+  #   # Heuristics
+  #     - subfolder: att_uniform_matrix
+  #       suffix: _uniform
+  #       file_extension: '.npy'
+  #     - subfolder: att_copy_cat_matrix
+  #       suffix: _copycat
+  #       file_extension: '.npy'
+
+  # # ==========================================================================
+  # # TOP 3 - LINE
+  # # ==========================================================================
+  # - name: tl_top3
+  #   type: matrix
+  #   comparison_function: top_3_overlap
+  #   comparison_output_column: top_3_list
+  #   comparison_output_subcolumns: ['value', 'token_index']
+  #   transformations:
+  #     - name: convert_to_token_to_lines
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #     - name: keep_only_lines_seen_by_model
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #   human:
+  #     subfolder: decay_0.1_Salesforce_codegen-16B-multi/data_followup_tokens_tokens_model
+  #     file_extension: '.npy'
+  #     tokenizer: facebook/incoder-6B
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #   machine:
+  #   # Gaussian baseline
+  #     - subfolder: att_gaussian_neighbors_10
+  #       suffix: _gauss_neigh_10
+  #       file_extension: '.npy'
+  #     - subfolder: att_gaussian_neighbors_20
+  #       suffix: _gauss_neigh_20
+  #       file_extension: '.npy'
+  #     - subfolder: att_gaussian_neighbors_30
+  #       suffix: _gauss_neigh_30
+  #       file_extension: '.npy'
+  #     - subfolder: att_gaussian_neighbors_200
+  #       suffix: _gauss_neigh_200
+  #       file_extension: '.npy'
+  #     - subfolder: att_gaussian_neighbors_400
+  #       suffix: _gauss_neigh_400
+  #       file_extension: '.npy'
+  #     - subfolder: att_gaussian_neighbors_600
+  #       suffix: _gauss_neigh_600
+  #       file_extension: '.npy'
+  #   # # Raw weights
+  #   #   - subfolder: raw_weights_last_layer
+  #   #     suffix: _raw_weights_last_layer
+  #   #     file_extension: '.npy'
+  #   #   - subfolder: raw_weights_first_layer
+  #   #     suffix: _raw_weights_first_layer
+  #   #     file_extension: '.npy'
+  #   # Rollout
+  #     - subfolder: rollout_condensed_all
+  #       suffix: _rollout_condensed_all
+  #       file_extension: '.npy'
+  #   # Ablation: number of generated tokens
+  #     - subfolder: followup_max_10_all_layers
+  #       suffix: _followup_max_10_all_layers
+  #       file_extension: '.npy'
+  #     - subfolder: followup_max_50_all_layers
+  #       suffix: _followup_max_50_all_layers
+  #       file_extension: '.npy'
+  #   # Ablation: which layers
+  #     - subfolder: followup_first_layer
+  #       suffix: _followup_fst_layer
+  #       file_extension: '.npy'
+  #     - subfolder: followup_last_layer
+  #       suffix: _followup_lst_layer
+  #       file_extension: '.npy'
+  #     - subfolder: followup_first_half_summed
+  #       suffix: _followup_fst_half
+  #       file_extension: '.npy'
+  #     - subfolder: followup_last_half_summed
+  #       suffix: _followup_lst_half
+  #       file_extension: '.npy'
+  #   # Post-Processing
+  #     - subfolder: followup
+  #       suffix: _followup
+  #       file_extension: '.npy'
+  #     - subfolder: naive_max
+  #       suffix: _naivemax
+  #       file_extension: '.npy'
+  #   # Heuristics
+  #     - subfolder: att_uniform_matrix
+  #       suffix: _uniform
+  #       file_extension: '.npy'
+  #     - subfolder: att_copy_cat_matrix
+  #       suffix: _copycat
+  #       file_extension: '.npy'
+
+  # # ==========================================================================
+  # # TOP 3 - LINE - REMOVE BASELINE DISTRIBUTION
+  # # ==========================================================================
+  # - name: tl_top3_divide_all_dist
+  #   type: matrix
+  #   comparison_function: top_3_overlap
+  #   comparison_output_column: top_3_list
+  #   comparison_output_subcolumns: ['value', 'token_index', 'top_k_groud_truth', 'top_k_machine']
+  #   transformations:
+  #     - name: keep_only_tokens_seen_by_model
+  #     - name: remove_base_human_behavior
+  #       kwargs:
+  #         mode: divide
+  #         min_base_value: 0.00001
+  #         path_csv_normalization_prob_human: /home/eaftan/copilot-attention/data/eye_tracking_attention/eye_v10/decay_0.1_Salesforce_codegen-16B-multi/data_avg_followup/df_base_all_prob_based_on_distance.csv
+  #         modelling_based_on_abs_position: false
+  #         col_name_probability: prob_to_go_to_target_mean
+  #         col_name_distance: distance_current_to_target
+  #     - name: convert_to_token_to_lines
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #     - name: keep_only_lines_seen_by_model
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #   human:
+  #     subfolder: decay_0.1_Salesforce_codegen-16B-multi/data_followup_tokens_tokens_model
+  #     file_extension: '.npy'
+  #     tokenizer: facebook/incoder-6B
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #   machine:
+    # # Gaussian baseline
+    #   - subfolder: att_gaussian_neighbors_30
+    #     suffix: _gauss_neigh_30
+    #     file_extension: '.npy'
+    #   - subfolder: att_gaussian_neighbors_200
+    #     suffix: _gauss_neigh_200
+    #     file_extension: '.npy'
+    #   - subfolder: att_gaussian_neighbors_400
+    #     suffix: _gauss_neigh_400
+    #     file_extension: '.npy'
+      # - subfolder: att_gaussian_neighbors_1000
+      #   suffix: _gauss_neigh_1000
+      #   file_extension: '.npy'
+    # # Raw weights
+    #   - subfolder: raw_weights_last_layer
+    #     suffix: _raw_weights_last_layer
+    #     file_extension: '.npy'
+    #   - subfolder: raw_weights_first_layer
+    #     suffix: _raw_weights_first_layer
+    #     file_extension: '.npy'
+    #   - subfolder: raw_weights_last_layer_sym
+    #     suffix: _raw_weights_last_layer_sym
+    #     file_extension: '.npy'
+    #   - subfolder: raw_weights_first_layer_sym
+    #     suffix: _raw_weights_first_layer_sym
+    #     file_extension: '.npy'
+    # # Post-Processing
+    #   - subfolder: followup
+    #     suffix: _followup
+    #     file_extension: '.npy'
+    #   - subfolder: naive_max
+    #     suffix: _naivemax
+    #     file_extension: '.npy'
+    #   - subfolder: naive_mean
+    #     suffix: _naivemean
+    #     file_extension: '.npy'
+    #   - subfolder: naive_max_sym
+    #     suffix: _naivemax_sym
+    #     file_extension: '.npy'
+    #   - subfolder: naive_mean_sym
+    #     suffix: _naivemean_sym
+    #     file_extension: '.npy'
+    # # Rollout
+    #   - subfolder: rollout_condensed_all
+    #     suffix: _rollout_condensed_all
+    #     file_extension: '.npy'
+    # # Heuristics
+    #   - subfolder: att_uniform_matrix
+    #     suffix: _uniform
+    #     file_extension: '.npy'
+    #   - subfolder: att_copy_cat_matrix
+    #     suffix: _copycat
+    #     file_extension: '.npy'
+    # # Ablation study: layers
+    #   - subfolder: followup_layer_pair_0
+    #     suffix: _followup_layer_pair_0
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_3
+    #     suffix: _followup_layer_pair_3
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_6
+    #     suffix: _followup_layer_pair_6
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_9
+    #     suffix: _followup_layer_pair_9
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_12
+    #     suffix: _followup_layer_pair_12
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_15
+    #     suffix: _followup_layer_pair_15
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_18
+    #     suffix: _followup_layer_pair_18
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_21
+    #     suffix: _followup_layer_pair_21
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_24
+    #     suffix: _followup_layer_pair_24
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_27
+    #     suffix: _followup_layer_pair_27
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_30
+    #     suffix: _followup_layer_pair_30
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_32
+    #     suffix: _followup_layer_pair_32
+    #     file_extension: '.npy'
+    # # Ablation: number of generated tokens
+    #   - subfolder: followup_max_10_all_layers
+    #     suffix: _followup_max_10_all_layers
+    #     file_extension: '.npy'
+    #   - subfolder: followup_max_50_all_layers
+    #     suffix: _followup_max_50_all_layers
+    #     file_extension: '.npy'
+
+  # # ==========================================================================
+  # # SPEARMAN RANK - LINE - REMOVE BASELINE DISTRIBUTION
+  # # ==========================================================================
+  # - name: tl_spearman_divide_all_dist
+  #   type: matrix
+  #   comparison_function: spearman_rank_by_line
+  #   comparison_output_column: spearman_res_list
+  #   comparison_output_subcolumns: ['corr', 'pval', 'token_index']
+  #   transformations:
+  #     - name: keep_only_tokens_seen_by_model
+  #     - name: remove_base_human_behavior
+  #       kwargs:
+  #         mode: divide
+  #         min_base_value: 0.00001
+  #         path_csv_normalization_prob_human: /home/eaftan/copilot-attention/data/eye_tracking_attention/eye_v10/decay_0.1_Salesforce_codegen-16B-multi/data_avg_followup/df_base_all_prob_based_on_distance.csv
+  #         modelling_based_on_abs_position: false
+  #         col_name_probability: prob_to_go_to_target_mean
+  #         col_name_distance: distance_current_to_target
+  #     - name: convert_to_token_to_lines
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #     - name: keep_only_lines_seen_by_model
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #   human:
+  #     subfolder: decay_0.1_Salesforce_codegen-16B-multi/data_followup_tokens_tokens_model
+  #     file_extension: '.npy'
+  #     tokenizer: facebook/incoder-6B
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #   machine:
+    # # Gaussian baseline
+    #   - subfolder: att_gaussian_neighbors_30
+    #     suffix: _gauss_neigh_30
+    #     file_extension: '.npy'
+    #   - subfolder: att_gaussian_neighbors_200
+    #     suffix: _gauss_neigh_200
+    #     file_extension: '.npy'
+    #   - subfolder: att_gaussian_neighbors_400
+    #     suffix: _gauss_neigh_400
+    #     file_extension: '.npy'
+      # - subfolder: att_gaussian_neighbors_1000
+      #   suffix: _gauss_neigh_1000
+      #   file_extension: '.npy'
+    # # Raw weights
+    #   - subfolder: raw_weights_last_layer
+    #     suffix: _raw_weights_last_layer
+    #     file_extension: '.npy'
+    #   - subfolder: raw_weights_first_layer
+    #     suffix: _raw_weights_first_layer
+    #     file_extension: '.npy'
+    #   - subfolder: raw_weights_last_layer_sym
+    #     suffix: _raw_weights_last_layer_sym
+    #     file_extension: '.npy'
+    #   - subfolder: raw_weights_first_layer_sym
+    #     suffix: _raw_weights_first_layer_sym
+    #     file_extension: '.npy'
+    # # Post-Processing
+    #   - subfolder: followup
+    #     suffix: _followup
+    #     file_extension: '.npy'
+    #   - subfolder: naive_max
+    #     suffix: _naivemax
+    #     file_extension: '.npy'
+    #   - subfolder: naive_mean
+    #     suffix: _naivemean
+    #     file_extension: '.npy'
+    #   - subfolder: naive_max_sym
+    #     suffix: _naivemax_sym
+    #     file_extension: '.npy'
+    #   - subfolder: naive_mean_sym
+    #     suffix: _naivemean_sym
+    #     file_extension: '.npy'
+    # # Rollout
+    #   - subfolder: rollout_condensed_all
+    #     suffix: _rollout_condensed_all
+    #     file_extension: '.npy'
+    # # Heuristics
+    #   - subfolder: att_uniform_matrix
+    #     suffix: _uniform
+    #     file_extension: '.npy'
+    #   - subfolder: att_copy_cat_matrix
+    #     suffix: _copycat
+    #     file_extension: '.npy'
+    # # Ablation study: layers
+    #   - subfolder: followup_layer_pair_0
+    #     suffix: _followup_layer_pair_0
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_3
+    #     suffix: _followup_layer_pair_3
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_6
+    #     suffix: _followup_layer_pair_6
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_9
+    #     suffix: _followup_layer_pair_9
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_12
+    #     suffix: _followup_layer_pair_12
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_15
+    #     suffix: _followup_layer_pair_15
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_18
+    #     suffix: _followup_layer_pair_18
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_21
+    #     suffix: _followup_layer_pair_21
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_24
+    #     suffix: _followup_layer_pair_24
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_27
+    #     suffix: _followup_layer_pair_27
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_30
+    #     suffix: _followup_layer_pair_30
+    #     file_extension: '.npy'
+    #   - subfolder: followup_layer_pair_32
+    #     suffix: _followup_layer_pair_32
+    #     file_extension: '.npy'
+    # # Ablation: number of generated tokens
+    #   - subfolder: followup_max_10_all_layers
+    #     suffix: _followup_max_10_all_layers
+    #     file_extension: '.npy'
+    #   - subfolder: followup_max_50_all_layers
+    #     suffix: _followup_max_50_all_layers
+    #     file_extension: '.npy'
+
+
+  # # ==========================================================================
+  # # DEBUG
+  # # ==========================================================================
+  # - name: tl_debug_minus_base
+  #   type: matrix
+  #   comparison_function: spearman_rank_by_line
+  #   comparison_output_column: spearman_res_list
+  #   comparison_output_subcolumns: ['corr', 'pval', 'token_index']
+  #   transformations:
+  #     - name: keep_only_tokens_seen_by_model
+  #     - name: remove_base_human_behavior
+  #       kwargs:
+  #         mode: divide
+  #         min_base_value: 0.01
+  #         path_csv_normalization_prob_human: /home/eaftan/copilot-attention/data/eye_tracking_attention/eye_v10/decay_0.1_Salesforce_codegen-16B-multi/data_avg_followup/baseline_ground_truth.csv
+  #         modelling_based_on_abs_position: true
+  #         col_name_probability: prob_to_go_to_target_mean
+  #         col_name_distance: distance_current_to_target
+  #   human:
+  #     subfolder: decay_0.1_Salesforce_codegen-16B-multi/data_followup_tokens_tokens_model
+  #     file_extension: '.npy'
+  #     tokenizer: facebook/incoder-6B
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #   machine:
+  #   # Gaussian baseline
+  #     - subfolder: att_gaussian_neighbors_30
+  #       suffix: _gauss_neigh_30
+  #       file_extension: '.npy'
+
+
+  # # ==========================================================================
+  # # TOP 3 - LINE - REMOVE BASELINE DISTRIBUTION
+  # # ==========================================================================
+  # - name: tl_top3_full_modelling
+  #   type: matrix
+  #   comparison_function: top_3_overlap
+  #   comparison_output_column: top_3_list
+  #   comparison_output_subcolumns: ['value', 'token_index']
+  #   transformations:
+  #     - name: keep_only_tokens_seen_by_model
+  #     - name: remove_base_human_behavior
+  #       kwargs:
+  #         mode: divide
+  #         min_base_value: 0.00001
+  #         path_csv_normalization_prob_human: /home/eaftan/copilot-attention/data/eye_tracking_attention/eye_v10/decay_0.1_Salesforce_codegen-16B-multi/data_avg_followup/baseline_ground_truth.csv
+  #         modelling_based_on_abs_position: true
+  #         col_name_probability: prob_to_go_to_target_mean
+  #         col_name_distance: distance_current_to_target
+  #     - name: convert_to_token_to_lines
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #     - name: keep_only_lines_seen_by_model
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #   human:
+  #     subfolder: decay_0.1_Salesforce_codegen-16B-multi/data_followup_tokens_tokens_model
+  #     file_extension: '.npy'
+  #     tokenizer: facebook/incoder-6B
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #   machine:
+  #   # Gaussian baseline
+  #     - subfolder: att_gaussian_neighbors_30
+  #       suffix: _gauss_neigh_30
+  #       file_extension: '.npy'
+  #     - subfolder: att_gaussian_neighbors_200
+  #       suffix: _gauss_neigh_200
+  #       file_extension: '.npy'
+  #     - subfolder: att_gaussian_neighbors_400
+  #       suffix: _gauss_neigh_400
+  #       file_extension: '.npy'
+  #   # Post-Processing
+  #     - subfolder: followup
+  #       suffix: _followup
+  #       file_extension: '.npy'
+  #     - subfolder: naive_max
+  #       suffix: _naivemax
+  #       file_extension: '.npy'
+  #   # Rollout
+  #     - subfolder: rollout_condensed_all
+  #       suffix: _rollout_condensed_all
+  #       file_extension: '.npy'
+
+
+  # # ==========================================================================
+  # # SPEARMAN RANK - LINE - REMOVE BASELINE DISTRIBUTION
+  # # ==========================================================================
+  # - name: tl_spearman_full_modelling
+  #   type: matrix
+  #   comparison_function: spearman_rank_by_line
+  #   comparison_output_column: spearman_res_list
+  #   comparison_output_subcolumns: ['corr', 'pval', 'token_index']
+  #   transformations:
+  #     - name: keep_only_tokens_seen_by_model
+  #     - name: remove_base_human_behavior
+  #       kwargs:
+  #         mode: divide
+  #         min_base_value: 0.00001
+  #         path_csv_normalization_prob_human: /home/eaftan/copilot-attention/data/eye_tracking_attention/eye_v10/decay_0.1_Salesforce_codegen-16B-multi/data_avg_followup/baseline_ground_truth.csv
+  #         modelling_based_on_abs_position: true
+  #         col_name_probability: prob_to_go_to_target_mean
+  #         col_name_distance: distance_current_to_target
+  #     - name: convert_to_token_to_lines
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #     - name: keep_only_lines_seen_by_model
+  #       kwargs:
+  #         special_char_mapping:
+  #           Ġ: ' '
+  #           Ċ: '\n'
+  #   human:
+  #     subfolder: decay_0.1_Salesforce_codegen-16B-multi/data_followup_tokens_tokens_model
+  #     file_extension: '.npy'
+  #     tokenizer: facebook/incoder-6B
+  #     model_folder: /mnt/huggingface_models
+  #     suffix: _humans
+  #   machine:
+  #   # Gaussian baseline
+  #     - subfolder: att_gaussian_neighbors_30
+  #       suffix: _gauss_neigh_30
+  #       file_extension: '.npy'
+  #     - subfolder: att_gaussian_neighbors_200
+  #       suffix: _gauss_neigh_200
+  #       file_extension: '.npy'
+  #     - subfolder: att_gaussian_neighbors_400
+  #       suffix: _gauss_neigh_400
+  #       file_extension: '.npy'
+  #   # Post-Processing
+  #     - subfolder: followup
+  #       suffix: _followup
+  #       file_extension: '.npy'
+  #     - subfolder: naive_max
+  #       suffix: _naivemax
+  #       file_extension: '.npy'
+  #   # Rollout
+  #     - subfolder: rollout_condensed_all
+  #       suffix: _rollout_condensed_all
+  #       file_extension: '.npy'

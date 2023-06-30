@@ -1,0 +1,66 @@
+input_data_folder: data/prompts_collection/sensemaking_test
+output_data_folder: data/model_output/exp_vXX_test/codet5p770py
+analysis_data_folder: ./data/model_output/exp_vXX_test/codet5p770py
+local_model_folder: /mnt/huggingface_models
+# if the stop_signal_line is not null it means that, if the stop_signal_line
+# is in the prompt, all the lines after that will be ignored
+stop_signal_line: "Answer:"
+models:
+  - Salesforce/codet5p-770m-py
+
+# We query the model over a series of snippet and we saves the model output as:
+# - generated text
+# - attention matrix (typically condensed on both layer and head dim)
+# - metadata (e.g. info on tokenization used, text prompt and generated)
+generation:  # refers to the generative model
+  number_of_tokens: 100  # use -1 for open-ended generation
+  max_time_in_seconds: 60  # use -1 for infinite time
+  temperature: 0.2
+  n_queries: 3
+extract_attention: true
+
+attention:
+  # min, max, mean, sum, keep
+  strategy_reduce_head: keep
+  # min, max, mean, sum, keep
+  strategy_reduce_layer: keep
+  # do not normalize
+  strategy_normalize_tokens: None
+
+save_attention_matrix: true
+save_raw_model_output: false
+
+
+# ANALYSIS PASSES
+# this are routines which takes the extracted attention tensor from the model
+# and perform some operations/analysis on it, producing new derived artifacts
+# in the `analysis_data_folder`.
+# e.g. compute the follow-up attention or the entropy of the attention tensor
+# each funtion takes a 6-dimension tensor as input and produces its output
+# in a new folder called with the analysis pass name
+# this analysis passes can also take json files as input. Depending on the file
+# contained in the input_folder. The filetype should be the same for all the
+# files in the input folder.
+analysis_passes:
+  - name: followup
+    input_folder: att_tensor
+    function_name: compute_followup_attention
+  - name: naive_max
+    input_folder: att_tensor
+    function_name: compute_naive_max_aggregation
+
+  # # VECTORS
+  - name: vector_naive_max_plus_mean_of_followers
+    input_folder: naive_max
+    function_name: compute_mean_of_followers
+  - name: vector_naive_mean_plus_mean_of_followers
+    input_folder: naive_mean
+    function_name: compute_mean_of_followers
+
+  # # RAW WEIGHTS
+  - name: raw_weights_last_layer
+    input_folder: att_tensor
+    function_name: raw_weights_last_layer
+  - name: raw_weights_first_layer
+    input_folder: att_tensor
+    function_name: raw_weights_first_layer

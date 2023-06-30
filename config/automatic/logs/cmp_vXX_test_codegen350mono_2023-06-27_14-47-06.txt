@@ -1,0 +1,183 @@
+Using config file information.
+Loading metadata...
+n of data read:  3
+n of data read:  92
+Pre-loading human and machine attention files...
+n of data read:  92
+att_weights_Salesforce_codegen-350M-mono (human) loaded.
+n of data read:  3
+Shape of one element: (324,)
+vector_naive_max_plus_mean_of_followers (machine) loaded.
+n of data read:  92
+decay_0.1_Salesforce_codegen-350M-mono/data_followup_tokens_tokens_model (human) loaded.
+n of data read:  3
+Shape of one element: (324, 324)
+raw_weights_last_layer (machine) loaded.
+n of data read:  3
+Shape of one element: (324, 324)
+raw_weights_first_layer (machine) loaded.
+n of data read:  3
+Shape of one element: (324, 324)
+followup (machine) loaded.
+n of data read:  3
+Shape of one element: (324, 324)
+naive_max (machine) loaded.
+================================================================================
+plain_weights_tokens_at_least_a_letter_meanfollowers
+Comparing data... 
+n of human data: 92
+n of machine data: 3
+  0%|                                                                                                                                                           | 0/92 [00:00<?, ?it/s]No machine data for triangle_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for multithread_Q2.cpp
+No machine data for hannoi_Q3.py
+No machine data for triangle_Q3.py
+No machine data for triangle_Q1.cs
+No machine data for multithread_Q1.cs
+No machine data for Nqueens_Q2.cpp
+No machine data for tree_Q1.cs
+No machine data for Nqueens_Q1.cs
+No machine data for tree_Q2.cpp
+No machine data for Nqueens_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q1.cpp
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q3.py
+No machine data for tree_Q2.cs
+No machine data for multithread_Q3.cs
+No machine data for hannoi_Q3.cs
+No machine data for multithread_Q2.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for multithread_Q1.cs
+No machine data for triangle_Q1.py
+No machine data for tree_Q3.cpp
+No machine data for tree_Q1.cs
+No machine data for hannoi_Q2.cs
+No machine data for triangle_Q3.py
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q1.cs
+No machine data for tree_Q3.cs
+No machine data for Nqueens_Q1.py
+No machine data for triangle_Q3.cs
+No machine data for hannoi_Q1.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q2.py
+No machine data for Nqueens_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for multithread_Q1.cs
+No machine data for hannoi_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for triangle_Q3.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q2.py
+No machine data for multithread_Q1.cs
+No machine data for multithread_Q3.py
+No machine data for tree_Q1.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for triangle_Q3.cs
+No machine data for tree_Q1.py
+No machine data for tree_Q1.py
+No machine data for tree_Q3.py
+No machine data for tree_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for tree_Q3.cpp
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q3.cs
+No machine data for hannoi_Q3.py
+No machine data for Nqueens_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for tree_Q1.py
+No machine data for hannoi_Q2.cpp
+No machine data for triangle_Q1.cpp
+No machine data for hannoi_Q3.cs
+No machine data for triangle_Q2.cs
+No machine data for hannoi_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for triangle_Q2.cs
+No machine data for tree_Q2.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:00<00:00, 2563.21it/s]
+Total number of comparisons:  9
+================================================================================
+================================================================================
+Humans vs Humans of: plain_weights_tokens_at_least_a_letter
+Comparing human data... 
+n of human data a: 92
+n of human data b: 92
+n of matching pairs: 224
+  0%|                                                                                                                                                          | 0/224 [00:00<?, ?it/s]  1%|█▎                                                                                                                                                | 2/224 [00:00<00:16, 13.20it/s]  2%|██▌                                                                                                                                               | 4/224 [00:00<00:15, 14.18it/s]  3%|███▉                                                                                                                                              | 6/224 [00:00<00:14, 14.56it/s]  4%|█████▏                                                                                                                                            | 8/224 [00:00<00:15, 14.13it/s]  4%|██████▍                                                                                                                                          | 10/224 [00:00<00:15, 14.16it/s]  5%|███████▊                                                                                                                                         | 12/224 [00:00<00:14, 14.40it/s]  6%|█████████                                                                                                                                        | 14/224 [00:00<00:14, 14.70it/s]  7%|██████████▎                                                                                                                                      | 16/224 [00:01<00:14, 14.49it/s]  8%|███████████▋                                                                                                                                     | 18/224 [00:01<00:14, 14.54it/s]  9%|████████████▉                                                                                                                                    | 20/224 [00:01<00:13, 14.60it/s] 10%|██████████████▏                                                                                                                                  | 22/224 [00:01<00:13, 14.89it/s] 11%|███████████████▌                                                                                                                                 | 24/224 [00:01<00:13, 14.80it/s] 12%|████████████████▊                                                                                                                                | 26/224 [00:01<00:13, 14.93it/s] 12%|██████████████████▏                                                                                                                              | 28/224 [00:01<00:12, 15.18it/s] 13%|███████████████████▍                                                                                                                             | 30/224 [00:02<00:12, 15.28it/s] 14%|████████████████████▋                                                                                                                            | 32/224 [00:02<00:12, 15.19it/s] 15%|██████████████████████                                                                                                                           | 34/224 [00:02<00:12, 15.20it/s] 16%|███████████████████████▎                                                                                                                         | 36/224 [00:02<00:12, 15.20it/s] 17%|████████████████████████▌                                                                                                                        | 38/224 [00:02<00:12, 15.05it/s] 18%|█████████████████████████▉                                                                                                                       | 40/224 [00:02<00:12, 15.15it/s] 19%|███████████████████████████▏                                                                                                                     | 42/224 [00:02<00:12, 15.13it/s] 20%|████████████████████████████▍                                                                                                                    | 44/224 [00:02<00:11, 15.36it/s] 21%|█████████████████████████████▊                                                                                                                   | 46/224 [00:03<00:11, 15.38it/s] 21%|███████████████████████████████                                                                                                                  | 48/224 [00:03<00:11, 15.25it/s] 22%|████████████████████████████████▎                                                                                                                | 50/224 [00:03<00:11, 15.30it/s] 23%|█████████████████████████████████▋                                                                                                               | 52/224 [00:03<00:11, 15.27it/s] 24%|██████████████████████████████████▉                                                                                                              | 54/224 [00:03<00:11, 15.14it/s] 25%|████████████████████████████████████▎                                                                                                            | 56/224 [00:03<00:11, 15.10it/s] 26%|█████████████████████████████████████▌                                                                                                           | 58/224 [00:03<00:11, 14.74it/s] 27%|██████████████████████████████████████▊                                                                                                          | 60/224 [00:04<00:11, 14.75it/s] 28%|████████████████████████████████████████▏                                                                                                        | 62/224 [00:04<00:10, 14.93it/s] 29%|█████████████████████████████████████████▍                                                                                                       | 64/224 [00:04<00:10, 15.14it/s] 29%|██████████████████████████████████████████▋                                                                                                      | 66/224 [00:04<00:10, 15.16it/s] 30%|████████████████████████████████████████████                                                                                                     | 68/224 [00:04<00:10, 15.10it/s] 31%|█████████████████████████████████████████████▎                                                                                                   | 70/224 [00:04<00:10, 15.13it/s] 32%|██████████████████████████████████████████████▌                                                                                                  | 72/224 [00:04<00:10, 15.06it/s] 33%|███████████████████████████████████████████████▉                                                                                                 | 74/224 [00:04<00:10, 14.96it/s] 34%|█████████████████████████████████████████████████▏                                                                                               | 76/224 [00:05<00:09, 14.82it/s] 35%|██████████████████████████████████████████████████▍                                                                                              | 78/224 [00:05<00:09, 14.67it/s] 36%|███████████████████████████████████████████████████▊                                                                                             | 80/224 [00:05<00:09, 14.79it/s] 37%|█████████████████████████████████████████████████████                                                                                            | 82/224 [00:05<00:09, 14.89it/s] 38%|██████████████████████████████████████████████████████▍                                                                                          | 84/224 [00:05<00:09, 14.86it/s] 38%|███████████████████████████████████████████████████████▋                                                                                         | 86/224 [00:05<00:09, 14.79it/s] 39%|████████████████████████████████████████████████████████▉                                                                                        | 88/224 [00:05<00:09, 14.77it/s] 40%|██████████████████████████████████████████████████████████▎                                                                                      | 90/224 [00:06<00:09, 14.71it/s] 41%|███████████████████████████████████████████████████████████▌                                                                                     | 92/224 [00:06<00:08, 14.73it/s] 42%|████████████████████████████████████████████████████████████▊                                                                                    | 94/224 [00:06<00:08, 14.65it/s] 43%|██████████████████████████████████████████████████████████████▏                                                                                  | 96/224 [00:06<00:08, 14.85it/s] 44%|███████████████████████████████████████████████████████████████▍                                                                                 | 98/224 [00:06<00:08, 15.05it/s] 45%|████████████████████████████████████████████████████████████████▎                                                                               | 100/224 [00:06<00:08, 15.21it/s] 46%|█████████████████████████████████████████████████████████████████▌                                                                              | 102/224 [00:06<00:07, 15.38it/s] 46%|██████████████████████████████████████████████████████████████████▊                                                                             | 104/224 [00:06<00:08, 14.92it/s] 47%|████████████████████████████████████████████████████████████████████▏                                                                           | 106/224 [00:07<00:07, 14.76it/s] 48%|█████████████████████████████████████████████████████████████████████▍                                                                          | 108/224 [00:07<00:07, 14.69it/s] 49%|██████████████████████████████████████████████████████████████████████▋                                                                         | 110/224 [00:07<00:07, 14.77it/s] 50%|████████████████████████████████████████████████████████████████████████                                                                        | 112/224 [00:07<00:07, 14.80it/s] 51%|█████████████████████████████████████████████████████████████████████████▎                                                                      | 114/224 [00:07<00:07, 14.85it/s] 52%|██████████████████████████████████████████████████████████████████████████▌                                                                     | 116/224 [00:07<00:07, 14.82it/s] 53%|███████████████████████████████████████████████████████████████████████████▊                                                                    | 118/224 [00:07<00:07, 14.72it/s] 54%|█████████████████████████████████████████████████████████████████████████████▏                                                                  | 120/224 [00:08<00:07, 14.70it/s] 54%|██████████████████████████████████████████████████████████████████████████████▍                                                                 | 122/224 [00:08<00:06, 14.80it/s] 55%|███████████████████████████████████████████████████████████████████████████████▋                                                                | 124/224 [00:08<00:06, 14.73it/s] 56%|█████████████████████████████████████████████████████████████████████████████████                                                               | 126/224 [00:08<00:06, 14.75it/s] 57%|██████████████████████████████████████████████████████████████████████████████████▎                                                             | 128/224 [00:08<00:06, 14.88it/s] 58%|███████████████████████████████████████████████████████████████████████████████████▌                                                            | 130/224 [00:08<00:06, 15.06it/s] 59%|████████████████████████████████████████████████████████████████████████████████████▊                                                           | 132/224 [00:08<00:06, 15.13it/s] 60%|██████████████████████████████████████████████████████████████████████████████████████▏                                                         | 134/224 [00:08<00:05, 15.19it/s] 61%|███████████████████████████████████████████████████████████████████████████████████████▍                                                        | 136/224 [00:09<00:05, 15.10it/s] 62%|████████████████████████████████████████████████████████████████████████████████████████▋                                                       | 138/224 [00:09<00:05, 15.05it/s] 62%|██████████████████████████████████████████████████████████████████████████████████████████                                                      | 140/224 [00:09<00:05, 14.90it/s] 63%|███████████████████████████████████████████████████████████████████████████████████████████▎                                                    | 142/224 [00:09<00:05, 14.68it/s] 64%|████████████████████████████████████████████████████████████████████████████████████████████▌                                                   | 144/224 [00:09<00:05, 14.62it/s] 65%|█████████████████████████████████████████████████████████████████████████████████████████████▊                                                  | 146/224 [00:09<00:05, 14.63it/s] 66%|███████████████████████████████████████████████████████████████████████████████████████████████▏                                                | 148/224 [00:09<00:05, 14.71it/s] 67%|████████████████████████████████████████████████████████████████████████████████████████████████▍                                               | 150/224 [00:10<00:05, 14.66it/s] 68%|█████████████████████████████████████████████████████████████████████████████████████████████████▋                                              | 152/224 [00:10<00:04, 14.49it/s] 69%|███████████████████████████████████████████████████████████████████████████████████████████████████                                             | 154/224 [00:10<00:04, 14.40it/s] 70%|████████████████████████████████████████████████████████████████████████████████████████████████████▎                                           | 156/224 [00:10<00:04, 14.46it/s] 71%|█████████████████████████████████████████████████████████████████████████████████████████████████████▌                                          | 158/224 [00:10<00:04, 14.61it/s] 71%|██████████████████████████████████████████████████████████████████████████████████████████████████████▊                                         | 160/224 [00:10<00:04, 14.77it/s] 72%|████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                       | 162/224 [00:10<00:04, 14.78it/s] 73%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                      | 164/224 [00:11<00:04, 14.80it/s] 74%|██████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                     | 166/224 [00:11<00:03, 14.73it/s] 75%|████████████████████████████████████████████████████████████████████████████████████████████████████████████                                    | 168/224 [00:11<00:03, 14.51it/s] 76%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                  | 170/224 [00:11<00:03, 14.50it/s] 77%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                 | 172/224 [00:11<00:03, 14.43it/s] 78%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                | 174/224 [00:11<00:03, 14.52it/s] 79%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                              | 176/224 [00:11<00:03, 14.57it/s] 79%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                             | 178/224 [00:12<00:03, 14.54it/s] 80%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                            | 180/224 [00:12<00:03, 14.66it/s] 81%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                           | 182/224 [00:12<00:02, 14.83it/s] 82%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                         | 184/224 [00:12<00:02, 14.80it/s] 83%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                        | 186/224 [00:12<00:02, 14.76it/s] 84%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                       | 188/224 [00:12<00:02, 14.69it/s] 85%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                     | 190/224 [00:12<00:02, 14.95it/s] 86%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                    | 192/224 [00:12<00:02, 15.08it/s] 87%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                   | 194/224 [00:13<00:02, 14.59it/s] 88%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                  | 196/224 [00:13<00:01, 14.60it/s] 88%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                | 198/224 [00:13<00:01, 14.70it/s] 89%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌               | 200/224 [00:13<00:01, 14.75it/s] 90%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊              | 202/224 [00:13<00:01, 14.73it/s] 91%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏            | 204/224 [00:13<00:01, 14.91it/s] 92%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍           | 206/224 [00:13<00:01, 14.76it/s] 93%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋          | 208/224 [00:14<00:01, 14.68it/s] 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████         | 210/224 [00:14<00:00, 14.91it/s] 95%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎       | 212/224 [00:14<00:00, 14.94it/s] 96%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌      | 214/224 [00:14<00:00, 15.01it/s] 96%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊     | 216/224 [00:14<00:00, 14.83it/s] 97%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏   | 218/224 [00:14<00:00, 14.81it/s] 98%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍  | 220/224 [00:14<00:00, 14.73it/s] 99%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋ | 222/224 [00:14<00:00, 14.73it/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 224/224 [00:15<00:00, 14.85it/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 224/224 [00:15<00:00, 14.83it/s]
+n of comparison records: 224
+================================================================================
+tl_top3_divide_all_dist_raw_weights_last_layer
+Comparing data... 
+n of human data: 92
+n of machine data: 3
+  0%|                                                                                                                                                           | 0/92 [00:00<?, ?it/s]No machine data for triangle_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for multithread_Q2.cpp
+No machine data for hannoi_Q3.py
+No machine data for triangle_Q3.py
+No machine data for triangle_Q1.cs
+No machine data for multithread_Q1.cs
+No machine data for Nqueens_Q2.cpp
+  9%|████████████▌                                                                                                                                    | 8/92 [00:00<00:00, 4699.50it/s]
+Traceback (most recent call last):
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/comparator.py", line 430, in <module>
+    cli()
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/comparator.py", line 390, in compare
+    df_comparison = compare_data(
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/comparator.py", line 106, in compare_data
+    c_human_data, c_machine_data = transformation_fn(
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/transformation_functions.py", line 626, in remove_base_human_behavior
+    base_values_hum, start_position_hum = read_probability_and_fill(
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/transformation_functions.py", line 550, in read_probability_and_fill
+    df_base = pd.read_csv(path_csv_probabilities)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 934, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1218, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/pandas/io/common.py", line 786, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/eaftan/copilot-attention/data/eye_tracking_attention/eye_vXX_test/decay_0.1_Salesforce_codegen-350M-mono/data_avg_followup/df_base_all_prob_based_on_distance_rebuttal.csv'

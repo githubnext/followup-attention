@@ -1,0 +1,32 @@
+# This folder describes the parameters to run an attention extraction job
+
+# DESCRIPTION
+# This experiment iterates over a series of snippets, produces an output and
+# saves the raw model output, which include the generated sequence and the
+# attention weights.
+# At the same time, another txt file is created to include the generated text,
+# so that it is freely available to inspect.
+# Some heatmaps will also be produced for some sandomly sampled tokens, among
+# the newly generated ones.
+
+prompt_folder: ./data/prompt/exp_v01
+model_output_folder: ./data/model_output/exp_v01
+analysis_folder: ./data/analysis/exp_v01
+local_model_folder: ./huggingface_models
+
+
+# if the stop_signal_line is not null it means that, if the stop_signal_line
+# is in the prompt, all the lines after that will be ignored
+stop_signal_line: "#**#STOP#**#"
+
+models:
+  - EleutherAI/gpt-neo-125M
+
+number_of_seeds: 1
+number_of_tokens: 100  # use -1 for open-ended generation
+number_of_source_code_heatmaps: 2
+
+extract_attention: true
+
+save_raw_model_output: true
+

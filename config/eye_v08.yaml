@@ -1,0 +1,103 @@
+# Config Setting for processing Eye-Tracking Data
+
+# important input/output directories
+
+# where to find the participants' data
+folder_participants: ./data/eye_tracking_studies/batch_2022_08_03
+
+# where to find the source code snippets attended by the participants
+folder_questions: ./eye_tracking/samples_batch_2022_08_03
+
+# where to save the resulting attention weights and outputs.
+folder_output: ./data/eye_tracking_attention/eye_v08
+
+
+# Participants under study.
+# Their data should be placed in the folder_participants directory.
+# The name is the name of the subdirectory
+# The zoom refers to the zoom with which the user run the experiment.
+# The tasks is a list of integer referring to the indices of the fixation.csv
+# files and the corresponding .avi video file.
+participants:
+  - name: UbeerU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+  - name: UbottleU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+  - name: UdragonU
+    zoom: M
+    tasks: [1, 2, 3, 4]
+  - name: UbagU
+    zoom: M
+    tasks: [0, 2, 3, 4]
+  - name: UearthU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+
+# these parameters influence how to distribute the attention in one (x, y)
+# point of the screen to the neighboring characters.
+# This should consider the fovea region, the distance from the screen and the
+# screen size.
+attention_parameters:
+  # motivation: http://www.learning-systems.ch/multimedia/vis_e02.htm
+  horizontal_attention_span: 4
+  vertical_attention_span: 1
+
+
+# these parameters are
+followup_attention:
+  decay: 1
+  model_tokenizer: Salesforce/codegen-16B-multi
+  model_folder: /mnt/huggingface_models
+  normalization: null # null, turn_lines_into_prob_distrib
+  force_model_tokens: true
+  levels:
+    # - line
+    - token
+
+
+# Since the first experiments contained tab characters which were displayed
+# in an ambiguous way by vscode (aka some tabs counted as 4 spaces and others
+# counted as 1 space).
+manual_tab_replacements:
+  - find: "towerOfHanoi(n, 'A', 'C', 'B');\treturn 0;"
+    replace: "towerOfHanoi(n, 'A', 'C', 'B'); return 0;"
+  - find: "					   {0, 0, 0, 0},"
+    replace: "                       {0, 0, 0, 0},"
+  - find: "					   {0, 0, 0, 0},"
+    replace: "                       {0, 0, 0, 0},"
+  - find: "					   {0, 0, 0, 0}};"
+    replace: "                       {0, 0, 0, 0}};"
+
+
+# resolution of the screen
+screen_resolution:
+  pixel_screen_width: 1920
+  pixel_screen_height: 1080
+
+# DELL ULTRASHARP U2414HB 23.8" (metrics: mm)
+screen_size:
+  width_mm: 527.04
+  height_mm: 296.46
+
+screen_distance_mm: 300
+
+# parameters to detect the size of the screen via template matching method
+# based on computer vision
+zoom_dependant_parameters:
+  M:  # zoom level keyword
+    path_marker_top_left: ./data/eye_tracking_studies/markers/top_left_marker.png
+    path_marker_bottom_right: ./data/eye_tracking_studies/markers/bottom_right_marker_cropped.png
+    top_left_offsets: [182, 109]
+    bottom_right_offsets: [107, 6]
+    # number of visible lines and columns given this zoom level
+    n_lines: 26
+    n_col: 97
+  L:
+    path_marker_top_left: ./data/eye_tracking_studies/markers/top_left_marker_zoomed.png
+    path_marker_bottom_right: ./data/eye_tracking_studies/markers/bottom_right_marker_zoomed.png
+    top_left_offsets: [220, 125]
+    bottom_right_offsets: [90, -25]
+    n_lines: 20
+    n_col: 71

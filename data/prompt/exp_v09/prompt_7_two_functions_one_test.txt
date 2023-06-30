@@ -1,0 +1,20 @@
+def count_upper(s):
+    """
+    Given a string s, count the number of uppercase vowels in even indices.
+    
+    """
+    count = 0
+    for i in range(0,len(s),2):
+        if s[i] in "AEIOU":
+            count += 1
+    return count
+
+
+def unique(l: list):
+    """Return sorted unique elements in a list
+    """
+    return sorted(list(set(l)))
+
+
+# Write a test for the function count_upper below
+assert count_upper(

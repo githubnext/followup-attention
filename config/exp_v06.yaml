@@ -1,0 +1,90 @@
+# This folder describes the parameters to run an attention extraction job
+
+# DESCRIPTION
+# This experiment extract the attention from the snippets attended by the
+# human eye tracking experiment
+
+input_data_folder: ./data/prompt/exp_v06
+ground_truth_folder: ./data/ground_truth_attention/exp_v06
+output_data_folder: ./data/model_output/exp_v06
+local_model_folder: /mnt/huggingface_models
+
+
+
+# if the stop_signal_line is not null it means that, if the stop_signal_line
+# is in the prompt, all the lines after that will be ignored
+stop_signal_line: "Answer:"
+
+# The model used in the experiment are those uncommented.
+# The others listed here have been tested (and are available on gpt-j-3 VM)
+# if they are not available on your machine use the download_model script.
+models:
+  - Salesforce/codegen-16B-multi
+#  - Salesforce/codegen-16B-mono
+#  - Salesforce/codegen-350M-mono
+#  - EleutherAI/gpt-neo-125M
+
+
+
+
+
+# define the propertis of the prompt if you wish to generate them
+# automatically
+prompt_creation_strategy: # IGNORED in exp_v06
+  name: 'assignment_chain'
+  type: 'creator'
+  attention_level: 'line'
+  n_prompts: 10
+  kwargs:
+    seed: 42
+    n_assignments: 6
+    init_max_int_value: 100
+    init_min_int_value: 0
+    n_arithmetic_ops: 4
+    allow_reuse_of_derived_nodes: true
+    distance_fn: naive
+    custom_prompt: 'print(<RELEVANT_VARIABLE>) # prints the value "'
+    arithmetic_ops:
+      - symbol: "+"
+        min_n_args: 2
+        max_n_args: 5
+      - symbol: "-"
+        min_n_args: 2
+        max_n_args: 5
+      - symbol: "/"
+        min_n_args: 2
+        max_n_args: 2
+      - symbol: "*"
+        min_n_args: 2
+        max_n_args: 2
+
+
+
+# We query the model over a series of snippet and we saves the model output as:
+# - generated text
+# - attention matrix (typically condensed on both layer and head dim)
+# - metadata (e.g. info on tokenization used, text prompt and generated)
+generation:  # refers to the generative model
+  # UNUSED number_of_seeds: 1
+  number_of_tokens: 100  # use -1 for open-ended generation
+  max_time_in_seconds: 60  # use -1 for infinite time
+  temperature: 1.0
+
+
+extract_attention: true
+
+attention:
+  # min, max, mean, sum, keep
+  strategy_reduce_head: keep
+  # min, max, mean, sum, keep
+  strategy_reduce_layer: keep
+  # do not normalize
+  strategy_normalize_tokens: None
+
+save_attention_matrix: true
+# UNUSED number_of_source_code_heatmaps: 2
+
+
+# this is typically to very large, it would saturate the memory too quickly.
+save_raw_model_output: false
+

@@ -1,0 +1,208 @@
+human_att_folder: ./data/eye_tracking_attention/eye_v10
+machine_att_folder: ./data/model_output/exp_v10/{{model_short_name}}_rebuttal
+output_comparison_folder: ./data/comparisons/cmp_v06/{{model_short_name}}_rebuttal
+
+comparisons:
+  - name: plain_weights
+    type: vector
+    comparison_function: spearman_rank
+    transformations:
+      - name: convert_to_char_level
+        kwargs:
+          mapping_from_token_to_char: equal_share
+      - name: convert_vect_to_probabilities
+    human:
+      subfolder: att_weights
+      file_extension: '.npy'
+      tokenizer: {{model_huggingface_name}}
+      model_folder: {{local_model_folder}}
+      suffix: _humans
+      transformations: []
+    machine:
+      - subfolder: vector_naive_max_plus_mean_of_followers
+        suffix: _meanfollowers
+        file_extension: '.npy'
+      - subfolder: vector_naive_mean_plus_mean_of_followers
+        suffix: _mean_meanfollowers
+        file_extension: '.npy'
+
+  - name: plain_weights_tokens_at_least_a_letter
+    type: vector
+    comparison_function: spearman_rank
+    transformations:
+      - name: truncate_human_visible_tokens
+      - name: at_least_one_letter
+    human:
+      subfolder: att_weights_{{underscore_model_huggingface_name}}
+      file_extension: '.npy'
+      tokenizer: {{model_huggingface_name}}
+      model_folder: {{local_model_folder}}
+      suffix: _humans
+      transformations: []
+    machine:
+      - subfolder: vector_naive_max_plus_mean_of_followers
+        suffix: _meanfollowers
+        file_extension: '.npy'
+      - subfolder: vector_naive_mean_plus_mean_of_followers
+        suffix: _mean_meanfollowers
+        file_extension: '.npy'
+
+  # ==========================================================================
+  # TOP 3 - LINE - REMOVE BASELINE DISTRIBUTION
+  # ==========================================================================
+  - name: tl_top3_divide_all_dist
+    type: matrix
+    comparison_function: top_3_overlap
+    comparison_output_column: top_3_list
+    comparison_output_subcolumns: ['value', 'token_index', 'top_k_groud_truth', 'top_k_machine']
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+      - name: remove_base_human_behavior
+        kwargs:
+          mode: divide
+          min_base_value: 0.00001
+          path_csv_normalization_prob_human: /home/eaftan/copilot-attention/data/eye_tracking_attention/eye_v10/decay_{{decay}}_{{underscore_model_huggingface_name}}/data_avg_followup/df_base_all_prob_based_on_distance.csv
+          modelling_based_on_abs_position: false
+          col_name_probability: prob_to_go_to_target_mean
+          col_name_distance: distance_current_to_target
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+    human:
+      subfolder: decay_{{decay}}_{{underscore_model_huggingface_name}}/data_followup_tokens_tokens_model
+      file_extension: '.npy'
+      tokenizer: {{model_huggingface_name}}
+      model_folder: {{local_model_folder}}
+      suffix: _humans
+    machine:
+    # Gaussian baseline
+      - subfolder: att_gaussian_neighbors_1000
+        suffix: _gauss_neigh_1000
+        file_extension: '.npy'
+    # Raw weights
+      - subfolder: raw_weights_last_layer
+        suffix: _raw_weights_last_layer
+        file_extension: '.npy'
+      - subfolder: raw_weights_first_layer
+        suffix: _raw_weights_first_layer
+        file_extension: '.npy'
+      - subfolder: raw_weights_last_layer_sym
+        suffix: _raw_weights_last_layer_sym
+        file_extension: '.npy'
+      - subfolder: raw_weights_first_layer_sym
+        suffix: _raw_weights_first_layer_sym
+        file_extension: '.npy'
+    # Post-Processing
+      - subfolder: followup
+        suffix: _followup
+        file_extension: '.npy'
+      - subfolder: naive_max
+        suffix: _naivemax
+        file_extension: '.npy'
+      - subfolder: naive_mean
+        suffix: _naivemean
+        file_extension: '.npy'
+      - subfolder: naive_max_sym
+        suffix: _naivemax_sym
+        file_extension: '.npy'
+      - subfolder: naive_mean_sym
+        suffix: _naivemean_sym
+        file_extension: '.npy'
+    # Rollout
+      - subfolder: rollout_condensed_all
+        suffix: _rollout_condensed_all
+        file_extension: '.npy'
+    # Heuristics
+      - subfolder: att_uniform_matrix
+        suffix: _uniform
+        file_extension: '.npy'
+      - subfolder: att_copy_cat_matrix
+        suffix: _copycat
+        file_extension: '.npy'
+
+  # ==========================================================================
+  # SPEARMAN RANK - LINE - REMOVE BASELINE DISTRIBUTION
+  # ==========================================================================
+  - name: tl_spearman_divide_all_dist
+    type: matrix
+    comparison_function: spearman_rank_by_line
+    comparison_output_column: spearman_res_list
+    comparison_output_subcolumns: ['corr', 'pval', 'token_index']
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+      - name: remove_base_human_behavior
+        kwargs:
+          mode: divide
+          min_base_value: 0.00001
+          path_csv_normalization_prob_human: /home/eaftan/copilot-attention/data/eye_tracking_attention/eye_v10/decay_{{decay}}_{{underscore_model_huggingface_name}}/data_avg_followup/df_base_all_prob_based_on_distance.csv
+          modelling_based_on_abs_position: false
+          col_name_probability: prob_to_go_to_target_mean
+          col_name_distance: distance_current_to_target
+      - name: convert_to_token_to_lines
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+      - name: keep_only_lines_seen_by_model
+        kwargs:
+          special_char_mapping:
+            Ġ: ' '
+            Ċ: '\n'
+    human:
+      subfolder: decay_{{decay}}_{{underscore_model_huggingface_name}}/data_followup_tokens_tokens_model
+      file_extension: '.npy'
+      tokenizer: {{model_huggingface_name}}
+      model_folder: {{local_model_folder}}
+      suffix: _humans
+    machine:
+    # Gaussian baseline
+      - subfolder: att_gaussian_neighbors_1000
+        suffix: _gauss_neigh_1000
+        file_extension: '.npy'
+    # Raw weights
+      - subfolder: raw_weights_last_layer
+        suffix: _raw_weights_last_layer
+        file_extension: '.npy'
+      - subfolder: raw_weights_first_layer
+        suffix: _raw_weights_first_layer
+        file_extension: '.npy'
+      - subfolder: raw_weights_last_layer_sym
+        suffix: _raw_weights_last_layer_sym
+        file_extension: '.npy'
+      - subfolder: raw_weights_first_layer_sym
+        suffix: _raw_weights_first_layer_sym
+        file_extension: '.npy'
+    # Post-Processing
+      - subfolder: followup
+        suffix: _followup
+        file_extension: '.npy'
+      - subfolder: naive_max
+        suffix: _naivemax
+        file_extension: '.npy'
+      - subfolder: naive_mean
+        suffix: _naivemean
+        file_extension: '.npy'
+      - subfolder: naive_max_sym
+        suffix: _naivemax_sym
+        file_extension: '.npy'
+      - subfolder: naive_mean_sym
+        suffix: _naivemean_sym
+        file_extension: '.npy'
+    # Rollout
+      - subfolder: rollout_condensed_all
+        suffix: _rollout_condensed_all
+        file_extension: '.npy'
+    # Heuristics
+      - subfolder: att_uniform_matrix
+        suffix: _uniform
+        file_extension: '.npy'
+      - subfolder: att_copy_cat_matrix
+        suffix: _copycat
+        file_extension: '.npy'

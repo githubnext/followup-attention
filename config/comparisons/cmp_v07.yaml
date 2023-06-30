@@ -1,0 +1,52 @@
+# This config decsribe how human and models are compared and on what
+
+# CHANGELOG:
+# This is version is the first to allow the speicification of multiple
+# machine subfolders so to condense all the comparisosn with the same human
+# data and the same distance metric in a single comaprison.
+# A new csv for each machine subfolder is created (use the suffix to give
+# them unique names).
+
+# This is a simple test to double check whether:
+# 1. humans are compared only on the same file and on the same question and never
+# on the same file but different questions.
+# 2. the machine is always compared to all the humans performing the task,
+# namely we do not perform any aggregation.
+
+
+human_att_folder: ./data/eye_tracking_attention/eye_v10
+machine_att_folder: ./data/model_output/exp_v10/gptj_rebuttal
+output_comparison_folder: ./data/comparisons/cmp_v07
+
+
+comparisons:
+# the type can be:
+# - vectors: if we compare vectors of N elements as the tokens in the prompt
+# - matrix: if we compare matrices of size N x N where N are the promt tokens
+# - transform_functions: the functions to apply to the data before they are
+#   compared. Note that if more than one transformation is there they are
+#   applied sequentially in the given order.
+#   Note that, beside a name, each transformation can have also a "kwargs" key
+#   with the additional argument that the function might take.
+  - name: plain_weights
+    type: vector
+    comparison_function: spearman_rank
+    transformations:
+      - name: convert_to_char_level
+        kwargs:
+          mapping_from_token_to_char: equal_share
+      - name: convert_vect_to_probabilities
+    human:
+      subfolder: att_weights
+      file_extension: '.npy'
+      tokenizer: EleutherAI/gpt-j-6B
+      model_folder: /mnt/huggingface_models
+      suffix: _humans
+      transformations: []
+    machine:
+      - subfolder: vector_naive_max_plus_mean_of_followers
+        suffix: _meanfollowers
+        file_extension: '.npy'
+      - subfolder: vector_naive_mean_plus_mean_of_followers
+        suffix: _mean_meanfollowers
+        file_extension: '.npy'

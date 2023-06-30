@@ -1,0 +1,439 @@
+# This folder describes the parameters to run an attention extraction job
+
+# DESCRIPTION
+# This experiment tuns INCODER
+
+# Changelog:
+# - added the option to query the model more than once
+# - added support for INCODER
+
+#input_data_folder: ./data/prompt/exp_v10
+input_data_folder: ./data/prompts_collection/sensemaking
+output_data_folder: ./data/model_output/exp_v10/incoder_rebuttal
+
+analysis_data_folder: ./data/model_output/exp_v10/incoder_rebuttal
+
+local_model_folder: /mnt/huggingface_models
+
+# if the stop_signal_line is not null it means that, if the stop_signal_line
+# is in the prompt, all the lines after that will be ignored
+stop_signal_line: "Answer:"
+
+# The model used in the experiment are those uncommented.
+# The others listed here have been tested (and are available on gpt-j-3 VM)
+# if they are not available on your machine use the download_model script.
+models:
+#  - EleutherAI/gpt-j-6B
+#  - Salesforce/codegen-16B-multi
+  - facebook/incoder-6B
+#  - Salesforce/codegen-16B-mono
+#  - Salesforce/codegen-350M-mono
+#  - EleutherAI/gpt-neo-125M
+
+
+
+# define the propertis of the prompt if you wish to generate them
+# automatically
+prompt_creation_strategy: # IGNORED in exp_v10
+  name: 'assignment_chain'
+  type: 'creator'
+  attention_level: 'line'
+  n_prompts: 10
+  kwargs:
+    seed: 42
+    n_assignments: 6
+    init_max_int_value: 100
+    init_min_int_value: 0
+    n_arithmetic_ops: 4
+    allow_reuse_of_derived_nodes: true
+    distance_fn: naive
+    custom_prompt: 'print(<RELEVANT_VARIABLE>) # prints the value "'
+    arithmetic_ops:
+      - symbol: "+"
+        min_n_args: 2
+        max_n_args: 5
+      - symbol: "-"
+        min_n_args: 2
+        max_n_args: 5
+      - symbol: "/"
+        min_n_args: 2
+        max_n_args: 2
+      - symbol: "*"
+        min_n_args: 2
+        max_n_args: 2
+
+
+
+# We query the model over a series of snippet and we saves the model output as:
+# - generated text
+# - attention matrix (typically condensed on both layer and head dim)
+# - metadata (e.g. info on tokenization used, text prompt and generated)
+generation:  # refers to the generative model
+  # UNUSED number_of_seeds: 1
+  number_of_tokens: 100  # use -1 for open-ended generation
+  max_time_in_seconds: 60  # use -1 for infinite time
+  temperature: 0.2
+  n_queries: 3
+
+
+extract_attention: true
+
+attention:
+  # min, max, mean, sum, keep
+  strategy_reduce_head: keep
+  # min, max, mean, sum, keep
+  strategy_reduce_layer: keep
+  # do not normalize
+  strategy_normalize_tokens: None
+
+
+save_attention_matrix: true
+# UNUSED number_of_source_code_heatmaps: 2
+
+
+# this is typically to very large, it would saturate the memory too quickly.
+save_raw_model_output: false
+
+
+# ANALYSIS PASSES
+# this are routines which takes the extracted attention tensor from the model
+# and perform some operations/analysis on it, producing new derived artifacts
+# in the `analysis_data_folder`.
+# e.g. compute the follow-up attention or the entropy of the attention tensor
+# each funtion takes a 6-dimension tensor as input and produces its output
+# in a new folder called with the analysis pass name
+# this analysis passes can also take json files as input. Depending on the file
+# contained in the input_folder. The filetype should be the same for all the
+# files in the input folder.
+analysis_passes:
+  - name: followup
+    input_folder: att_tensor
+    function_name: compute_followup_attention
+
+  - name: naive_max
+    input_folder: att_tensor
+    function_name: compute_naive_max_aggregation
+  - name: naive_mean
+    input_folder: att_tensor
+    function_name: compute_naive_mean_aggregation
+  - name: naive_max_sym
+    input_folder: naive_max
+    function_name: make_symmetric
+  - name: naive_mean_sym
+    input_folder: naive_mean
+    function_name: make_symmetric
+
+
+  # # VECTORS
+  - name: vector_naive_max_plus_mean_of_followers
+    input_folder: naive_max
+    function_name: compute_mean_of_followers
+  - name: vector_naive_mean_plus_mean_of_followers
+    input_folder: naive_mean
+    function_name: compute_mean_of_followers
+
+  # # RAW WEIGHTS
+  - name: raw_weights_last_layer
+    input_folder: att_tensor
+    function_name: raw_weights_last_layer
+  - name: raw_weights_first_layer
+    input_folder: att_tensor
+    function_name: raw_weights_first_layer
+  - name: raw_weights_last_layer_sym
+    input_folder: raw_weights_last_layer
+    function_name: make_symmetric
+  - name: raw_weights_first_layer_sym
+    input_folder: raw_weights_first_layer
+    function_name: make_symmetric
+
+  # # ROLLOUT
+  - name: att_roll_layer_matrix
+    input_folder: att_tensor
+    function_name: compute_attention_rollout_from_tensor
+  - name: rollout_condensed_all
+    input_folder: att_roll_layer_matrix
+    function_name: sum_over_1st_dimension
+  # - name: rollout_last_layer
+  #   input_folder: att_roll_layer_matrix
+  #   function_name: extract_single_slice
+  #   kwargs:
+  #     dim_to_extract: 0
+  #     slice_to_extract: -1
+  # - name: rollout_first_layer
+  #   input_folder: att_roll_layer_matrix
+  #   function_name: extract_single_slice
+  #   kwargs:
+  #     dim_to_extract: 0
+  #     slice_to_extract: 0
+  # - name: rollout_last_half_summed
+  #   input_folder: att_roll_layer_matrix
+  #   function_name: extract_half_and_sum
+  #   kwargs:
+  #     dim_to_extract: 0
+  #     half_to_extract: upper
+  # - name: rollout_first_half_summed
+  #   input_folder: att_roll_layer_matrix
+  #   function_name: extract_half_and_sum
+  #   kwargs:
+  #     dim_to_extract: 0
+  #     half_to_extract: lower
+
+
+  # # BASELINE - MODEL-AGNOSTIC
+  - name: att_uniform_matrix
+    input_folder: att_tensor
+    function_name: generate_uniform_attention
+  - name: att_copy_cat_matrix
+    input_folder: metadata
+    function_name: generate_copy_cat_attention
+  # - name: att_gaussian_neighbors_10
+  #   input_folder: metadata
+  #   function_name: generate_gaussian_attention_in_neighborhood_from_metadata
+  #   kwargs:
+  #     sigma: 10
+  # - name: att_gaussian_neighbors_20
+  #   input_folder: metadata
+  #   function_name: generate_gaussian_attention_in_neighborhood_from_metadata
+  #   kwargs:
+  #     sigma: 20
+  # - name: att_gaussian_neighbors_30
+  #   input_folder: metadata
+  #   function_name: generate_gaussian_attention_in_neighborhood_from_metadata
+  #   kwargs:
+  #     sigma: 30
+  # - name: att_gaussian_neighbors_200
+  #   input_folder: metadata
+  #   function_name: generate_gaussian_attention_in_neighborhood_from_metadata
+  #   kwargs:
+  #     sigma: 200
+  # - name: att_gaussian_neighbors_400
+  #   input_folder: metadata
+  #   function_name: generate_gaussian_attention_in_neighborhood_from_metadata
+  #   kwargs:
+  #     sigma: 400
+  # - name: att_gaussian_neighbors_600
+  #   input_folder: metadata
+  #   function_name: generate_gaussian_attention_in_neighborhood_from_metadata
+  #   kwargs:
+  #     sigma: 600
+  - name: att_gaussian_neighbors_1000
+    input_folder: metadata
+    function_name: generate_gaussian_attention_in_neighborhood_from_metadata
+    kwargs:
+      sigma: 1000
+
+  # # TRANSITIVE ATTENTION
+  # - name: att_trans_layer_matrix_left
+  #   input_folder: att_tensor
+  #   function_name: compute_transitive_attention
+  #   kwargs:
+  #     condense_head_strategy: sum
+  #     alpha: 0.5
+  #     beta: 0.5
+  #     mult_direction: left
+
+  # GRID SEARCH on LEFT
+  # - name: att_trans_layer_matrix_left_0_0
+  #   input_folder: att_tensor
+  #   function_name: compute_transitive_attention
+  #   kwargs:
+  #     condense_head_strategy: sum
+  #     alpha: 0
+  #     beta: 0
+  #     mult_direction: left
+  # - name: att_trans_layer_matrix_left_0_50
+  #   input_folder: att_tensor
+  #   function_name: compute_transitive_attention
+  #   kwargs:
+  #     condense_head_strategy: sum
+  #     alpha: 0
+  #     beta: 0.5
+  #     mult_direction: left
+  # - name: att_trans_layer_matrix_left_0_100
+  #   input_folder: att_tensor
+  #   function_name: compute_transitive_attention
+  #   kwargs:
+  #     condense_head_strategy: sum
+  #     alpha: 0
+  #     beta: 1
+  #     mult_direction: left
+  # - name: att_trans_layer_matrix_left_50_0
+  #   input_folder: att_tensor
+  #   function_name: compute_transitive_attention
+  #   kwargs:
+  #     condense_head_strategy: sum
+  #     alpha: 0.5
+  #     beta: 0
+  #     mult_direction: left
+  # - name: att_trans_layer_matrix_left_50_50
+  #   input_folder: att_tensor
+  #   function_name: compute_transitive_attention
+  #   kwargs:
+  #     condense_head_strategy: sum
+  #     alpha: 0.5
+  #     beta: 0.5
+  #     mult_direction: left
+  # - name: att_trans_layer_matrix_left_50_100
+  #   input_folder: att_tensor
+  #   function_name: compute_transitive_attention
+  #   kwargs:
+  #     condense_head_strategy: sum
+  #     alpha: 0
+  #     beta: 1
+  #     mult_direction: left
+  # - name: att_trans_layer_matrix_left_100_0
+  #   input_folder: att_tensor
+  #   function_name: compute_transitive_attention
+  #   kwargs:
+  #     condense_head_strategy: sum
+  #     alpha: 1
+  #     beta: 0
+  #     mult_direction: left
+  # - name: att_trans_layer_matrix_left_100_50
+  #   input_folder: att_tensor
+  #   function_name: compute_transitive_attention
+  #   kwargs:
+  #     condense_head_strategy: sum
+  #     alpha: 1
+  #     beta: 0.5
+  #     mult_direction: left
+  # - name: att_trans_layer_matrix_left_100_100
+  #   input_folder: att_tensor
+  #   function_name: compute_transitive_attention
+  #   kwargs:
+  #     condense_head_strategy: sum
+  #     alpha: 1
+  #     beta: 1
+  #     mult_direction: left
+
+  # # RIGHT MULTIPLICATION
+  # - name: att_trans_layer_matrix_right
+  #   input_folder: att_tensor
+  #   function_name: compute_transitive_attention
+  #   kwargs:
+  #     condense_head_strategy: sum
+  #     alpha: 0.5
+  #     beta: 0.5
+  #     mult_direction: right
+
+
+  # # FOLLOW-UP ABLATION: No. LAYERS
+  - name: followup_all_layers
+    input_folder: att_tensor
+    function_name: compute_followup_attention_all_layers
+  - name: followup_last_layer
+    input_folder: followup_all_layers
+    function_name: extract_single_slice
+    kwargs:
+      dim_to_extract: 0
+      slice_to_extract: -1
+  - name: followup_first_layer
+    input_folder: followup_all_layers
+    function_name: extract_single_slice
+    kwargs:
+      dim_to_extract: 0
+      slice_to_extract: 0
+  - name: followup_last_half_summed
+    input_folder: followup_all_layers
+    function_name: extract_half_and_sum
+    kwargs:
+      dim_to_extract: 0
+      half_to_extract: upper
+  - name: followup_first_half_summed
+    input_folder: followup_all_layers
+    function_name: extract_half_and_sum
+    kwargs:
+      dim_to_extract: 0
+      half_to_extract: lower
+  - name: followup_scaled
+    input_folder: att_tensor
+    function_name: compute_followup_attention_scaled
+
+  - name: followup_layer_pair_0
+    input_folder: followup_all_layers
+    function_name: extract_single_slice
+    kwargs:
+      dim_to_extract: 0
+      slice_to_extract: 0
+  - name: followup_layer_pair_3
+    input_folder: followup_all_layers
+    function_name: extract_single_slice
+    kwargs:
+      dim_to_extract: 0
+      slice_to_extract: 3
+  - name: followup_layer_pair_6
+    input_folder: followup_all_layers
+    function_name: extract_single_slice
+    kwargs:
+      dim_to_extract: 0
+      slice_to_extract: 6
+  - name: followup_layer_pair_9
+    input_folder: followup_all_layers
+    function_name: extract_single_slice
+    kwargs:
+      dim_to_extract: 0
+      slice_to_extract: 9
+  - name: followup_layer_pair_12
+    input_folder: followup_all_layers
+    function_name: extract_single_slice
+    kwargs:
+      dim_to_extract: 0
+      slice_to_extract: 12
+  - name: followup_layer_pair_15
+    input_folder: followup_all_layers
+    function_name: extract_single_slice
+    kwargs:
+      dim_to_extract: 0
+      slice_to_extract: 15
+  - name: followup_layer_pair_18
+    input_folder: followup_all_layers
+    function_name: extract_single_slice
+    kwargs:
+      dim_to_extract: 0
+      slice_to_extract: 18
+  - name: followup_layer_pair_21
+    input_folder: followup_all_layers
+    function_name: extract_single_slice
+    kwargs:
+      dim_to_extract: 0
+      slice_to_extract: 21
+  - name: followup_layer_pair_24
+    input_folder: followup_all_layers
+    function_name: extract_single_slice
+    kwargs:
+      dim_to_extract: 0
+      slice_to_extract: 24
+  - name: followup_layer_pair_27
+    input_folder: followup_all_layers
+    function_name: extract_single_slice
+    kwargs:
+      dim_to_extract: 0
+      slice_to_extract: 27
+  - name: followup_layer_pair_30
+    input_folder: followup_all_layers
+    function_name: extract_single_slice
+    kwargs:
+      dim_to_extract: 0
+      slice_to_extract: 30
+  - name: followup_layer_pair_32
+    input_folder: followup_all_layers
+    function_name: extract_single_slice
+    kwargs:
+      dim_to_extract: 0
+      slice_to_extract: 32
+
+  # # FOLLOW-UP ABLATION: No. GENERATED TOKENS
+  - name: att_tensor_max_10_predictions
+    input_folder: att_tensor
+    function_name: max_10_predictions
+    pass_metadata: true
+  - name: att_tensor_max_50_predictions
+    input_folder: att_tensor
+    function_name: max_50_predictions
+  - name: followup_max_10_all_layers
+    input_folder: att_tensor_max_10_predictions
+    function_name: compute_followup_attention
+  - name: followup_max_50_all_layers
+    input_folder: att_tensor_max_50_predictions
+    function_name: compute_followup_attention
+    pass_metadata: true

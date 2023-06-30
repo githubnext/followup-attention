@@ -1,0 +1,20 @@
+d = "world"
+e = False
+f = 9
+b = 0
+c = "world"
+a = False
+e = min( b, )
+c = c
+b = e
+f = min( e, f, c, )
+f = e * d
+f = b + f
+b = e
+f = max( f, )
+a = b + b
+a = abs( b, )
+a = min( c, b, )
+c = max( b, c, d, )
+e = c / 5 + c
+if (a == 

@@ -1,0 +1,104 @@
+input_data_folder: data/prompts_collection/sensemaking
+output_data_folder: data/model_output/exp_v10/{{model_short_name}}_rebuttal
+analysis_data_folder: ./data/model_output/exp_v10/{{model_short_name}}_rebuttal
+local_model_folder: {{local_model_folder}}
+# if the stop_signal_line is not null it means that, if the stop_signal_line
+# is in the prompt, all the lines after that will be ignored
+stop_signal_line: "Answer:"
+models:
+  - {{model_huggingface_name}}
+
+# We query the model over a series of snippet and we saves the model output as:
+# - generated text
+# - attention matrix (typically condensed on both layer and head dim)
+# - metadata (e.g. info on tokenization used, text prompt and generated)
+generation:  # refers to the generative model
+  number_of_tokens: 100  # use -1 for open-ended generation
+  max_time_in_seconds: 60  # use -1 for infinite time
+  temperature: 0.2
+  n_queries: 3
+extract_attention: true
+
+attention:
+  # min, max, mean, sum, keep
+  strategy_reduce_head: keep
+  # min, max, mean, sum, keep
+  strategy_reduce_layer: keep
+  # do not normalize
+  strategy_normalize_tokens: None
+
+save_attention_matrix: true
+save_raw_model_output: false
+
+
+# ANALYSIS PASSES
+# this are routines which takes the extracted attention tensor from the model
+# and perform some operations/analysis on it, producing new derived artifacts
+# in the `analysis_data_folder`.
+# e.g. compute the follow-up attention or the entropy of the attention tensor
+# each funtion takes a 6-dimension tensor as input and produces its output
+# in a new folder called with the analysis pass name
+# this analysis passes can also take json files as input. Depending on the file
+# contained in the input_folder. The filetype should be the same for all the
+# files in the input folder.
+analysis_passes:
+  - name: followup
+    input_folder: att_tensor
+    function_name: compute_followup_attention
+
+  - name: naive_max
+    input_folder: att_tensor
+    function_name: compute_naive_max_aggregation
+  - name: naive_mean
+    input_folder: att_tensor
+    function_name: compute_naive_mean_aggregation
+  - name: naive_max_sym
+    input_folder: naive_max
+    function_name: make_symmetric
+  - name: naive_mean_sym
+    input_folder: naive_mean
+    function_name: make_symmetric
+
+
+  # # VECTORS
+  - name: vector_naive_max_plus_mean_of_followers
+    input_folder: naive_max
+    function_name: compute_mean_of_followers
+  - name: vector_naive_mean_plus_mean_of_followers
+    input_folder: naive_mean
+    function_name: compute_mean_of_followers
+
+  # # RAW WEIGHTS
+  - name: raw_weights_last_layer
+    input_folder: att_tensor
+    function_name: raw_weights_last_layer
+  - name: raw_weights_first_layer
+    input_folder: att_tensor
+    function_name: raw_weights_first_layer
+  - name: raw_weights_last_layer_sym
+    input_folder: raw_weights_last_layer
+    function_name: make_symmetric
+  - name: raw_weights_first_layer_sym
+    input_folder: raw_weights_first_layer
+    function_name: make_symmetric
+
+  # # ROLLOUT
+  - name: att_roll_layer_matrix
+    input_folder: att_tensor
+    function_name: compute_attention_rollout_from_tensor
+  - name: rollout_condensed_all
+    input_folder: att_roll_layer_matrix
+    function_name: sum_over_1st_dimension
+
+  # # BASELINE - MODEL-AGNOSTIC
+  - name: att_uniform_matrix
+    input_folder: att_tensor
+    function_name: generate_uniform_attention
+  - name: att_copy_cat_matrix
+    input_folder: metadata
+    function_name: generate_copy_cat_attention
+  - name: att_gaussian_neighbors_1000
+    input_folder: metadata
+    function_name: generate_gaussian_attention_in_neighborhood_from_metadata
+    kwargs:
+      sigma: 1000

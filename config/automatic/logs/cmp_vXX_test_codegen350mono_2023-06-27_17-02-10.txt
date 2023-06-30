@@ -1,0 +1,1373 @@
+Using config file information.
+Loading metadata...
+n of data read:  3
+n of data read:  92
+Pre-loading human and machine attention files...
+n of data read:  92
+att_weights_Salesforce_codegen-350M-mono (human) loaded.
+n of data read:  3
+Shape of one element: (324,)
+vector_naive_max_plus_mean_of_followers (machine) loaded.
+n of data read:  92
+decay_0.1_Salesforce_codegen-350M-mono/data_followup_tokens_tokens_model (human) loaded.
+n of data read:  3
+Shape of one element: (324, 324)
+raw_weights_last_layer (machine) loaded.
+n of data read:  3
+Shape of one element: (324, 324)
+raw_weights_first_layer (machine) loaded.
+n of data read:  3
+Shape of one element: (324, 324)
+followup (machine) loaded.
+n of data read:  3
+Shape of one element: (324, 324)
+naive_max (machine) loaded.
+================================================================================
+plain_weights_tokens_at_least_a_letter_meanfollowers
+Comparing data... 
+n of human data: 92
+n of machine data: 3
+  0%|                                                                                                                                      | 0/92 [00:00<?, ?it/s]No machine data for triangle_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for multithread_Q2.cpp
+No machine data for hannoi_Q3.py
+No machine data for triangle_Q3.py
+No machine data for triangle_Q1.cs
+No machine data for multithread_Q1.cs
+No machine data for Nqueens_Q2.cpp
+No machine data for tree_Q1.cs
+No machine data for Nqueens_Q1.cs
+No machine data for tree_Q2.cpp
+No machine data for Nqueens_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q1.cpp
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q3.py
+No machine data for tree_Q2.cs
+No machine data for multithread_Q3.cs
+No machine data for hannoi_Q3.cs
+No machine data for multithread_Q2.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for multithread_Q1.cs
+No machine data for triangle_Q1.py
+No machine data for tree_Q3.cpp
+No machine data for tree_Q1.cs
+No machine data for hannoi_Q2.cs
+No machine data for triangle_Q3.py
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q1.cs
+No machine data for tree_Q3.cs
+No machine data for Nqueens_Q1.py
+No machine data for triangle_Q3.cs
+No machine data for hannoi_Q1.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q2.py
+No machine data for Nqueens_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for multithread_Q1.cs
+No machine data for hannoi_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for triangle_Q3.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q2.py
+No machine data for multithread_Q1.cs
+No machine data for multithread_Q3.py
+No machine data for tree_Q1.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for triangle_Q3.cs
+No machine data for tree_Q1.py
+No machine data for tree_Q1.py
+No machine data for tree_Q3.py
+No machine data for tree_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for tree_Q3.cpp
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q3.cs
+No machine data for hannoi_Q3.py
+No machine data for Nqueens_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for tree_Q1.py
+No machine data for hannoi_Q2.cpp
+No machine data for triangle_Q1.cpp
+No machine data for hannoi_Q3.cs
+No machine data for triangle_Q2.cs
+No machine data for hannoi_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for triangle_Q2.cs
+No machine data for tree_Q2.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:00<00:00, 10455.08it/s]
+Total number of comparisons:  9
+================================================================================
+================================================================================
+Humans vs Humans of: plain_weights_tokens_at_least_a_letter
+Comparing human data... 
+n of human data a: 92
+n of human data b: 92
+n of matching pairs: 224
+  0%|                                                                                                                                     | 0/224 [00:00<?, ?it/s]  1%|█                                                                                                                            | 2/224 [00:00<00:16, 13.11it/s]  2%|██▏                                                                                                                          | 4/224 [00:00<00:15, 14.08it/s]  3%|███▎                                                                                                                         | 6/224 [00:00<00:15, 14.36it/s]  4%|████▍                                                                                                                        | 8/224 [00:00<00:15, 13.93it/s]  4%|█████▌                                                                                                                      | 10/224 [00:00<00:15, 14.00it/s]  5%|██████▋                                                                                                                     | 12/224 [00:00<00:14, 14.27it/s]  6%|███████▊                                                                                                                    | 14/224 [00:00<00:14, 14.56it/s]  7%|████████▊                                                                                                                   | 16/224 [00:01<00:14, 14.63it/s]  8%|█████████▉                                                                                                                  | 18/224 [00:01<00:14, 14.70it/s]  9%|███████████                                                                                                                 | 20/224 [00:01<00:13, 14.63it/s] 10%|████████████▏                                                                                                               | 22/224 [00:01<00:13, 14.79it/s] 11%|█████████████▎                                                                                                              | 24/224 [00:01<00:13, 14.62it/s] 12%|██████████████▍                                                                                                             | 26/224 [00:01<00:13, 14.68it/s] 12%|███████████████▌                                                                                                            | 28/224 [00:01<00:13, 14.85it/s] 13%|████████████████▌                                                                                                           | 30/224 [00:02<00:12, 15.03it/s] 14%|█████████████████▋                                                                                                          | 32/224 [00:02<00:12, 14.96it/s] 15%|██████████████████▊                                                                                                         | 34/224 [00:02<00:12, 14.96it/s] 16%|███████████████████▉                                                                                                        | 36/224 [00:02<00:12, 14.89it/s] 17%|█████████████████████                                                                                                       | 38/224 [00:02<00:12, 14.81it/s] 18%|██████████████████████▏                                                                                                     | 40/224 [00:02<00:12, 14.94it/s] 19%|███████████████████████▎                                                                                                    | 42/224 [00:02<00:12, 14.86it/s] 20%|████████████████████████▎                                                                                                   | 44/224 [00:02<00:11, 15.02it/s] 21%|█████████████████████████▍                                                                                                  | 46/224 [00:03<00:11, 14.84it/s] 21%|██████████████████████████▌                                                                                                 | 48/224 [00:03<00:11, 14.80it/s] 22%|███████████████████████████▋                                                                                                | 50/224 [00:03<00:11, 14.69it/s] 23%|████████████████████████████▊                                                                                               | 52/224 [00:03<00:11, 14.64it/s] 24%|█████████████████████████████▉                                                                                              | 54/224 [00:03<00:11, 14.53it/s] 25%|███████████████████████████████                                                                                             | 56/224 [00:03<00:11, 14.50it/s] 26%|████████████████████████████████                                                                                            | 58/224 [00:03<00:11, 14.19it/s] 27%|█████████████████████████████████▏                                                                                          | 60/224 [00:04<00:11, 14.25it/s] 28%|██████████████████████████████████▎                                                                                         | 62/224 [00:04<00:11, 14.45it/s] 29%|███████████████████████████████████▍                                                                                        | 64/224 [00:04<00:10, 14.67it/s] 29%|████████████████████████████████████▌                                                                                       | 66/224 [00:04<00:10, 14.84it/s] 30%|█████████████████████████████████████▋                                                                                      | 68/224 [00:04<00:10, 14.76it/s] 31%|██████████████████████████████████████▊                                                                                     | 70/224 [00:04<00:10, 14.66it/s] 32%|███████████████████████████████████████▊                                                                                    | 72/224 [00:04<00:10, 14.57it/s] 33%|████████████████████████████████████████▉                                                                                   | 74/224 [00:05<00:10, 14.56it/s] 34%|██████████████████████████████████████████                                                                                  | 76/224 [00:05<00:10, 14.39it/s] 35%|███████████████████████████████████████████▏                                                                                | 78/224 [00:05<00:10, 14.35it/s] 36%|████████████████████████████████████████████▎                                                                               | 80/224 [00:05<00:10, 14.32it/s] 37%|█████████████████████████████████████████████▍                                                                              | 82/224 [00:05<00:09, 14.37it/s] 38%|██████████████████████████████████████████████▌                                                                             | 84/224 [00:05<00:09, 14.47it/s] 38%|███████████████████████████████████████████████▌                                                                            | 86/224 [00:05<00:09, 14.38it/s] 39%|████████████████████████████████████████████████▋                                                                           | 88/224 [00:06<00:09, 14.26it/s] 40%|█████████████████████████████████████████████████▊                                                                          | 90/224 [00:06<00:09, 14.18it/s] 41%|██████████████████████████████████████████████████▉                                                                         | 92/224 [00:06<00:09, 14.42it/s] 42%|████████████████████████████████████████████████████                                                                        | 94/224 [00:06<00:09, 14.40it/s] 43%|█████████████████████████████████████████████████████▏                                                                      | 96/224 [00:06<00:08, 14.63it/s] 44%|██████████████████████████████████████████████████████▎                                                                     | 98/224 [00:06<00:08, 14.72it/s] 45%|██████████████████████████████████████████████████████▉                                                                    | 100/224 [00:06<00:08, 14.78it/s] 46%|████████████████████████████████████████████████████████                                                                   | 102/224 [00:07<00:08, 14.42it/s] 46%|█████████████████████████████████████████████████████████                                                                  | 104/224 [00:07<00:08, 14.48it/s] 47%|██████████████████████████████████████████████████████████▏                                                                | 106/224 [00:07<00:08, 14.33it/s] 48%|███████████████████████████████████████████████████████████▎                                                               | 108/224 [00:07<00:08, 14.50it/s] 49%|████████████████████████████████████████████████████████████▍                                                              | 110/224 [00:07<00:07, 14.63it/s] 50%|█████████████████████████████████████████████████████████████▌                                                             | 112/224 [00:07<00:07, 14.67it/s] 51%|██████████████████████████████████████████████████████████████▌                                                            | 114/224 [00:07<00:07, 14.58it/s] 52%|███████████████████████████████████████████████████████████████▋                                                           | 116/224 [00:07<00:07, 14.50it/s] 53%|████████████████████████████████████████████████████████████████▊                                                          | 118/224 [00:08<00:07, 14.44it/s] 54%|█████████████████████████████████████████████████████████████████▉                                                         | 120/224 [00:08<00:07, 14.46it/s] 54%|██████████████████████████████████████████████████████████████████▉                                                        | 122/224 [00:08<00:06, 14.70it/s] 55%|████████████████████████████████████████████████████████████████████                                                       | 124/224 [00:08<00:06, 14.57it/s] 56%|█████████████████████████████████████████████████████████████████████▏                                                     | 126/224 [00:08<00:06, 14.61it/s] 57%|██████████████████████████████████████████████████████████████████████▎                                                    | 128/224 [00:08<00:06, 14.78it/s] 58%|███████████████████████████████████████████████████████████████████████▍                                                   | 130/224 [00:08<00:06, 14.89it/s] 59%|████████████████████████████████████████████████████████████████████████▍                                                  | 132/224 [00:09<00:06, 15.02it/s] 60%|█████████████████████████████████████████████████████████████████████████▌                                                 | 134/224 [00:09<00:06, 14.94it/s] 61%|██████████████████████████████████████████████████████████████████████████▋                                                | 136/224 [00:09<00:05, 14.88it/s] 62%|███████████████████████████████████████████████████████████████████████████▊                                               | 138/224 [00:09<00:05, 14.77it/s] 62%|████████████████████████████████████████████████████████████████████████████▉                                              | 140/224 [00:09<00:05, 14.66it/s] 63%|█████████████████████████████████████████████████████████████████████████████▉                                             | 142/224 [00:09<00:05, 14.59it/s] 64%|███████████████████████████████████████████████████████████████████████████████                                            | 144/224 [00:09<00:05, 14.53it/s] 65%|████████████████████████████████████████████████████████████████████████████████▏                                          | 146/224 [00:10<00:05, 14.54it/s] 66%|█████████████████████████████████████████████████████████████████████████████████▎                                         | 148/224 [00:10<00:05, 14.54it/s] 67%|██████████████████████████████████████████████████████████████████████████████████▎                                        | 150/224 [00:10<00:05, 14.58it/s] 68%|███████████████████████████████████████████████████████████████████████████████████▍                                       | 152/224 [00:10<00:04, 14.62it/s] 69%|████████████████████████████████████████████████████████████████████████████████████▌                                      | 154/224 [00:10<00:04, 14.51it/s] 70%|█████████████████████████████████████████████████████████████████████████████████████▋                                     | 156/224 [00:10<00:04, 14.44it/s] 71%|██████████████████████████████████████████████████████████████████████████████████████▊                                    | 158/224 [00:10<00:04, 14.51it/s] 71%|███████████████████████████████████████████████████████████████████████████████████████▊                                   | 160/224 [00:10<00:04, 14.50it/s] 72%|████████████████████████████████████████████████████████████████████████████████████████▉                                  | 162/224 [00:11<00:04, 14.62it/s] 73%|██████████████████████████████████████████████████████████████████████████████████████████                                 | 164/224 [00:11<00:04, 14.71it/s] 74%|███████████████████████████████████████████████████████████████████████████████████████████▏                               | 166/224 [00:11<00:03, 14.75it/s] 75%|████████████████████████████████████████████████████████████████████████████████████████████▎                              | 168/224 [00:11<00:03, 14.70it/s] 76%|█████████████████████████████████████████████████████████████████████████████████████████████▎                             | 170/224 [00:11<00:03, 14.60it/s] 77%|██████████████████████████████████████████████████████████████████████████████████████████████▍                            | 172/224 [00:11<00:03, 14.54it/s] 78%|███████████████████████████████████████████████████████████████████████████████████████████████▌                           | 174/224 [00:11<00:03, 14.56it/s] 79%|████████████████████████████████████████████████████████████████████████████████████████████████▋                          | 176/224 [00:12<00:03, 14.48it/s] 79%|█████████████████████████████████████████████████████████████████████████████████████████████████▋                         | 178/224 [00:12<00:03, 14.37it/s] 80%|██████████████████████████████████████████████████████████████████████████████████████████████████▊                        | 180/224 [00:12<00:03, 14.53it/s] 81%|███████████████████████████████████████████████████████████████████████████████████████████████████▉                       | 182/224 [00:12<00:02, 14.67it/s] 82%|█████████████████████████████████████████████████████████████████████████████████████████████████████                      | 184/224 [00:12<00:02, 14.58it/s] 83%|██████████████████████████████████████████████████████████████████████████████████████████████████████▏                    | 186/224 [00:12<00:02, 14.49it/s] 84%|███████████████████████████████████████████████████████████████████████████████████████████████████████▏                   | 188/224 [00:12<00:02, 14.35it/s] 85%|████████████████████████████████████████████████████████████████████████████████████████████████████████▎                  | 190/224 [00:13<00:02, 14.17it/s] 86%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▍                 | 192/224 [00:13<00:02, 14.27it/s] 87%|██████████████████████████████████████████████████████████████████████████████████████████████████████████▌                | 194/224 [00:13<00:02, 14.41it/s] 88%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▋               | 196/224 [00:13<00:01, 14.52it/s] 88%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▋              | 198/224 [00:13<00:01, 14.57it/s] 89%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▊             | 200/224 [00:13<00:01, 14.58it/s] 90%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▉            | 202/224 [00:13<00:01, 14.47it/s] 91%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████           | 204/224 [00:14<00:01, 14.57it/s] 92%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████          | 206/224 [00:14<00:01, 14.55it/s] 93%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏        | 208/224 [00:14<00:01, 14.49it/s] 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎       | 210/224 [00:14<00:00, 14.63it/s] 95%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍      | 212/224 [00:14<00:00, 14.74it/s] 96%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌     | 214/224 [00:14<00:00, 14.78it/s] 96%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌    | 216/224 [00:14<00:00, 14.71it/s] 97%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋   | 218/224 [00:14<00:00, 14.56it/s] 98%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊  | 220/224 [00:15<00:00, 14.47it/s] 99%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉ | 222/224 [00:15<00:00, 14.49it/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 224/224 [00:15<00:00, 14.62it/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 224/224 [00:15<00:00, 14.57it/s]
+n of comparison records: 224
+================================================================================
+tl_top3_divide_all_dist_raw_weights_last_layer
+Comparing data... 
+n of human data: 92
+n of machine data: 3
+  0%|                                                                                                                                      | 0/92 [00:00<?, ?it/s]No machine data for triangle_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for multithread_Q2.cpp
+No machine data for hannoi_Q3.py
+No machine data for triangle_Q3.py
+No machine data for triangle_Q1.cs
+No machine data for multithread_Q1.cs
+No machine data for Nqueens_Q2.cpp
+ 10%|████████████▎                                                                                                                 | 9/92 [00:01<00:16,  4.92it/s]No machine data for tree_Q1.cs
+No machine data for Nqueens_Q1.cs
+No machine data for tree_Q2.cpp
+No machine data for Nqueens_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q1.cpp
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q3.py
+No machine data for tree_Q2.cs
+No machine data for multithread_Q3.cs
+No machine data for hannoi_Q3.cs
+No machine data for multithread_Q2.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for multithread_Q1.cs
+No machine data for triangle_Q1.py
+No machine data for tree_Q3.cpp
+No machine data for tree_Q1.cs
+No machine data for hannoi_Q2.cs
+ 35%|███████████████████████████████████████████▍                                                                                 | 32/92 [00:03<00:06,  9.48it/s]No machine data for triangle_Q3.py
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q1.cs
+No machine data for tree_Q3.cs
+No machine data for Nqueens_Q1.py
+No machine data for triangle_Q3.cs
+No machine data for hannoi_Q1.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q2.py
+ 51%|███████████████████████████████████████████████████████████████▊                                                             | 47/92 [00:05<00:05,  8.85it/s]No machine data for Nqueens_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for multithread_Q1.cs
+No machine data for hannoi_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for triangle_Q3.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q2.py
+No machine data for multithread_Q1.cs
+No machine data for multithread_Q3.py
+No machine data for tree_Q1.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for triangle_Q3.cs
+No machine data for tree_Q1.py
+No machine data for tree_Q1.py
+No machine data for tree_Q3.py
+No machine data for tree_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for tree_Q3.cpp
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q3.cs
+No machine data for hannoi_Q3.py
+No machine data for Nqueens_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for tree_Q1.py
+No machine data for hannoi_Q2.cpp
+No machine data for triangle_Q1.cpp
+No machine data for hannoi_Q3.cs
+No machine data for triangle_Q2.cs
+No machine data for hannoi_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for triangle_Q2.cs
+No machine data for tree_Q2.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:05<00:00, 16.75it/s]
+Total number of comparisons:  9
+================================================================================
+================================================================================
+tl_top3_divide_all_dist_raw_weights_first_layer
+Comparing data... 
+n of human data: 92
+n of machine data: 3
+  0%|                                                                                                                                      | 0/92 [00:00<?, ?it/s]No machine data for triangle_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for multithread_Q2.cpp
+No machine data for hannoi_Q3.py
+No machine data for triangle_Q3.py
+No machine data for triangle_Q1.cs
+No machine data for multithread_Q1.cs
+No machine data for Nqueens_Q2.cpp
+ 10%|████████████▎                                                                                                                 | 9/92 [00:01<00:17,  4.87it/s]No machine data for tree_Q1.cs
+No machine data for Nqueens_Q1.cs
+No machine data for tree_Q2.cpp
+No machine data for Nqueens_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q1.cpp
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q3.py
+No machine data for tree_Q2.cs
+No machine data for multithread_Q3.cs
+No machine data for hannoi_Q3.cs
+No machine data for multithread_Q2.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for multithread_Q1.cs
+No machine data for triangle_Q1.py
+No machine data for tree_Q3.cpp
+No machine data for tree_Q1.cs
+No machine data for hannoi_Q2.cs
+ 35%|███████████████████████████████████████████▍                                                                                 | 32/92 [00:03<00:06,  9.38it/s]No machine data for triangle_Q3.py
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q1.cs
+No machine data for tree_Q3.cs
+No machine data for Nqueens_Q1.py
+No machine data for triangle_Q3.cs
+No machine data for hannoi_Q1.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q2.py
+ 51%|███████████████████████████████████████████████████████████████▊                                                             | 47/92 [00:05<00:05,  8.80it/s]No machine data for Nqueens_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for multithread_Q1.cs
+No machine data for hannoi_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for triangle_Q3.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q2.py
+No machine data for multithread_Q1.cs
+No machine data for multithread_Q3.py
+No machine data for tree_Q1.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for triangle_Q3.cs
+No machine data for tree_Q1.py
+No machine data for tree_Q1.py
+No machine data for tree_Q3.py
+No machine data for tree_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for tree_Q3.cpp
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q3.cs
+No machine data for hannoi_Q3.py
+No machine data for Nqueens_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for tree_Q1.py
+No machine data for hannoi_Q2.cpp
+No machine data for triangle_Q1.cpp
+No machine data for hannoi_Q3.cs
+No machine data for triangle_Q2.cs
+No machine data for hannoi_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for triangle_Q2.cs
+No machine data for tree_Q2.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:05<00:00, 16.65it/s]
+Total number of comparisons:  9
+================================================================================
+================================================================================
+tl_top3_divide_all_dist_followup
+Comparing data... 
+n of human data: 92
+n of machine data: 3
+  0%|                                                                                                                                      | 0/92 [00:00<?, ?it/s]No machine data for triangle_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for multithread_Q2.cpp
+No machine data for hannoi_Q3.py
+No machine data for triangle_Q3.py
+No machine data for triangle_Q1.cs
+No machine data for multithread_Q1.cs
+No machine data for Nqueens_Q2.cpp
+ 10%|████████████▎                                                                                                                 | 9/92 [00:01<00:16,  4.93it/s]No machine data for tree_Q1.cs
+No machine data for Nqueens_Q1.cs
+No machine data for tree_Q2.cpp
+No machine data for Nqueens_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q1.cpp
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q3.py
+No machine data for tree_Q2.cs
+No machine data for multithread_Q3.cs
+No machine data for hannoi_Q3.cs
+No machine data for multithread_Q2.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for multithread_Q1.cs
+No machine data for triangle_Q1.py
+No machine data for tree_Q3.cpp
+No machine data for tree_Q1.cs
+No machine data for hannoi_Q2.cs
+ 35%|███████████████████████████████████████████▍                                                                                 | 32/92 [00:03<00:06,  9.37it/s]No machine data for triangle_Q3.py
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q1.cs
+No machine data for tree_Q3.cs
+No machine data for Nqueens_Q1.py
+No machine data for triangle_Q3.cs
+No machine data for hannoi_Q1.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q2.py
+ 51%|███████████████████████████████████████████████████████████████▊                                                             | 47/92 [00:05<00:05,  8.88it/s]No machine data for Nqueens_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for multithread_Q1.cs
+No machine data for hannoi_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for triangle_Q3.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q2.py
+No machine data for multithread_Q1.cs
+No machine data for multithread_Q3.py
+No machine data for tree_Q1.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for triangle_Q3.cs
+No machine data for tree_Q1.py
+No machine data for tree_Q1.py
+No machine data for tree_Q3.py
+No machine data for tree_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for tree_Q3.cpp
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q3.cs
+No machine data for hannoi_Q3.py
+No machine data for Nqueens_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for tree_Q1.py
+No machine data for hannoi_Q2.cpp
+No machine data for triangle_Q1.cpp
+No machine data for hannoi_Q3.cs
+No machine data for triangle_Q2.cs
+No machine data for hannoi_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for triangle_Q2.cs
+No machine data for tree_Q2.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:05<00:00, 16.77it/s]
+Total number of comparisons:  9
+================================================================================
+================================================================================
+tl_top3_divide_all_dist_naivemax
+Comparing data... 
+n of human data: 92
+n of machine data: 3
+  0%|                                                                                                                                      | 0/92 [00:00<?, ?it/s]No machine data for triangle_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for multithread_Q2.cpp
+No machine data for hannoi_Q3.py
+No machine data for triangle_Q3.py
+No machine data for triangle_Q1.cs
+No machine data for multithread_Q1.cs
+No machine data for Nqueens_Q2.cpp
+ 10%|████████████▎                                                                                                                 | 9/92 [00:01<00:16,  4.98it/s]No machine data for tree_Q1.cs
+No machine data for Nqueens_Q1.cs
+No machine data for tree_Q2.cpp
+No machine data for Nqueens_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q1.cpp
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q3.py
+No machine data for tree_Q2.cs
+No machine data for multithread_Q3.cs
+No machine data for hannoi_Q3.cs
+No machine data for multithread_Q2.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for multithread_Q1.cs
+No machine data for triangle_Q1.py
+No machine data for tree_Q3.cpp
+No machine data for tree_Q1.cs
+No machine data for hannoi_Q2.cs
+ 35%|███████████████████████████████████████████▍                                                                                 | 32/92 [00:03<00:06,  9.42it/s]No machine data for triangle_Q3.py
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q1.cs
+No machine data for tree_Q3.cs
+No machine data for Nqueens_Q1.py
+No machine data for triangle_Q3.cs
+No machine data for hannoi_Q1.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q2.py
+ 51%|███████████████████████████████████████████████████████████████▊                                                             | 47/92 [00:05<00:05,  8.84it/s]No machine data for Nqueens_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for multithread_Q1.cs
+No machine data for hannoi_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for triangle_Q3.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q2.py
+No machine data for multithread_Q1.cs
+No machine data for multithread_Q3.py
+No machine data for tree_Q1.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for triangle_Q3.cs
+No machine data for tree_Q1.py
+No machine data for tree_Q1.py
+No machine data for tree_Q3.py
+No machine data for tree_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for tree_Q3.cpp
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q3.cs
+No machine data for hannoi_Q3.py
+No machine data for Nqueens_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for tree_Q1.py
+No machine data for hannoi_Q2.cpp
+No machine data for triangle_Q1.cpp
+No machine data for hannoi_Q3.cs
+No machine data for triangle_Q2.cs
+No machine data for hannoi_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for triangle_Q2.cs
+No machine data for tree_Q2.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:05<00:00, 16.75it/s]
+Total number of comparisons:  9
+================================================================================
+================================================================================
+Humans vs Humans of: tl_top3_divide_all_dist
+Comparing human data... 
+n of human data a: 92
+n of human data b: 92
+n of matching pairs: 224
+Warning: Using machine transformations also on machine data
+if this is not what you want set the field "transformations"
+in the "human" field of the comparison to []
+  0%|                                                                                                                                     | 0/224 [00:00<?, ?it/s]  0%|▌                                                                                                                            | 1/224 [00:00<02:30,  1.48it/s]  1%|█                                                                                                                            | 2/224 [00:01<02:32,  1.46it/s]  1%|█▋                                                                                                                           | 3/224 [00:02<02:35,  1.42it/s]  2%|██▏                                                                                                                          | 4/224 [00:02<02:35,  1.41it/s]  2%|██▊                                                                                                                          | 5/224 [00:03<02:36,  1.40it/s]  3%|███▎                                                                                                                         | 6/224 [00:04<02:36,  1.40it/s]  3%|███▉                                                                                                                         | 7/224 [00:04<02:35,  1.39it/s]  4%|████▍                                                                                                                        | 8/224 [00:05<02:37,  1.37it/s]  4%|█████                                                                                                                        | 9/224 [00:06<02:37,  1.36it/s]  4%|█████▌                                                                                                                      | 10/224 [00:07<02:37,  1.36it/s]  5%|██████                                                                                                                      | 11/224 [00:07<02:37,  1.35it/s]  5%|██████▋                                                                                                                     | 12/224 [00:08<02:33,  1.38it/s]  6%|███████▏                                                                                                                    | 13/224 [00:09<02:30,  1.41it/s]  6%|███████▊                                                                                                                    | 14/224 [00:10<02:30,  1.40it/s]  7%|████████▎                                                                                                                   | 15/224 [00:10<02:30,  1.39it/s]  7%|████████▊                                                                                                                   | 16/224 [00:11<02:30,  1.38it/s]  8%|█████████▍                                                                                                                  | 17/224 [00:12<02:30,  1.38it/s]  8%|█████████▉                                                                                                                  | 18/224 [00:12<02:29,  1.37it/s]  8%|██████████▌                                                                                                                 | 19/224 [00:13<02:29,  1.37it/s]  9%|███████████                                                                                                                 | 20/224 [00:14<02:29,  1.37it/s]  9%|███████████▋                                                                                                                | 21/224 [00:15<02:25,  1.39it/s] 10%|████████████▏                                                                                                               | 22/224 [00:15<02:22,  1.42it/s] 10%|████████████▋                                                                                                               | 23/224 [00:16<02:21,  1.42it/s] 11%|█████████████▎                                                                                                              | 24/224 [00:17<02:23,  1.39it/s] 11%|█████████████▊                                                                                                              | 25/224 [00:18<02:24,  1.38it/s] 12%|██████████████▍                                                                                                             | 26/224 [00:18<02:21,  1.39it/s] 12%|██████████████▉                                                                                                             | 27/224 [00:19<02:19,  1.41it/s] 12%|███████████████▌                                                                                                            | 28/224 [00:20<02:17,  1.43it/s] 13%|████████████████                                                                                                            | 29/224 [00:20<02:15,  1.44it/s] 13%|████████████████▌                                                                                                           | 30/224 [00:21<02:14,  1.45it/s] 14%|█████████████████▏                                                                                                          | 31/224 [00:22<02:15,  1.42it/s] 14%|█████████████████▋                                                                                                          | 32/224 [00:22<02:21,  1.36it/s] 15%|██████████████████▎                                                                                                         | 33/224 [00:23<02:19,  1.36it/s] 15%|██████████████████▊                                                                                                         | 34/224 [00:24<02:18,  1.37it/s] 16%|███████████████████▍                                                                                                        | 35/224 [00:25<02:17,  1.37it/s] 16%|███████████████████▉                                                                                                        | 36/224 [00:25<02:17,  1.37it/s] 17%|████████████████████▍                                                                                                       | 37/224 [00:26<02:17,  1.36it/s] 17%|█████████████████████                                                                                                       | 38/224 [00:27<02:16,  1.36it/s] 17%|█████████████████████▌                                                                                                      | 39/224 [00:28<02:13,  1.38it/s] 18%|██████████████████████▏                                                                                                     | 40/224 [00:28<02:10,  1.41it/s] 18%|██████████████████████▋                                                                                                     | 41/224 [00:29<02:11,  1.39it/s] 19%|███████████████████████▎                                                                                                    | 42/224 [00:30<02:11,  1.39it/s] 19%|███████████████████████▊                                                                                                    | 43/224 [00:30<02:08,  1.41it/s] 20%|████████████████████████▎                                                                                                   | 44/224 [00:31<02:06,  1.42it/s] 20%|████████████████████████▉                                                                                                   | 45/224 [00:32<02:05,  1.43it/s] 21%|█████████████████████████▍                                                                                                  | 46/224 [00:33<02:07,  1.40it/s] 21%|██████████████████████████                                                                                                  | 47/224 [00:33<02:08,  1.38it/s] 21%|██████████████████████████▌                                                                                                 | 48/224 [00:34<02:07,  1.38it/s] 22%|███████████████████████████▏                                                                                                | 49/224 [00:35<02:06,  1.38it/s] 22%|███████████████████████████▋                                                                                                | 50/224 [00:35<02:03,  1.40it/s] 23%|████████████████████████████▏                                                                                               | 51/224 [00:36<02:04,  1.39it/s] 23%|████████████████████████████▊                                                                                               | 52/224 [00:37<02:05,  1.37it/s] 24%|█████████████████████████████▎                                                                                              | 53/224 [00:38<02:05,  1.36it/s] 24%|█████████████████████████████▉                                                                                              | 54/224 [00:38<02:05,  1.35it/s] 25%|██████████████████████████████▍                                                                                             | 55/224 [00:39<02:05,  1.34it/s] 25%|███████████████████████████████                                                                                             | 56/224 [00:40<02:03,  1.36it/s] 25%|███████████████████████████████▌                                                                                            | 57/224 [00:41<02:02,  1.36it/s] 26%|████████████████████████████████                                                                                            | 58/224 [00:41<02:01,  1.36it/s] 26%|████████████████████████████████▋                                                                                           | 59/224 [00:42<02:01,  1.36it/s] 27%|█████████████████████████████████▏                                                                                          | 60/224 [00:43<02:00,  1.36it/s] 27%|█████████████████████████████████▊                                                                                          | 61/224 [00:43<01:57,  1.38it/s] 28%|██████████████████████████████████▎                                                                                         | 62/224 [00:44<01:55,  1.41it/s] 28%|██████████████████████████████████▉                                                                                         | 63/224 [00:45<01:59,  1.34it/s] 29%|███████████████████████████████████▍                                                                                        | 64/224 [00:46<01:56,  1.37it/s] 29%|███████████████████████████████████▉                                                                                        | 65/224 [00:46<01:53,  1.40it/s] 29%|████████████████████████████████████▌                                                                                       | 66/224 [00:47<01:53,  1.39it/s] 30%|█████████████████████████████████████                                                                                       | 67/224 [00:48<01:53,  1.39it/s] 30%|█████████████████████████████████████▋                                                                                      | 68/224 [00:49<01:52,  1.39it/s] 31%|██████████████████████████████████████▏                                                                                     | 69/224 [00:49<01:51,  1.38it/s] 31%|██████████████████████████████████████▊                                                                                     | 70/224 [00:50<01:51,  1.39it/s] 32%|███████████████████████████████████████▎                                                                                    | 71/224 [00:51<01:51,  1.37it/s] 32%|███████████████████████████████████████▊                                                                                    | 72/224 [00:51<01:51,  1.36it/s] 33%|████████████████████████████████████████▍                                                                                   | 73/224 [00:52<01:51,  1.35it/s] 33%|████████████████████████████████████████▉                                                                                   | 74/224 [00:53<01:51,  1.35it/s] 33%|█████████████████████████████████████████▌                                                                                  | 75/224 [00:54<01:51,  1.34it/s] 34%|██████████████████████████████████████████                                                                                  | 76/224 [00:54<01:50,  1.34it/s] 34%|██████████████████████████████████████████▋                                                                                 | 77/224 [00:55<01:49,  1.34it/s] 35%|███████████████████████████████████████████▏                                                                                | 78/224 [00:56<01:49,  1.34it/s] 35%|███████████████████████████████████████████▋                                                                                | 79/224 [00:57<01:47,  1.35it/s] 36%|████████████████████████████████████████████▎                                                                               | 80/224 [00:57<01:45,  1.36it/s] 36%|████████████████████████████████████████████▊                                                                               | 81/224 [00:58<01:44,  1.37it/s] 37%|█████████████████████████████████████████████▍                                                                              | 82/224 [00:59<01:43,  1.37it/s] 37%|█████████████████████████████████████████████▉                                                                              | 83/224 [01:00<01:42,  1.38it/s] 38%|██████████████████████████████████████████████▌                                                                             | 84/224 [01:00<01:42,  1.37it/s] 38%|███████████████████████████████████████████████                                                                             | 85/224 [01:01<01:42,  1.36it/s] 38%|███████████████████████████████████████████████▌                                                                            | 86/224 [01:02<01:41,  1.36it/s] 39%|████████████████████████████████████████████████▏                                                                           | 87/224 [01:03<01:41,  1.35it/s] 39%|████████████████████████████████████████████████▋                                                                           | 88/224 [01:03<01:40,  1.36it/s] 40%|█████████████████████████████████████████████████▎                                                                          | 89/224 [01:04<01:39,  1.35it/s] 40%|█████████████████████████████████████████████████▊                                                                          | 90/224 [01:05<01:39,  1.35it/s] 41%|██████████████████████████████████████████████████▍                                                                         | 91/224 [01:06<01:37,  1.37it/s] 41%|██████████████████████████████████████████████████▉                                                                         | 92/224 [01:06<01:35,  1.38it/s] 42%|███████████████████████████████████████████████████▍                                                                        | 93/224 [01:07<01:40,  1.30it/s] 42%|████████████████████████████████████████████████████                                                                        | 94/224 [01:08<01:39,  1.31it/s] 42%|████████████████████████████████████████████████████▌                                                                       | 95/224 [01:09<01:36,  1.34it/s] 43%|█████████████████████████████████████████████████████▏                                                                      | 96/224 [01:09<01:33,  1.37it/s] 43%|█████████████████████████████████████████████████████▋                                                                      | 97/224 [01:10<01:31,  1.39it/s] 44%|██████████████████████████████████████████████████████▎                                                                     | 98/224 [01:11<01:29,  1.40it/s] 44%|██████████████████████████████████████████████████████▊                                                                     | 99/224 [01:11<01:28,  1.41it/s] 45%|██████████████████████████████████████████████████████▉                                                                    | 100/224 [01:12<01:27,  1.42it/s] 45%|███████████████████████████████████████████████████████▍                                                                   | 101/224 [01:13<01:26,  1.43it/s] 46%|████████████████████████████████████████████████████████                                                                   | 102/224 [01:13<01:24,  1.44it/s] 46%|████████████████████████████████████████████████████████▌                                                                  | 103/224 [01:14<01:23,  1.44it/s] 46%|█████████████████████████████████████████████████████████                                                                  | 104/224 [01:15<01:25,  1.41it/s] 47%|█████████████████████████████████████████████████████████▋                                                                 | 105/224 [01:16<01:25,  1.39it/s] 47%|██████████████████████████████████████████████████████████▏                                                                | 106/224 [01:16<01:26,  1.37it/s] 48%|██████████████████████████████████████████████████████████▊                                                                | 107/224 [01:17<01:24,  1.38it/s] 48%|███████████████████████████████████████████████████████████▎                                                               | 108/224 [01:18<01:22,  1.40it/s] 49%|███████████████████████████████████████████████████████████▊                                                               | 109/224 [01:18<01:21,  1.42it/s] 49%|████████████████████████████████████████████████████████████▍                                                              | 110/224 [01:19<01:21,  1.40it/s] 50%|████████████████████████████████████████████████████████████▉                                                              | 111/224 [01:20<01:21,  1.39it/s] 50%|█████████████████████████████████████████████████████████████▌                                                             | 112/224 [01:21<01:20,  1.38it/s] 50%|██████████████████████████████████████████████████████████████                                                             | 113/224 [01:21<01:20,  1.39it/s] 51%|██████████████████████████████████████████████████████████████▌                                                            | 114/224 [01:22<01:20,  1.37it/s] 51%|███████████████████████████████████████████████████████████████▏                                                           | 115/224 [01:23<01:19,  1.37it/s] 52%|███████████████████████████████████████████████████████████████▋                                                           | 116/224 [01:24<01:19,  1.36it/s] 52%|████████████████████████████████████████████████████████████████▏                                                          | 117/224 [01:24<01:19,  1.35it/s] 53%|████████████████████████████████████████████████████████████████▊                                                          | 118/224 [01:25<01:18,  1.35it/s] 53%|█████████████████████████████████████████████████████████████████▎                                                         | 119/224 [01:26<01:18,  1.34it/s] 54%|█████████████████████████████████████████████████████████████████▉                                                         | 120/224 [01:26<01:15,  1.37it/s] 54%|██████████████████████████████████████████████████████████████████▍                                                        | 121/224 [01:27<01:14,  1.39it/s] 54%|██████████████████████████████████████████████████████████████████▉                                                        | 122/224 [01:28<01:12,  1.40it/s] 55%|███████████████████████████████████████████████████████████████████▌                                                       | 123/224 [01:29<01:12,  1.39it/s] 55%|████████████████████████████████████████████████████████████████████                                                       | 124/224 [01:29<01:12,  1.38it/s] 56%|████████████████████████████████████████████████████████████████████▋                                                      | 125/224 [01:30<01:12,  1.37it/s] 56%|█████████████████████████████████████████████████████████████████████▏                                                     | 126/224 [01:31<01:11,  1.37it/s] 57%|█████████████████████████████████████████████████████████████████████▋                                                     | 127/224 [01:32<01:10,  1.38it/s] 57%|██████████████████████████████████████████████████████████████████████▎                                                    | 128/224 [01:32<01:07,  1.41it/s] 58%|██████████████████████████████████████████████████████████████████████▊                                                    | 129/224 [01:33<01:06,  1.42it/s] 58%|███████████████████████████████████████████████████████████████████████▍                                                   | 130/224 [01:34<01:06,  1.42it/s] 58%|███████████████████████████████████████████████████████████████████████▉                                                   | 131/224 [01:34<01:05,  1.43it/s] 59%|████████████████████████████████████████████████████████████████████████▍                                                  | 132/224 [01:35<01:04,  1.43it/s] 59%|█████████████████████████████████████████████████████████████████████████                                                  | 133/224 [01:36<01:03,  1.43it/s] 60%|█████████████████████████████████████████████████████████████████████████▌                                                 | 134/224 [01:36<01:03,  1.42it/s] 60%|██████████████████████████████████████████████████████████████████████████▏                                                | 135/224 [01:37<01:06,  1.34it/s] 61%|██████████████████████████████████████████████████████████████████████████▋                                                | 136/224 [01:38<01:05,  1.35it/s] 61%|███████████████████████████████████████████████████████████████████████████▏                                               | 137/224 [01:39<01:03,  1.36it/s] 62%|███████████████████████████████████████████████████████████████████████████▊                                               | 138/224 [01:39<01:02,  1.37it/s] 62%|████████████████████████████████████████████████████████████████████████████▎                                              | 139/224 [01:40<01:02,  1.35it/s] 62%|████████████████████████████████████████████████████████████████████████████▉                                              | 140/224 [01:41<01:02,  1.35it/s] 63%|█████████████████████████████████████████████████████████████████████████████▍                                             | 141/224 [01:42<01:01,  1.34it/s] 63%|█████████████████████████████████████████████████████████████████████████████▉                                             | 142/224 [01:42<01:01,  1.34it/s] 64%|██████████████████████████████████████████████████████████████████████████████▌                                            | 143/224 [01:43<01:00,  1.33it/s] 64%|███████████████████████████████████████████████████████████████████████████████                                            | 144/224 [01:44<01:00,  1.33it/s] 65%|███████████████████████████████████████████████████████████████████████████████▌                                           | 145/224 [01:45<00:59,  1.33it/s] 65%|████████████████████████████████████████████████████████████████████████████████▏                                          | 146/224 [01:45<00:58,  1.33it/s] 66%|████████████████████████████████████████████████████████████████████████████████▋                                          | 147/224 [01:46<00:57,  1.34it/s] 66%|█████████████████████████████████████████████████████████████████████████████████▎                                         | 148/224 [01:47<00:56,  1.34it/s] 67%|█████████████████████████████████████████████████████████████████████████████████▊                                         | 149/224 [01:48<00:54,  1.37it/s] 67%|██████████████████████████████████████████████████████████████████████████████████▎                                        | 150/224 [01:48<00:54,  1.36it/s] 67%|██████████████████████████████████████████████████████████████████████████████████▉                                        | 151/224 [01:49<00:53,  1.36it/s] 68%|███████████████████████████████████████████████████████████████████████████████████▍                                       | 152/224 [01:50<00:53,  1.35it/s] 68%|████████████████████████████████████████████████████████████████████████████████████                                       | 153/224 [01:51<00:52,  1.34it/s] 69%|████████████████████████████████████████████████████████████████████████████████████▌                                      | 154/224 [01:51<00:52,  1.34it/s] 69%|█████████████████████████████████████████████████████████████████████████████████████                                      | 155/224 [01:52<00:51,  1.33it/s] 70%|█████████████████████████████████████████████████████████████████████████████████████▋                                     | 156/224 [01:53<00:50,  1.33it/s] 70%|██████████████████████████████████████████████████████████████████████████████████████▏                                    | 157/224 [01:54<00:50,  1.34it/s] 71%|██████████████████████████████████████████████████████████████████████████████████████▊                                    | 158/224 [01:54<00:48,  1.35it/s] 71%|███████████████████████████████████████████████████████████████████████████████████████▎                                   | 159/224 [01:55<00:47,  1.36it/s] 71%|███████████████████████████████████████████████████████████████████████████████████████▊                                   | 160/224 [01:56<00:46,  1.37it/s] 72%|████████████████████████████████████████████████████████████████████████████████████████▍                                  | 161/224 [01:57<00:45,  1.37it/s] 72%|████████████████████████████████████████████████████████████████████████████████████████▉                                  | 162/224 [01:57<00:45,  1.38it/s] 73%|█████████████████████████████████████████████████████████████████████████████████████████▌                                 | 163/224 [01:58<00:44,  1.38it/s] 73%|██████████████████████████████████████████████████████████████████████████████████████████                                 | 164/224 [01:59<00:43,  1.38it/s] 74%|██████████████████████████████████████████████████████████████████████████████████████████▌                                | 165/224 [01:59<00:42,  1.38it/s] 74%|███████████████████████████████████████████████████████████████████████████████████████████▏                               | 166/224 [02:00<00:42,  1.38it/s] 75%|███████████████████████████████████████████████████████████████████████████████████████████▋                               | 167/224 [02:01<00:41,  1.37it/s] 75%|████████████████████████████████████████████████████████████████████████████████████████████▎                              | 168/224 [02:02<00:40,  1.37it/s] 75%|████████████████████████████████████████████████████████████████████████████████████████████▊                              | 169/224 [02:02<00:40,  1.36it/s] 76%|█████████████████████████████████████████████████████████████████████████████████████████████▎                             | 170/224 [02:03<00:39,  1.35it/s] 76%|█████████████████████████████████████████████████████████████████████████████████████████████▉                             | 171/224 [02:04<00:41,  1.28it/s] 77%|██████████████████████████████████████████████████████████████████████████████████████████████▍                            | 172/224 [02:05<00:40,  1.29it/s] 77%|██████████████████████████████████████████████████████████████████████████████████████████████▉                            | 173/224 [02:05<00:39,  1.30it/s] 78%|███████████████████████████████████████████████████████████████████████████████████████████████▌                           | 174/224 [02:06<00:37,  1.32it/s] 78%|████████████████████████████████████████████████████████████████████████████████████████████████                           | 175/224 [02:07<00:36,  1.33it/s] 79%|████████████████████████████████████████████████████████████████████████████████████████████████▋                          | 176/224 [02:08<00:35,  1.36it/s] 79%|█████████████████████████████████████████████████████████████████████████████████████████████████▏                         | 177/224 [02:08<00:35,  1.34it/s] 79%|█████████████████████████████████████████████████████████████████████████████████████████████████▋                         | 178/224 [02:09<00:34,  1.34it/s] 80%|██████████████████████████████████████████████████████████████████████████████████████████████████▎                        | 179/224 [02:10<00:33,  1.36it/s] 80%|██████████████████████████████████████████████████████████████████████████████████████████████████▊                        | 180/224 [02:11<00:31,  1.38it/s] 81%|███████████████████████████████████████████████████████████████████████████████████████████████████▍                       | 181/224 [02:11<00:30,  1.39it/s] 81%|███████████████████████████████████████████████████████████████████████████████████████████████████▉                       | 182/224 [02:12<00:30,  1.38it/s] 82%|████████████████████████████████████████████████████████████████████████████████████████████████████▍                      | 183/224 [02:13<00:29,  1.38it/s] 82%|█████████████████████████████████████████████████████████████████████████████████████████████████████                      | 184/224 [02:13<00:29,  1.37it/s] 83%|█████████████████████████████████████████████████████████████████████████████████████████████████████▌                     | 185/224 [02:14<00:28,  1.36it/s] 83%|██████████████████████████████████████████████████████████████████████████████████████████████████████▏                    | 186/224 [02:15<00:28,  1.35it/s] 83%|██████████████████████████████████████████████████████████████████████████████████████████████████████▋                    | 187/224 [02:16<00:27,  1.34it/s] 84%|███████████████████████████████████████████████████████████████████████████████████████████████████████▏                   | 188/224 [02:17<00:26,  1.34it/s] 84%|███████████████████████████████████████████████████████████████████████████████████████████████████████▊                   | 189/224 [02:17<00:25,  1.36it/s] 85%|████████████████████████████████████████████████████████████████████████████████████████████████████████▎                  | 190/224 [02:18<00:24,  1.38it/s] 85%|████████████████████████████████████████████████████████████████████████████████████████████████████████▉                  | 191/224 [02:19<00:23,  1.39it/s] 86%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▍                 | 192/224 [02:19<00:23,  1.39it/s] 86%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▉                 | 193/224 [02:20<00:22,  1.38it/s] 87%|██████████████████████████████████████████████████████████████████████████████████████████████████████████▌                | 194/224 [02:21<00:21,  1.38it/s] 87%|███████████████████████████████████████████████████████████████████████████████████████████████████████████                | 195/224 [02:22<00:20,  1.38it/s] 88%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▋               | 196/224 [02:22<00:20,  1.38it/s] 88%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▏              | 197/224 [02:23<00:19,  1.38it/s] 88%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▋              | 198/224 [02:24<00:18,  1.38it/s] 89%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▎             | 199/224 [02:24<00:18,  1.38it/s] 89%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▊             | 200/224 [02:25<00:17,  1.38it/s] 90%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▎            | 201/224 [02:26<00:16,  1.37it/s] 90%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▉            | 202/224 [02:27<00:16,  1.36it/s] 91%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████▍           | 203/224 [02:27<00:15,  1.40it/s] 91%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████           | 204/224 [02:28<00:14,  1.41it/s] 92%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌          | 205/224 [02:29<00:13,  1.38it/s] 92%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████          | 206/224 [02:30<00:13,  1.37it/s] 92%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋         | 207/224 [02:30<00:12,  1.36it/s] 93%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏        | 208/224 [02:31<00:11,  1.35it/s] 93%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊        | 209/224 [02:32<00:10,  1.38it/s] 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎       | 210/224 [02:32<00:10,  1.39it/s] 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊       | 211/224 [02:33<00:09,  1.39it/s] 95%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍      | 212/224 [02:34<00:08,  1.38it/s] 95%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉      | 213/224 [02:35<00:07,  1.38it/s] 96%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌     | 214/224 [02:35<00:07,  1.38it/s] 96%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████     | 215/224 [02:36<00:06,  1.37it/s] 96%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌    | 216/224 [02:37<00:05,  1.36it/s] 97%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏   | 217/224 [02:38<00:05,  1.35it/s] 97%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋   | 218/224 [02:38<00:04,  1.34it/s] 98%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎  | 219/224 [02:39<00:03,  1.35it/s] 98%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊  | 220/224 [02:40<00:03,  1.26it/s] 99%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎ | 221/224 [02:41<00:02,  1.27it/s] 99%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉ | 222/224 [02:41<00:01,  1.32it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍| 223/224 [02:42<00:00,  1.35it/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 224/224 [02:43<00:00,  1.38it/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 224/224 [02:43<00:00,  1.37it/s]
+n of comparison records: 224
+================================================================================
+tl_spearman_divide_all_dist_raw_weights_last_layer
+Comparing data... 
+n of human data: 92
+n of machine data: 3
+  0%|                                                                                                                                      | 0/92 [00:00<?, ?it/s]No machine data for triangle_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for multithread_Q2.cpp
+No machine data for hannoi_Q3.py
+No machine data for triangle_Q3.py
+No machine data for triangle_Q1.cs
+No machine data for multithread_Q1.cs
+No machine data for Nqueens_Q2.cpp
+ 10%|████████████▎                                                                                                                 | 9/92 [00:02<00:19,  4.31it/s]No machine data for tree_Q1.cs
+No machine data for Nqueens_Q1.cs
+No machine data for tree_Q2.cpp
+No machine data for Nqueens_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q1.cpp
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q3.py
+No machine data for tree_Q2.cs
+No machine data for multithread_Q3.cs
+No machine data for hannoi_Q3.cs
+No machine data for multithread_Q2.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for multithread_Q1.cs
+No machine data for triangle_Q1.py
+No machine data for tree_Q3.cpp
+No machine data for tree_Q1.cs
+No machine data for hannoi_Q2.cs
+ 35%|███████████████████████████████████████████▍                                                                                 | 32/92 [00:04<00:07,  8.31it/s]No machine data for triangle_Q3.py
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q1.cs
+No machine data for tree_Q3.cs
+No machine data for Nqueens_Q1.py
+No machine data for triangle_Q3.cs
+No machine data for hannoi_Q1.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q2.py
+ 51%|███████████████████████████████████████████████████████████████▊                                                             | 47/92 [00:06<00:05,  7.79it/s]No machine data for Nqueens_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for multithread_Q1.cs
+No machine data for hannoi_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for triangle_Q3.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q2.py
+No machine data for multithread_Q1.cs
+No machine data for multithread_Q3.py
+No machine data for tree_Q1.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for triangle_Q3.cs
+No machine data for tree_Q1.py
+No machine data for tree_Q1.py
+No machine data for tree_Q3.py
+No machine data for tree_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for tree_Q3.cpp
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q3.cs
+No machine data for hannoi_Q3.py
+No machine data for Nqueens_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for tree_Q1.py
+No machine data for hannoi_Q2.cpp
+No machine data for triangle_Q1.cpp
+No machine data for hannoi_Q3.cs
+No machine data for triangle_Q2.cs
+No machine data for hannoi_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for triangle_Q2.cs
+No machine data for tree_Q2.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:06<00:00, 14.73it/s]
+Total number of comparisons:  9
+================================================================================
+================================================================================
+tl_spearman_divide_all_dist_raw_weights_first_layer
+Comparing data... 
+n of human data: 92
+n of machine data: 3
+  0%|                                                                                                                                      | 0/92 [00:00<?, ?it/s]No machine data for triangle_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for multithread_Q2.cpp
+No machine data for hannoi_Q3.py
+No machine data for triangle_Q3.py
+No machine data for triangle_Q1.cs
+No machine data for multithread_Q1.cs
+No machine data for Nqueens_Q2.cpp
+ 10%|████████████▎                                                                                                                 | 9/92 [00:02<00:19,  4.29it/s]No machine data for tree_Q1.cs
+No machine data for Nqueens_Q1.cs
+No machine data for tree_Q2.cpp
+No machine data for Nqueens_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q1.cpp
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q3.py
+No machine data for tree_Q2.cs
+No machine data for multithread_Q3.cs
+No machine data for hannoi_Q3.cs
+No machine data for multithread_Q2.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for multithread_Q1.cs
+No machine data for triangle_Q1.py
+No machine data for tree_Q3.cpp
+No machine data for tree_Q1.cs
+No machine data for hannoi_Q2.cs
+ 35%|███████████████████████████████████████████▍                                                                                 | 32/92 [00:04<00:07,  8.28it/s]No machine data for triangle_Q3.py
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q1.cs
+No machine data for tree_Q3.cs
+No machine data for Nqueens_Q1.py
+No machine data for triangle_Q3.cs
+No machine data for hannoi_Q1.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q2.py
+ 51%|███████████████████████████████████████████████████████████████▊                                                             | 47/92 [00:06<00:05,  7.74it/s]No machine data for Nqueens_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for multithread_Q1.cs
+No machine data for hannoi_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for triangle_Q3.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q2.py
+No machine data for multithread_Q1.cs
+No machine data for multithread_Q3.py
+No machine data for tree_Q1.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for triangle_Q3.cs
+No machine data for tree_Q1.py
+No machine data for tree_Q1.py
+No machine data for tree_Q3.py
+No machine data for tree_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for tree_Q3.cpp
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q3.cs
+No machine data for hannoi_Q3.py
+No machine data for Nqueens_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for tree_Q1.py
+No machine data for hannoi_Q2.cpp
+No machine data for triangle_Q1.cpp
+No machine data for hannoi_Q3.cs
+No machine data for triangle_Q2.cs
+No machine data for hannoi_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for triangle_Q2.cs
+No machine data for tree_Q2.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:06<00:00, 14.65it/s]
+Total number of comparisons:  9
+================================================================================
+================================================================================
+tl_spearman_divide_all_dist_followup
+Comparing data... 
+n of human data: 92
+n of machine data: 3
+  0%|                                                                                                                                      | 0/92 [00:00<?, ?it/s]No machine data for triangle_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for multithread_Q2.cpp
+No machine data for hannoi_Q3.py
+No machine data for triangle_Q3.py
+No machine data for triangle_Q1.cs
+No machine data for multithread_Q1.cs
+No machine data for Nqueens_Q2.cpp
+ 10%|████████████▎                                                                                                                 | 9/92 [00:02<00:19,  4.36it/s]No machine data for tree_Q1.cs
+No machine data for Nqueens_Q1.cs
+No machine data for tree_Q2.cpp
+No machine data for Nqueens_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q1.cpp
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q3.py
+No machine data for tree_Q2.cs
+No machine data for multithread_Q3.cs
+No machine data for hannoi_Q3.cs
+No machine data for multithread_Q2.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for multithread_Q1.cs
+No machine data for triangle_Q1.py
+No machine data for tree_Q3.cpp
+No machine data for tree_Q1.cs
+No machine data for hannoi_Q2.cs
+ 35%|███████████████████████████████████████████▍                                                                                 | 32/92 [00:04<00:07,  8.36it/s]No machine data for triangle_Q3.py
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q1.cs
+No machine data for tree_Q3.cs
+No machine data for Nqueens_Q1.py
+No machine data for triangle_Q3.cs
+No machine data for hannoi_Q1.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q2.py
+ 51%|███████████████████████████████████████████████████████████████▊                                                             | 47/92 [00:06<00:05,  7.83it/s]No machine data for Nqueens_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for multithread_Q1.cs
+No machine data for hannoi_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for triangle_Q3.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q2.py
+No machine data for multithread_Q1.cs
+No machine data for multithread_Q3.py
+No machine data for tree_Q1.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for triangle_Q3.cs
+No machine data for tree_Q1.py
+No machine data for tree_Q1.py
+No machine data for tree_Q3.py
+No machine data for tree_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for tree_Q3.cpp
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q3.cs
+No machine data for hannoi_Q3.py
+No machine data for Nqueens_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for tree_Q1.py
+No machine data for hannoi_Q2.cpp
+No machine data for triangle_Q1.cpp
+No machine data for hannoi_Q3.cs
+No machine data for triangle_Q2.cs
+No machine data for hannoi_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for triangle_Q2.cs
+No machine data for tree_Q2.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:06<00:00, 14.82it/s]
+Total number of comparisons:  9
+================================================================================
+================================================================================
+tl_spearman_divide_all_dist_naivemax
+Comparing data... 
+n of human data: 92
+n of machine data: 3
+  0%|                                                                                                                                      | 0/92 [00:00<?, ?it/s]No machine data for triangle_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for multithread_Q2.cpp
+No machine data for hannoi_Q3.py
+No machine data for triangle_Q3.py
+No machine data for triangle_Q1.cs
+No machine data for multithread_Q1.cs
+No machine data for Nqueens_Q2.cpp
+ 10%|████████████▎                                                                                                                 | 9/92 [00:02<00:19,  4.29it/s]No machine data for tree_Q1.cs
+No machine data for Nqueens_Q1.cs
+No machine data for tree_Q2.cpp
+No machine data for Nqueens_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q1.cpp
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q3.py
+No machine data for tree_Q2.cs
+No machine data for multithread_Q3.cs
+No machine data for hannoi_Q3.cs
+No machine data for multithread_Q2.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for multithread_Q1.cs
+No machine data for triangle_Q1.py
+No machine data for tree_Q3.cpp
+No machine data for tree_Q1.cs
+No machine data for hannoi_Q2.cs
+ 35%|███████████████████████████████████████████▍                                                                                 | 32/92 [00:04<00:07,  8.30it/s]No machine data for triangle_Q3.py
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q1.cs
+No machine data for tree_Q3.cs
+No machine data for Nqueens_Q1.py
+No machine data for triangle_Q3.cs
+No machine data for hannoi_Q1.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for hannoi_Q2.py
+No machine data for multithread_Q2.py
+ 51%|███████████████████████████████████████████████████████████████▊                                                             | 47/92 [00:06<00:05,  7.77it/s]No machine data for Nqueens_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for tree_Q2.py
+No machine data for triangle_Q1.cpp
+No machine data for multithread_Q1.cs
+No machine data for hannoi_Q1.cs
+No machine data for Nqueens_Q3.cpp
+No machine data for triangle_Q3.cs
+No machine data for triangle_Q1.py
+No machine data for hannoi_Q2.cs
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for multithread_Q2.py
+No machine data for multithread_Q1.cs
+No machine data for multithread_Q3.py
+No machine data for tree_Q1.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for triangle_Q3.cs
+No machine data for tree_Q1.py
+No machine data for tree_Q1.py
+No machine data for tree_Q3.py
+No machine data for tree_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for triangle_Q2.cs
+No machine data for tree_Q3.cpp
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q3.cs
+No machine data for hannoi_Q3.py
+No machine data for Nqueens_Q3.cs
+No machine data for tree_Q2.cs
+No machine data for multithread_Q2.py
+No machine data for hannoi_Q1.cs
+No machine data for triangle_Q3.py
+No machine data for tree_Q1.py
+No machine data for hannoi_Q2.cpp
+No machine data for triangle_Q1.cpp
+No machine data for hannoi_Q3.cs
+No machine data for triangle_Q2.cs
+No machine data for hannoi_Q1.cpp
+No machine data for tree_Q1.py
+No machine data for triangle_Q2.cs
+No machine data for tree_Q2.cpp
+No machine data for multithread_Q1.py
+No machine data for hannoi_Q2.cs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:06<00:00, 14.69it/s]
+Total number of comparisons:  9
+================================================================================
+================================================================================
+Humans vs Humans of: tl_spearman_divide_all_dist
+Comparing human data... 
+n of human data a: 92
+n of human data b: 92
+n of matching pairs: 224
+Warning: Using machine transformations also on machine data
+if this is not what you want set the field "transformations"
+in the "human" field of the comparison to []
+  0%|                                                                                                                                     | 0/224 [00:00<?, ?it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  0%|▌                                                                                                                            | 1/224 [00:01<03:45,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  1%|█                                                                                                                            | 2/224 [00:01<03:19,  1.11it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  1%|█▋                                                                                                                           | 3/224 [00:02<03:29,  1.05it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  2%|██▏                                                                                                                          | 4/224 [00:03<03:35,  1.02it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  2%|██▊                                                                                                                          | 5/224 [00:04<03:37,  1.01it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  3%|███▎                                                                                                                         | 6/224 [00:05<03:38,  1.00s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  3%|███▉                                                                                                                         | 7/224 [00:06<03:39,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  4%|████▍                                                                                                                        | 8/224 [00:07<03:37,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  4%|█████                                                                                                                        | 9/224 [00:08<03:34,  1.00it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  4%|█████▌                                                                                                                      | 10/224 [00:09<03:37,  1.02s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  5%|██████                                                                                                                      | 11/224 [00:11<03:39,  1.03s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  5%|██████▋                                                                                                                     | 12/224 [00:11<03:25,  1.03it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  6%|███████▏                                                                                                                    | 13/224 [00:12<03:16,  1.07it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  6%|███████▊                                                                                                                    | 14/224 [00:13<03:21,  1.04it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  7%|████████▎                                                                                                                   | 15/224 [00:14<03:19,  1.05it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  7%|████████▊                                                                                                                   | 16/224 [00:15<03:17,  1.05it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  8%|█████████▍                                                                                                                  | 17/224 [00:16<03:12,  1.08it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  8%|█████████▉                                                                                                                  | 18/224 [00:17<03:16,  1.05it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  8%|██████████▌                                                                                                                 | 19/224 [00:18<03:13,  1.06it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  9%|███████████                                                                                                                 | 20/224 [00:19<03:10,  1.07it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+  9%|███████████▋                                                                                                                | 21/224 [00:20<02:58,  1.14it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 10%|████████████▏                                                                                                               | 22/224 [00:20<02:54,  1.15it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 10%|████████████▋                                                                                                               | 23/224 [00:21<02:50,  1.18it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 11%|█████████████▎                                                                                                              | 24/224 [00:22<03:04,  1.08it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 11%|█████████████▊                                                                                                              | 25/224 [00:23<03:12,  1.03it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 12%|██████████████▍                                                                                                             | 26/224 [00:24<03:07,  1.06it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 12%|██████████████▉                                                                                                             | 27/224 [00:25<03:01,  1.08it/s] 12%|███████████████▌                                                                                                            | 28/224 [00:26<02:50,  1.15it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 13%|████████████████                                                                                                            | 29/224 [00:27<02:42,  1.20it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 13%|████████████████▌                                                                                                           | 30/224 [00:27<02:36,  1.24it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 14%|█████████████████▏                                                                                                          | 31/224 [00:28<02:47,  1.15it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 14%|█████████████████▋                                                                                                          | 32/224 [00:29<02:55,  1.09it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 15%|██████████████████▎                                                                                                         | 33/224 [00:30<03:00,  1.06it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 15%|██████████████████▊                                                                                                         | 34/224 [00:31<03:03,  1.03it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 16%|███████████████████▍                                                                                                        | 35/224 [00:32<03:05,  1.02it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 16%|███████████████████▉                                                                                                        | 36/224 [00:34<03:10,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 17%|████████████████████▍                                                                                                       | 37/224 [00:35<03:11,  1.02s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 17%|█████████████████████                                                                                                       | 38/224 [00:36<03:05,  1.00it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 17%|█████████████████████▌                                                                                                      | 39/224 [00:36<02:56,  1.05it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 18%|██████████████████████▏                                                                                                     | 40/224 [00:37<02:48,  1.09it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 18%|██████████████████████▋                                                                                                     | 41/224 [00:38<02:55,  1.04it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 19%|███████████████████████▎                                                                                                    | 42/224 [00:39<02:58,  1.02it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 19%|███████████████████████▊                                                                                                    | 43/224 [00:40<02:48,  1.07it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 20%|████████████████████████▎                                                                                                   | 44/224 [00:41<02:38,  1.14it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 20%|████████████████████████▉                                                                                                   | 45/224 [00:42<02:33,  1.17it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 21%|█████████████████████████▍                                                                                                  | 46/224 [00:43<02:42,  1.10it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 21%|██████████████████████████                                                                                                  | 47/224 [00:44<02:48,  1.05it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 21%|██████████████████████████▌                                                                                                 | 48/224 [00:45<02:52,  1.02it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 22%|███████████████████████████▏                                                                                                | 49/224 [00:46<02:52,  1.02it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 22%|███████████████████████████▋                                                                                                | 50/224 [00:47<02:55,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 23%|████████████████████████████▏                                                                                               | 51/224 [00:48<02:55,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 23%|████████████████████████████▊                                                                                               | 52/224 [00:49<02:51,  1.00it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 24%|█████████████████████████████▎                                                                                              | 53/224 [00:50<02:48,  1.02it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 24%|█████████████████████████████▉                                                                                              | 54/224 [00:51<02:49,  1.00it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 25%|██████████████████████████████▍                                                                                             | 55/224 [00:52<02:50,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 25%|███████████████████████████████                                                                                             | 56/224 [00:53<02:51,  1.02s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 25%|███████████████████████████████▌                                                                                            | 57/224 [00:54<02:51,  1.03s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 26%|████████████████████████████████                                                                                            | 58/224 [00:55<02:41,  1.03it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 26%|████████████████████████████████▋                                                                                           | 59/224 [00:56<02:43,  1.01it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 27%|█████████████████████████████████▏                                                                                          | 60/224 [00:57<02:43,  1.01it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 27%|█████████████████████████████████▊                                                                                          | 61/224 [00:58<02:35,  1.05it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 28%|██████████████████████████████████▎                                                                                         | 62/224 [00:59<02:28,  1.09it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 28%|██████████████████████████████████▉                                                                                         | 63/224 [00:59<02:22,  1.13it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 29%|███████████████████████████████████▍                                                                                        | 64/224 [01:00<02:19,  1.15it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 29%|███████████████████████████████████▉                                                                                        | 65/224 [01:01<02:16,  1.17it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 29%|████████████████████████████████████▌                                                                                       | 66/224 [01:02<02:23,  1.10it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 30%|█████████████████████████████████████                                                                                       | 67/224 [01:03<02:28,  1.06it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 30%|█████████████████████████████████████▋                                                                                      | 68/224 [01:04<02:31,  1.03it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 31%|██████████████████████████████████████▏                                                                                     | 69/224 [01:05<02:33,  1.01it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 31%|██████████████████████████████████████▊                                                                                     | 70/224 [01:06<02:34,  1.00s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 32%|███████████████████████████████████████▎                                                                                    | 71/224 [01:07<02:39,  1.05s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 32%|███████████████████████████████████████▊                                                                                    | 72/224 [01:08<02:39,  1.05s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 33%|████████████████████████████████████████▍                                                                                   | 73/224 [01:10<02:42,  1.07s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 33%|████████████████████████████████████████▉                                                                                   | 74/224 [01:11<02:41,  1.08s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 33%|█████████████████████████████████████████▌                                                                                  | 75/224 [01:12<02:43,  1.10s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 34%|██████████████████████████████████████████                                                                                  | 76/224 [01:13<02:42,  1.10s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 34%|██████████████████████████████████████████▋                                                                                 | 77/224 [01:14<02:43,  1.11s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 35%|███████████████████████████████████████████▏                                                                                | 78/224 [01:15<02:41,  1.11s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 35%|███████████████████████████████████████████▋                                                                                | 79/224 [01:16<02:36,  1.08s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 36%|████████████████████████████████████████████▎                                                                               | 80/224 [01:17<02:33,  1.06s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 36%|████████████████████████████████████████████▊                                                                               | 81/224 [01:18<02:30,  1.06s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 37%|█████████████████████████████████████████████▍                                                                              | 82/224 [01:19<02:28,  1.05s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 37%|█████████████████████████████████████████████▉                                                                              | 83/224 [01:20<02:26,  1.04s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 38%|██████████████████████████████████████████████▌                                                                             | 84/224 [01:21<02:23,  1.02s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 38%|███████████████████████████████████████████████                                                                             | 85/224 [01:22<02:19,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 38%|███████████████████████████████████████████████▌                                                                            | 86/224 [01:23<02:18,  1.00s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 39%|████████████████████████████████████████████████▏                                                                           | 87/224 [01:24<02:17,  1.00s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 39%|████████████████████████████████████████████████▋                                                                           | 88/224 [01:25<02:16,  1.00s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 40%|█████████████████████████████████████████████████▎                                                                          | 89/224 [01:26<02:16,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 40%|█████████████████████████████████████████████████▊                                                                          | 90/224 [01:27<02:18,  1.03s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 41%|██████████████████████████████████████████████████▍                                                                         | 91/224 [01:28<02:11,  1.01it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 41%|██████████████████████████████████████████████████▉                                                                         | 92/224 [01:29<02:06,  1.04it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 42%|███████████████████████████████████████████████████▍                                                                        | 93/224 [01:30<02:11,  1.00s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 42%|████████████████████████████████████████████████████                                                                        | 94/224 [01:31<02:17,  1.06s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 42%|████████████████████████████████████████████████████▌                                                                       | 95/224 [01:32<02:08,  1.00it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 43%|█████████████████████████████████████████████████████▏                                                                      | 96/224 [01:33<02:00,  1.06it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 43%|█████████████████████████████████████████████████████▋                                                                      | 97/224 [01:34<01:54,  1.11it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 44%|██████████████████████████████████████████████████████▎                                                                     | 98/224 [01:35<01:51,  1.13it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 44%|██████████████████████████████████████████████████████▊                                                                     | 99/224 [01:36<01:48,  1.15it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 45%|██████████████████████████████████████████████████████▉                                                                    | 100/224 [01:36<01:47,  1.15it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 45%|███████████████████████████████████████████████████████▍                                                                   | 101/224 [01:37<01:44,  1.18it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 46%|████████████████████████████████████████████████████████                                                                   | 102/224 [01:38<01:39,  1.22it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 46%|████████████████████████████████████████████████████████▌                                                                  | 103/224 [01:39<01:38,  1.23it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 46%|█████████████████████████████████████████████████████████                                                                  | 104/224 [01:40<01:48,  1.10it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 47%|█████████████████████████████████████████████████████████▋                                                                 | 105/224 [01:41<01:56,  1.02it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 47%|██████████████████████████████████████████████████████████▏                                                                | 106/224 [01:42<01:58,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 48%|██████████████████████████████████████████████████████████▊                                                                | 107/224 [01:43<02:01,  1.04s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 48%|███████████████████████████████████████████████████████████▎                                                               | 108/224 [01:44<01:53,  1.02it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 49%|███████████████████████████████████████████████████████████▊                                                               | 109/224 [01:45<01:47,  1.07it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 49%|████████████████████████████████████████████████████████████▍                                                              | 110/224 [01:46<01:44,  1.09it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 50%|████████████████████████████████████████████████████████████▉                                                              | 111/224 [01:47<01:43,  1.09it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 50%|█████████████████████████████████████████████████████████████▌                                                             | 112/224 [01:48<01:47,  1.04it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 50%|██████████████████████████████████████████████████████████████                                                             | 113/224 [01:49<01:47,  1.03it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 51%|██████████████████████████████████████████████████████████████▌                                                            | 114/224 [01:50<01:48,  1.01it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 51%|███████████████████████████████████████████████████████████████▏                                                           | 115/224 [01:51<01:50,  1.02s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 52%|███████████████████████████████████████████████████████████████▋                                                           | 116/224 [01:52<01:51,  1.03s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 52%|████████████████████████████████████████████████████████████████▏                                                          | 117/224 [01:53<01:50,  1.03s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 53%|████████████████████████████████████████████████████████████████▊                                                          | 118/224 [01:54<01:48,  1.02s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 53%|█████████████████████████████████████████████████████████████████▎                                                         | 119/224 [01:55<01:49,  1.05s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 54%|█████████████████████████████████████████████████████████████████▉                                                         | 120/224 [01:56<01:42,  1.01it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 54%|██████████████████████████████████████████████████████████████████▍                                                        | 121/224 [01:57<01:37,  1.06it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 54%|██████████████████████████████████████████████████████████████████▉                                                        | 122/224 [01:58<01:34,  1.08it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 55%|███████████████████████████████████████████████████████████████████▌                                                       | 123/224 [01:59<01:37,  1.03it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 55%|████████████████████████████████████████████████████████████████████                                                       | 124/224 [02:00<01:39,  1.01it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 56%|████████████████████████████████████████████████████████████████████▋                                                      | 125/224 [02:01<01:39,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 56%|█████████████████████████████████████████████████████████████████████▏                                                     | 126/224 [02:02<01:39,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 57%|█████████████████████████████████████████████████████████████████████▋                                                     | 127/224 [02:03<01:39,  1.02s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 57%|██████████████████████████████████████████████████████████████████████▎                                                    | 128/224 [02:04<01:32,  1.04it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 58%|██████████████████████████████████████████████████████████████████████▊                                                    | 129/224 [02:04<01:27,  1.09it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 58%|███████████████████████████████████████████████████████████████████████▍                                                   | 130/224 [02:05<01:22,  1.14it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 58%|███████████████████████████████████████████████████████████████████████▉                                                   | 131/224 [02:06<01:20,  1.16it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 59%|████████████████████████████████████████████████████████████████████████▍                                                  | 132/224 [02:07<01:19,  1.16it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 59%|█████████████████████████████████████████████████████████████████████████                                                  | 133/224 [02:08<01:17,  1.17it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 60%|█████████████████████████████████████████████████████████████████████████▌                                                 | 134/224 [02:09<01:21,  1.11it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 60%|██████████████████████████████████████████████████████████████████████████▏                                                | 135/224 [02:10<01:23,  1.06it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 61%|██████████████████████████████████████████████████████████████████████████▋                                                | 136/224 [02:11<01:24,  1.04it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 61%|███████████████████████████████████████████████████████████████████████████▏                                               | 137/224 [02:12<01:25,  1.02it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 62%|███████████████████████████████████████████████████████████████████████████▊                                               | 138/224 [02:13<01:25,  1.00it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 62%|████████████████████████████████████████████████████████████████████████████▎                                              | 139/224 [02:14<01:27,  1.03s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 62%|████████████████████████████████████████████████████████████████████████████▉                                              | 140/224 [02:15<01:29,  1.07s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 63%|█████████████████████████████████████████████████████████████████████████████▍                                             | 141/224 [02:16<01:28,  1.06s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 63%|█████████████████████████████████████████████████████████████████████████████▉                                             | 142/224 [02:17<01:28,  1.08s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 64%|██████████████████████████████████████████████████████████████████████████████▌                                            | 143/224 [02:18<01:26,  1.07s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 64%|███████████████████████████████████████████████████████████████████████████████                                            | 144/224 [02:19<01:24,  1.06s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 65%|███████████████████████████████████████████████████████████████████████████████▌                                           | 145/224 [02:20<01:22,  1.04s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 65%|████████████████████████████████████████████████████████████████████████████████▏                                          | 146/224 [02:22<01:23,  1.07s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 66%|████████████████████████████████████████████████████████████████████████████████▋                                          | 147/224 [02:22<01:19,  1.03s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 66%|█████████████████████████████████████████████████████████████████████████████████▎                                         | 148/224 [02:23<01:17,  1.02s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 67%|█████████████████████████████████████████████████████████████████████████████████▊                                         | 149/224 [02:25<01:18,  1.04s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 67%|██████████████████████████████████████████████████████████████████████████████████▎                                        | 150/224 [02:26<01:17,  1.05s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 67%|██████████████████████████████████████████████████████████████████████████████████▉                                        | 151/224 [02:27<01:13,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 68%|███████████████████████████████████████████████████████████████████████████████████▍                                       | 152/224 [02:28<01:16,  1.06s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 68%|████████████████████████████████████████████████████████████████████████████████████                                       | 153/224 [02:29<01:16,  1.08s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 69%|████████████████████████████████████████████████████████████████████████████████████▌                                      | 154/224 [02:30<01:16,  1.09s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 69%|█████████████████████████████████████████████████████████████████████████████████████                                      | 155/224 [02:31<01:16,  1.11s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 70%|█████████████████████████████████████████████████████████████████████████████████████▋                                     | 156/224 [02:32<01:14,  1.10s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 70%|██████████████████████████████████████████████████████████████████████████████████████▏                                    | 157/224 [02:33<01:11,  1.07s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 71%|██████████████████████████████████████████████████████████████████████████████████████▊                                    | 158/224 [02:34<01:10,  1.06s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 71%|███████████████████████████████████████████████████████████████████████████████████████▎                                   | 159/224 [02:35<01:07,  1.04s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 71%|███████████████████████████████████████████████████████████████████████████████████████▊                                   | 160/224 [02:36<01:06,  1.04s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 72%|████████████████████████████████████████████████████████████████████████████████████████▍                                  | 161/224 [02:37<01:05,  1.04s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 72%|████████████████████████████████████████████████████████████████████████████████████████▉                                  | 162/224 [02:38<01:03,  1.03s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 73%|█████████████████████████████████████████████████████████████████████████████████████████▌                                 | 163/224 [02:39<01:01,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 73%|██████████████████████████████████████████████████████████████████████████████████████████                                 | 164/224 [02:40<01:00,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 74%|██████████████████████████████████████████████████████████████████████████████████████████▌                                | 165/224 [02:41<00:59,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 74%|███████████████████████████████████████████████████████████████████████████████████████████▏                               | 166/224 [02:42<00:58,  1.00s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 75%|███████████████████████████████████████████████████████████████████████████████████████████▋                               | 167/224 [02:43<00:58,  1.02s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 75%|████████████████████████████████████████████████████████████████████████████████████████████▎                              | 168/224 [02:44<00:57,  1.03s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 75%|████████████████████████████████████████████████████████████████████████████████████████████▊                              | 169/224 [02:45<00:54,  1.00it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 76%|█████████████████████████████████████████████████████████████████████████████████████████████▎                             | 170/224 [02:46<00:55,  1.02s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 76%|█████████████████████████████████████████████████████████████████████████████████████████████▉                             | 171/224 [02:47<00:55,  1.05s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 77%|██████████████████████████████████████████████████████████████████████████████████████████████▍                            | 172/224 [02:49<00:54,  1.05s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 77%|██████████████████████████████████████████████████████████████████████████████████████████████▉                            | 173/224 [02:50<00:53,  1.05s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 78%|███████████████████████████████████████████████████████████████████████████████████████████████▌                           | 174/224 [02:50<00:49,  1.01it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 78%|████████████████████████████████████████████████████████████████████████████████████████████████                           | 175/224 [02:51<00:49,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 79%|████████████████████████████████████████████████████████████████████████████████████████████████▋                          | 176/224 [02:53<00:48,  1.02s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 79%|█████████████████████████████████████████████████████████████████████████████████████████████████▏                         | 177/224 [02:54<00:48,  1.04s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 79%|█████████████████████████████████████████████████████████████████████████████████████████████████▋                         | 178/224 [02:55<00:48,  1.05s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 80%|██████████████████████████████████████████████████████████████████████████████████████████████████▎                        | 179/224 [02:56<00:44,  1.00it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 80%|██████████████████████████████████████████████████████████████████████████████████████████████████▊                        | 180/224 [02:56<00:41,  1.06it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 81%|███████████████████████████████████████████████████████████████████████████████████████████████████▍                       | 181/224 [02:57<00:39,  1.10it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 81%|███████████████████████████████████████████████████████████████████████████████████████████████████▉                       | 182/224 [02:58<00:38,  1.10it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 82%|████████████████████████████████████████████████████████████████████████████████████████████████████▍                      | 183/224 [02:59<00:37,  1.10it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 82%|█████████████████████████████████████████████████████████████████████████████████████████████████████                      | 184/224 [03:00<00:36,  1.10it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 83%|█████████████████████████████████████████████████████████████████████████████████████████████████████▌                     | 185/224 [03:01<00:37,  1.03it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 83%|██████████████████████████████████████████████████████████████████████████████████████████████████████▏                    | 186/224 [03:02<00:38,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 83%|██████████████████████████████████████████████████████████████████████████████████████████████████████▋                    | 187/224 [03:03<00:39,  1.06s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 84%|███████████████████████████████████████████████████████████████████████████████████████████████████████▏                   | 188/224 [03:04<00:38,  1.06s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 84%|███████████████████████████████████████████████████████████████████████████████████████████████████████▊                   | 189/224 [03:05<00:35,  1.00s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 85%|████████████████████████████████████████████████████████████████████████████████████████████████████████▎                  | 190/224 [03:06<00:32,  1.04it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 85%|████████████████████████████████████████████████████████████████████████████████████████████████████████▉                  | 191/224 [03:07<00:30,  1.07it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 86%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▍                 | 192/224 [03:08<00:30,  1.04it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 86%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▉                 | 193/224 [03:09<00:30,  1.02it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 87%|██████████████████████████████████████████████████████████████████████████████████████████████████████████▌                | 194/224 [03:10<00:29,  1.00it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 87%|███████████████████████████████████████████████████████████████████████████████████████████████████████████                | 195/224 [03:11<00:29,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 88%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▋               | 196/224 [03:12<00:28,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 88%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▏              | 197/224 [03:13<00:27,  1.02s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 88%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▋              | 198/224 [03:14<00:26,  1.03s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 89%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▎             | 199/224 [03:15<00:25,  1.02s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 89%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▊             | 200/224 [03:16<00:24,  1.03s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 90%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▎            | 201/224 [03:17<00:23,  1.03s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 90%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▉            | 202/224 [03:18<00:23,  1.05s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 91%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████▍           | 203/224 [03:19<00:20,  1.02it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 91%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████           | 204/224 [03:20<00:18,  1.07it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 92%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌          | 205/224 [03:21<00:18,  1.01it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 92%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████          | 206/224 [03:22<00:18,  1.03s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 92%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋         | 207/224 [03:23<00:17,  1.05s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 93%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏        | 208/224 [03:25<00:17,  1.07s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 93%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊        | 209/224 [03:25<00:15,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎       | 210/224 [03:26<00:13,  1.03it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊       | 211/224 [03:27<00:12,  1.01it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 95%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍      | 212/224 [03:28<00:11,  1.00it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 95%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉      | 213/224 [03:29<00:11,  1.00s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 96%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌     | 214/224 [03:30<00:10,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 96%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████     | 215/224 [03:31<00:09,  1.03s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 96%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌    | 216/224 [03:33<00:08,  1.05s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 97%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏   | 217/224 [03:34<00:07,  1.05s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 97%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋   | 218/224 [03:35<00:06,  1.06s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 98%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎  | 219/224 [03:36<00:05,  1.04s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 98%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊  | 220/224 [03:37<00:04,  1.05s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 99%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎ | 221/224 [03:38<00:03,  1.09s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+ 99%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉ | 222/224 [03:39<00:02,  1.01s/it]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍| 223/224 [03:40<00:00,  1.05it/s]/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/scipy/stats/_stats_py.py:4529: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 224/224 [03:40<00:00,  1.11it/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 224/224 [03:40<00:00,  1.01it/s]
+n of comparison records: 224

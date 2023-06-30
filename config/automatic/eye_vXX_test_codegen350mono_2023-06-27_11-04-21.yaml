@@ -1,0 +1,338 @@
+folder_output: ./data/eye_tracking_attention/eye_vXX
+folder_questions: null
+folder_participants: null
+
+# to derive the weights based on a specific tokenization
+tokenization:
+  model_names:
+    - Salesforce/codegen-350M-mono
+  models_folder: /mnt/huggingface_models
+
+followup_attention:
+  decays:
+    - 0.1
+  model_tokenizer: Salesforce/codegen-350M-mono
+  model_folder: /mnt/huggingface_models
+  normalization: null # null, turn_lines_into_prob_distrib
+  force_model_tokens: true
+  save_images: false
+  levels:
+    # possible elements of the list are: "line", "token".
+    #- line
+    - token
+
+
+batches:
+  # folder_participants
+  # where to find the participants' data for the given batch
+  # folder_questions
+  # where to find the source code snippets attended by the participants
+  - batch_no: 1
+    folder_questions: ./eye_tracking/samples_batch_1
+    folder_participants: ./data/eye_tracking_studies/dataset_human_sessions/batch_A
+  - batch_no: 2
+    folder_questions: ./eye_tracking/samples_batch_2022_08_03
+    folder_participants: ./data/eye_tracking_studies/dataset_human_sessions/batch_B
+
+# Participants under study.
+# Their data should be placed in the folder_participants directory.
+# The name is the name of the subdirectory
+# The zoom refers to the zoom with which the user run the experiment.
+# The tasks is a list of integer referring to the indices of the fixation.csv
+# files and the corresponding .avi video file.
+participants:
+  - name: UconsumerU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+    batch_no: 1
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UsalvationU
+    zoom: L
+    tasks: [0, 1, 2, 3]
+    batch_no: 1
+    manual_screen_coordinates:
+      x_end_screen_abs: 1723
+      x_start_screen_abs: 592
+      y_end_screen_abs: 967
+      y_start_screen_abs: 179
+  - name: UquarterU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+    batch_no: 1
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UpassionU
+    zoom: M
+    tasks: [0, 1, 2]
+    batch_no: 1
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UimproveU
+    zoom: L
+    tasks: [0, 1, 2]
+    batch_no: 1
+    manual_screen_coordinates:
+      x_end_screen_abs: 1723
+      x_start_screen_abs: 592
+      y_end_screen_abs: 967
+      y_start_screen_abs: 179
+  - name: UmonkU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+    batch_no: 1
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UbeerU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1792
+      x_start_screen_abs: 482
+      y_end_screen_abs: 1006
+      y_start_screen_abs: 147
+  - name: UbottleU
+    zoom: M
+    tasks: [0, 1]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UbottleU
+    zoom: M
+    tasks: [2, 3]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1790
+      x_start_screen_abs: 482
+      y_end_screen_abs: 1016
+      y_start_screen_abs: 147
+  - name: UdragonU
+    zoom: M
+    tasks: [1, 2, 3, 4]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UbagU
+    zoom: M
+    tasks: [0, 2, 3, 4]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1790
+      x_start_screen_abs: 482
+      y_end_screen_abs: 1006
+      y_start_screen_abs: 147
+
+  # BATCH - 2022-08-10
+  - name: UcamelionU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UDuckU
+    zoom: M
+    tasks: [0, 2, 3, 4]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UmosquitoU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+
+  # BATCH - 2022-08-23
+  - name: UboatU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UseaU
+    zoom: M
+    tasks: [1, 2, 3]  # TO FIX task 0
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UsurfU
+    zoom: M
+    tasks: [0, 2]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+
+  # BATCH - 2022-08-26
+  - name: UfallU
+    zoom: M
+    tasks: [0, 1, 3, 4]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UjumpU  # notetaker on task 2, 3 excluded
+    zoom: M
+    tasks: [0, 1]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UrideU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UsleepU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UclimbU
+    zoom: M
+    tasks: [0, 1, 2, 3, 4]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UeatU  # notetaker on task 2, 3 excluded
+    zoom: M
+    tasks: [0, 1]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UcryU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UflyU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+  - name: UscoopU
+    zoom: M
+    tasks: [0, 1, 2, 3]
+    batch_no: 2
+    manual_screen_coordinates:
+      x_end_screen_abs: 1785
+      x_start_screen_abs: 493
+      y_end_screen_abs: 1000
+      y_start_screen_abs: 151
+
+# these parameters influence how to distribute the attention in one (x, y)
+# point of the screen to the neighboring characters.
+# This should consider the fovea region, the distance from the screen and the
+# screen size.
+attention_parameters:
+  # motivation: http://www.learning-systems.ch/multimedia/vis_e02.htm
+  horizontal_attention_span: 4
+  vertical_attention_span: 1
+
+
+# Since the first experiments contained tab characters which were displayed
+# in an ambiguous way by vscode (aka some tabs counted as 4 spaces and others
+# counted as 1 space).
+manual_tab_replacements:
+  - find: "towerOfHanoi(n, 'A', 'C', 'B');\treturn 0;"
+    replace: "towerOfHanoi(n, 'A', 'C', 'B'); return 0;"
+  - find: "					   {0, 0, 0, 0},"
+    replace: "                       {0, 0, 0, 0},"
+  - find: "					   {0, 0, 0, 0},"
+    replace: "                       {0, 0, 0, 0},"
+  - find: "					   {0, 0, 0, 0}};"
+    replace: "                       {0, 0, 0, 0}};"
+
+
+# resolution of the screen
+screen_resolution:
+  pixel_screen_width: 1920
+  pixel_screen_height: 1080
+
+# DELL ULTRASHARP U2414HB 23.8" (metrics: mm)
+screen_size:
+  width_mm: 527.04
+  height_mm: 296.46
+
+screen_distance_mm: 300
+
+# parameters to detect the size of the screen via template matching method
+# based on computer vision
+zoom_dependant_parameters:
+  M:  # zoom level keyword
+    path_marker_top_left: ./data/eye_tracking_studies/markers/top_left_marker.png
+    path_marker_bottom_right: ./data/eye_tracking_studies/markers/bottom_right_marker_cropped.png
+    top_left_offsets: [182, 109]
+    bottom_right_offsets: [107, 6]
+    # number of visible lines and columns given this zoom level
+    n_lines: 26
+    n_col: 97
+  L:
+    path_marker_top_left: ./data/eye_tracking_studies/markers/top_left_marker_zoomed.png
+    path_marker_bottom_right: ./data/eye_tracking_studies/markers/bottom_right_marker_zoomed.png
+    top_left_offsets: [220, 125]
+    bottom_right_offsets: [90, -25]
+    n_lines: 20
+    n_col: 71

@@ -1,0 +1,34 @@
+# This file has to be annotation by a human looking at the video
+
+# timestamp when the participant STARTS looking at the code for the
+# given question. If must be annotated on the relative time of the video,
+# since the start of the recording e.g. "1:30", if the participant
+# starts the task after 1min and 30 sec from the start of the recording
+task_start: "1:40"
+
+# timestamp when the participant STOPS looking at the code for the
+# given question. If must be annotated on the relative time of the video,
+# since the start of the recording e.g. "3:30", if the participant
+# ends the task after 3min and 30 sec from the start of the recording
+task_end: "4:37"
+
+
+# the following two fields are to determine the correspondence between the real
+# pc time and the relative time of the recording
+# this is extracted by looking at the window clock in the bottom right corner
+# of the video and see when it changes the minutes.
+# we then report both the relative time at a precise minute change and the pc
+# clock time.
+
+# precise PC clock time (bottom right corner). This is the new starting minute.
+# REMEMBER TO USE THE 24 hour format. Note that this represents:
+# hours and minutes unlike the rest of the field.
+sync_timestamp_pc_clock: "14:41"
+# corresponding video time since the start of the recording (time shown by the
+# video player app)
+sync_timestamp_video: "1:31"
+
+# add positive number if the eye-tracker data is faster than the video
+# add negative number if the video is faster than the eye-tracker data
+shift_text_ms: 0
+shift_eye_data_ms: -400

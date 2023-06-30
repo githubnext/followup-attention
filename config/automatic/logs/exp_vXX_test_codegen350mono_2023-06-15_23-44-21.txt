@@ -1,0 +1,194 @@
+Using config file information.
+Some weights of the model checkpoint at /mnt/huggingface_models/Salesforce_codegen-350M-mono/codegen-350M-mono were not used when initializing CodeGenForCausalLM: ['transformer.h.13.attn.causal_mask', 'transformer.h.0.attn.causal_mask', 'transformer.h.1.attn.causal_mask', 'transformer.h.16.attn.causal_mask', 'transformer.h.8.attn.causal_mask', 'transformer.h.11.attn.causal_mask', 'transformer.h.4.attn.causal_mask', 'transformer.h.5.attn.causal_mask', 'transformer.h.12.attn.causal_mask', 'transformer.h.18.attn.causal_mask', 'transformer.h.2.attn.causal_mask', 'transformer.h.15.attn.causal_mask', 'transformer.h.6.attn.causal_mask', 'transformer.h.17.attn.causal_mask', 'transformer.h.14.attn.causal_mask', 'transformer.h.9.attn.causal_mask', 'transformer.h.19.attn.causal_mask', 'transformer.h.10.attn.causal_mask', 'transformer.h.3.attn.causal_mask', 'transformer.h.7.attn.causal_mask']
+- This IS expected if you are initializing CodeGenForCausalLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing CodeGenForCausalLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+  0%|                                                                                                                                                | 0/1 [00:00<?, ?it/s]Before calling model.generate()
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+After calling model.generate()
+# ****************************************************************************
+
+# In the Tower of Hanoi problem you have to move all the disks
+
+# from the left hand post to the right hand post.
+
+# You can only move the disks one at a time and you can never
+
+# place a bigger disk on a smaller disk.
+
+
+def TowerOfHanoi(n, from_rod, to_rod, aux_rod):
+    if n == 0:
+        return
+    TowerOfHanoi(n-1, from_rod, aux_rod, to_rod)
+    print("Move disk", n, "from rod", from_rod, "to rod", to_rod)
+    TowerOfHanoi(n-1, aux_rod, to_rod, from_rod)
+
+
+n = 4
+TowerOfHanoi(n, 'A', 'C', 'B')
+
+
+# Questions: How does the algorithm moves disks from the starting rod to the
+
+# ending rod?
+
+# Answer:
+# Move disk from rod A to rod B
+# Move disk from rod B to rod C
+# Move disk from rod C to rod D
+# Move disk from rod D to rod E
+# Move disk from rod E to rod F
+# Move disk from rod F to rod G
+# Move disk from rod G to rod H
+# Move disk from rod H to rod I
+# Move disk from rod I to rod J
+# Move disk from rod J to rod K
+Time taken to predict hannoi_Q1.py: 5.715865612030029 seconds
+Saving attention matrix for hannoi_Q1.py
+Time taken to store attention matrix hannoi_Q1.py: 0.09034132957458496 seconds
+Before calling model.generate()
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+After calling model.generate()
+# ****************************************************************************
+
+# In the Tower of Hanoi problem you have to move all the disks
+
+# from the left hand post to the right hand post.
+
+# You can only move the disks one at a time and you can never
+
+# place a bigger disk on a smaller disk.
+
+
+def TowerOfHanoi(n, from_rod, to_rod, aux_rod):
+    if n == 0:
+        return
+    TowerOfHanoi(n-1, from_rod, aux_rod, to_rod)
+    print("Move disk", n, "from rod", from_rod, "to rod", to_rod)
+    TowerOfHanoi(n-1, aux_rod, to_rod, from_rod)
+
+
+n = 4
+TowerOfHanoi(n, 'A', 'C', 'B')
+
+
+# Questions: How does the algorithm moves disks from the starting rod to the
+
+# ending rod?
+
+# Answer:
+# Move disk 1 from rod A to rod B
+# Move disk 2 from rod A to rod C
+# Move disk 3 from rod A to rod D
+# Move disk 4 from rod A to rod E
+# Move disk 5 from rod A to rod F
+# Move disk 6 from rod A to rod G
+# Move disk 7 from rod A to rod H
+# Move disk 8 from rod A to rod I
+# Move disk 9 from rod A to rod J
+
+Time taken to predict hannoi_Q1.py: 3.472622871398926 seconds
+Saving attention matrix for hannoi_Q1.py
+Time taken to store attention matrix hannoi_Q1.py: 0.09203386306762695 seconds
+Before calling model.generate()
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+After calling model.generate()
+# ****************************************************************************
+
+# In the Tower of Hanoi problem you have to move all the disks
+
+# from the left hand post to the right hand post.
+
+# You can only move the disks one at a time and you can never
+
+# place a bigger disk on a smaller disk.
+
+
+def TowerOfHanoi(n, from_rod, to_rod, aux_rod):
+    if n == 0:
+        return
+    TowerOfHanoi(n-1, from_rod, aux_rod, to_rod)
+    print("Move disk", n, "from rod", from_rod, "to rod", to_rod)
+    TowerOfHanoi(n-1, aux_rod, to_rod, from_rod)
+
+
+n = 4
+TowerOfHanoi(n, 'A', 'C', 'B')
+
+
+# Questions: How does the algorithm moves disks from the starting rod to the
+
+# ending rod?
+
+# Answer:
+# Move disk 4 from the starting rod to the ending rod.
+# Move disk 3 from the starting rod to the ending rod.
+# Move disk 2 from the starting rod to the ending rod.
+# Move disk 1 from the starting rod to the ending rod.
+# Move disk 0 from the starting rod to the ending rod.
+# Move disk -1 from the starting rod to the ending rod.
+# Move disk -2 from the starting rod to the ending rod.
+Time taken to predict hannoi_Q1.py: 3.5184760093688965 seconds
+Saving attention matrix for hannoi_Q1.py
+Time taken to store attention matrix hannoi_Q1.py: 0.0896139144897461 seconds
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:23<00:00, 23.32s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:23<00:00, 23.32s/it]
+Using config file information.
+n of data read:  3
+Using config file information.
+n of data read:  3
+Using config file information.
+Processing analysis pass: followup
+Found 3 files to process.
+Found 0 files already processed. Skippign them.
+Processing 3 files.
+Starting to derive attention for 3 files...
+Args: [('hannoi_Q1.py_0_Salesforce_codegen-350M-mono.npy', 'data/model_output/exp_vXX_test/codegen350mono/att_tensor', 'data/model_output/exp_vXX_test/codegen350mono/metadata', './data/model_output/exp_vXX_test/codegen350mono/followup', {}, <function compute_followup_attention at 0x7fd3f0c61310>), ('hannoi_Q1.py_1_Salesforce_codegen-350M-mono.npy', 'data/model_output/exp_vXX_test/codegen350mono/att_tensor', 'data/model_output/exp_vXX_test/codegen350mono/metadata', './data/model_output/exp_vXX_test/codegen350mono/followup', {}, <function compute_followup_attention at 0x7fd3f0c61310>), ('hannoi_Q1.py_2_Salesforce_codegen-350M-mono.npy', 'data/model_output/exp_vXX_test/codegen350mono/att_tensor', 'data/model_output/exp_vXX_test/codegen350mono/metadata', './data/model_output/exp_vXX_test/codegen350mono/followup', {}, <function compute_followup_attention at 0x7fd3f0c61310>)]
+  0%|                                                                                                                                                | 0/3 [00:00<?, ?it/s]  0%|                                                                                                                                               | 0/19 [00:00<?, ?it/s]  5%|███████                                                                                                                                | 1/19 [00:00<00:03,  5.80it/s] 11%|██████████████▏                                                                                                                        | 2/19 [00:00<00:02,  6.99it/s] 16%|█████████████████████▎                                                                                                                 | 3/19 [00:00<00:02,  7.49it/s] 21%|████████████████████████████▍                                                                                                          | 4/19 [00:00<00:02,  7.42it/s] 26%|███████████████████████████████████▌                                                                                                   | 5/19 [00:00<00:01,  7.77it/s] 32%|██████████████████████████████████████████▋                                                                                            | 6/19 [00:00<00:01,  7.87it/s] 37%|█████████████████████████████████████████████████▋                                                                                     | 7/19 [00:00<00:01,  7.92it/s] 42%|████████████████████████████████████████████████████████▊                                                                              | 8/19 [00:01<00:01,  7.52it/s] 47%|███████████████████████████████████████████████████████████████▉                                                                       | 9/19 [00:01<00:01,  7.26it/s] 53%|██████████████████████████████████████████████████████████████████████▌                                                               | 10/19 [00:01<00:01,  7.54it/s] 58%|█████████████████████████████████████████████████████████████████████████████▌                                                        | 11/19 [00:01<00:01,  7.79it/s] 63%|████████████████████████████████████████████████████████████████████████████████████▋                                                 | 12/19 [00:01<00:00,  7.87it/s] 68%|███████████████████████████████████████████████████████████████████████████████████████████▋                                          | 13/19 [00:01<00:00,  7.64it/s] 74%|██████████████████████████████████████████████████████████████████████████████████████████████████▋                                   | 14/19 [00:01<00:00,  7.81it/s] 79%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▊                            | 15/19 [00:01<00:00,  7.99it/s] 84%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                     | 16/19 [00:02<00:00,  8.02it/s] 89%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉              | 17/19 [00:02<00:00,  7.91it/s] 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉       | 18/19 [00:02<00:00,  8.01it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19/19 [00:02<00:00,  8.05it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19/19 [00:02<00:00,  7.73it/s]
+Consecutive layer pairs:  torch.Size([19, 324, 324])
+ 33%|█████████████████████████████████████████████▎                                                                                          | 1/3 [00:02<00:05,  2.54s/it]  0%|                                                                                                                                               | 0/19 [00:00<?, ?it/s]  5%|███████                                                                                                                                | 1/19 [00:00<00:02,  7.62it/s] 11%|██████████████▏                                                                                                                        | 2/19 [00:00<00:02,  7.87it/s] 16%|█████████████████████▎                                                                                                                 | 3/19 [00:00<00:02,  7.91it/s] 21%|████████████████████████████▍                                                                                                          | 4/19 [00:00<00:01,  8.06it/s] 26%|███████████████████████████████████▌                                                                                                   | 5/19 [00:00<00:01,  8.18it/s] 32%|██████████████████████████████████████████▋                                                                                            | 6/19 [00:00<00:01,  7.99it/s] 37%|█████████████████████████████████████████████████▋                                                                                     | 7/19 [00:00<00:01,  7.38it/s] 42%|████████████████████████████████████████████████████████▊                                                                              | 8/19 [00:01<00:01,  7.30it/s] 47%|███████████████████████████████████████████████████████████████▉                                                                       | 9/19 [00:01<00:01,  7.23it/s] 53%|██████████████████████████████████████████████████████████████████████▌                                                               | 10/19 [00:01<00:01,  7.22it/s] 58%|█████████████████████████████████████████████████████████████████████████████▌                                                        | 11/19 [00:01<00:01,  7.32it/s] 63%|████████████████████████████████████████████████████████████████████████████████████▋                                                 | 12/19 [00:01<00:00,  7.57it/s] 68%|███████████████████████████████████████████████████████████████████████████████████████████▋                                          | 13/19 [00:01<00:00,  7.73it/s] 74%|██████████████████████████████████████████████████████████████████████████████████████████████████▋                                   | 14/19 [00:01<00:00,  7.88it/s] 79%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▊                            | 15/19 [00:01<00:00,  7.98it/s] 84%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                     | 16/19 [00:02<00:00,  8.04it/s] 89%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉              | 17/19 [00:02<00:00,  7.78it/s] 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉       | 18/19 [00:02<00:00,  7.38it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19/19 [00:02<00:00,  7.56it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19/19 [00:02<00:00,  7.64it/s]
+Consecutive layer pairs:  torch.Size([19, 324, 324])
+ 67%|██████████████████████████████████████████████████████████████████████████████████████████▋                                             | 2/3 [00:05<00:02,  2.55s/it]  0%|                                                                                                                                               | 0/19 [00:00<?, ?it/s]  5%|███████                                                                                                                                | 1/19 [00:00<00:03,  5.91it/s] 11%|██████████████▏                                                                                                                        | 2/19 [00:00<00:02,  6.91it/s] 16%|█████████████████████▎                                                                                                                 | 3/19 [00:00<00:02,  7.01it/s] 21%|████████████████████████████▍                                                                                                          | 4/19 [00:00<00:02,  7.45it/s] 26%|███████████████████████████████████▌                                                                                                   | 5/19 [00:00<00:01,  7.72it/s] 32%|██████████████████████████████████████████▋                                                                                            | 6/19 [00:00<00:01,  7.34it/s] 37%|█████████████████████████████████████████████████▋                                                                                     | 7/19 [00:00<00:01,  7.55it/s] 42%|████████████████████████████████████████████████████████▊                                                                              | 8/19 [00:01<00:01,  7.16it/s] 47%|███████████████████████████████████████████████████████████████▉                                                                       | 9/19 [00:01<00:01,  6.72it/s] 53%|██████████████████████████████████████████████████████████████████████▌                                                               | 10/19 [00:01<00:01,  6.55it/s] 58%|█████████████████████████████████████████████████████████████████████████████▌                                                        | 11/19 [00:01<00:01,  6.86it/s] 63%|████████████████████████████████████████████████████████████████████████████████████▋                                                 | 12/19 [00:01<00:01,  6.42it/s] 68%|███████████████████████████████████████████████████████████████████████████████████████████▋                                          | 13/19 [00:01<00:00,  6.16it/s] 74%|██████████████████████████████████████████████████████████████████████████████████████████████████▋                                   | 14/19 [00:02<00:00,  6.51it/s] 79%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▊                            | 15/19 [00:02<00:00,  6.96it/s] 84%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                     | 16/19 [00:02<00:00,  7.28it/s] 89%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉              | 17/19 [00:02<00:00,  7.38it/s] 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉       | 18/19 [00:02<00:00,  7.36it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19/19 [00:02<00:00,  7.56it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19/19 [00:02<00:00,  7.05it/s]
+Consecutive layer pairs:  torch.Size([19, 324, 324])
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:07<00:00,  2.65s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:07<00:00,  2.62s/it]
+n of data transformed:  3
+Processing analysis pass: naive_max
+Found 3 files to process.
+Found 0 files already processed. Skippign them.
+Processing 3 files.
+Starting to derive attention for 3 files...
+Args: [('hannoi_Q1.py_0_Salesforce_codegen-350M-mono.npy', 'data/model_output/exp_vXX_test/codegen350mono/att_tensor', 'data/model_output/exp_vXX_test/codegen350mono/metadata', './data/model_output/exp_vXX_test/codegen350mono/naive_max', {}, <function compute_naive_max_aggregation at 0x7fd3f0c614c0>), ('hannoi_Q1.py_1_Salesforce_codegen-350M-mono.npy', 'data/model_output/exp_vXX_test/codegen350mono/att_tensor', 'data/model_output/exp_vXX_test/codegen350mono/metadata', './data/model_output/exp_vXX_test/codegen350mono/naive_max', {}, <function compute_naive_max_aggregation at 0x7fd3f0c614c0>), ('hannoi_Q1.py_2_Salesforce_codegen-350M-mono.npy', 'data/model_output/exp_vXX_test/codegen350mono/att_tensor', 'data/model_output/exp_vXX_test/codegen350mono/metadata', './data/model_output/exp_vXX_test/codegen350mono/naive_max', {}, <function compute_naive_max_aggregation at 0x7fd3f0c614c0>)]
+  0%|                                                                                                                                                | 0/3 [00:00<?, ?it/s] 33%|█████████████████████████████████████████████▎                                                                                          | 1/3 [00:00<00:00,  2.95it/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00,  7.19it/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00,  6.29it/s]
+n of data transformed:  3
+Processing analysis pass: vector_naive_max_plus_mean_of_followers
+Found 3 files to process.
+Found 0 files already processed. Skippign them.
+Processing 3 files.
+Starting to derive attention for 3 files...
+Args: [('hannoi_Q1.py_0_Salesforce_codegen-350M-mono.npy', 'data/model_output/exp_vXX_test/codegen350mono/naive_max', 'data/model_output/exp_vXX_test/codegen350mono/metadata', './data/model_output/exp_vXX_test/codegen350mono/vector_naive_max_plus_mean_of_followers', {}, <function compute_mean_of_followers at 0x7fd3f0c615e0>), ('hannoi_Q1.py_1_Salesforce_codegen-350M-mono.npy', 'data/model_output/exp_vXX_test/codegen350mono/naive_max', 'data/model_output/exp_vXX_test/codegen350mono/metadata', './data/model_output/exp_vXX_test/codegen350mono/vector_naive_max_plus_mean_of_followers', {}, <function compute_mean_of_followers at 0x7fd3f0c615e0>), ('hannoi_Q1.py_2_Salesforce_codegen-350M-mono.npy', 'data/model_output/exp_vXX_test/codegen350mono/naive_max', 'data/model_output/exp_vXX_test/codegen350mono/metadata', './data/model_output/exp_vXX_test/codegen350mono/vector_naive_max_plus_mean_of_followers', {}, <function compute_mean_of_followers at 0x7fd3f0c615e0>)]
+  0%|                                                                                                                                                | 0/3 [00:00<?, ?it/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 197.98it/s]
+n of data transformed:  3
+Processing analysis pass: vector_naive_mean_plus_mean_of_followers
+Traceback (most recent call last):
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/analyzer.py", line 308, in <module>
+    cli()
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/analyzer.py", line 220, in deriveall
+    derive_for_experiment(
+  File "/home/eaftan/copilot-attention/attwizard/analysis_pass/analyzer.py", line 96, in derive_for_experiment
+    target_filetype = filetypes[0]
+IndexError: list index out of range

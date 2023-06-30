@@ -1,0 +1,20 @@
+d = 1
+e = False
+f = 4
+b = "world"
+c = 2
+a = 7
+d = c + d * b
+d = max( d, e, f, e, )
+f = f - b + 7 / d
+a = c
+c = e + f * f + d
+a = c * b
+c = d + c
+b = abs( e, b, )
+b = f + d * f - f
+f = abs( d, b, )
+e = len( e, 6, c, 3, )
+a = len( b, c, c, c, )
+e = b
+if (a == 

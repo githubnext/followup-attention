@@ -1,0 +1,78 @@
+Traceback (most recent call last):
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/eaftan/copilot-attention/eye_tracking/post_processing.py", line 1624, in <module>
+    cli()
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1654, in invoke
+    super().invoke(ctx)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/eaftan/copilot-attention/eye_tracking/post_processing.py", line 50, in cli
+    config = yaml.safe_load(f)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/yaml/constructor.py", line 51, in get_single_data
+    return self.construct_document(node)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/yaml/constructor.py", line 60, in construct_document
+    for dummy in generator:
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/yaml/constructor.py", line 413, in construct_yaml_map
+    value = self.construct_mapping(node)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/yaml/constructor.py", line 218, in construct_mapping
+    return super().construct_mapping(node, deep=deep)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/yaml/constructor.py", line 141, in construct_mapping
+    raise ConstructorError("while constructing a mapping", node.start_mark,
+yaml.constructor.ConstructorError: while constructing a mapping
+  in "config/automatic/eye_v10_rebuttal_codegen6B_2022-11-16_22-57-04.yaml", line 9, column 18
+found unhashable key
+  in "config/automatic/eye_v10_rebuttal_codegen6B_2022-11-16_22-57-04.yaml", line 9, column 19
+Traceback (most recent call last):
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/eaftan/.pyenv/versions/3.8.9/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/eaftan/copilot-attention/eye_tracking/post_processing.py", line 1624, in <module>
+    cli()
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1654, in invoke
+    super().invoke(ctx)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/eaftan/copilot-attention/eye_tracking/post_processing.py", line 50, in cli
+    config = yaml.safe_load(f)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/yaml/constructor.py", line 51, in get_single_data
+    return self.construct_document(node)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/yaml/constructor.py", line 60, in construct_document
+    for dummy in generator:
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/yaml/constructor.py", line 413, in construct_yaml_map
+    value = self.construct_mapping(node)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/yaml/constructor.py", line 218, in construct_mapping
+    return super().construct_mapping(node, deep=deep)
+  File "/home/eaftan/copilot-attention/venv/lib/python3.8/site-packages/yaml/constructor.py", line 141, in construct_mapping
+    raise ConstructorError("while constructing a mapping", node.start_mark,
+yaml.constructor.ConstructorError: while constructing a mapping
+  in "config/automatic/eye_v10_rebuttal_codegen6B_2022-11-16_22-57-04.yaml", line 9, column 18
+found unhashable key
+  in "config/automatic/eye_v10_rebuttal_codegen6B_2022-11-16_22-57-04.yaml", line 9, column 19

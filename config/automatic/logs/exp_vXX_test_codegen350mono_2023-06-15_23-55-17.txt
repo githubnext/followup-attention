@@ -1,0 +1,188 @@
+Using config file information.
+Some weights of the model checkpoint at /mnt/huggingface_models/Salesforce_codegen-350M-mono/codegen-350M-mono were not used when initializing CodeGenForCausalLM: ['transformer.h.14.attn.causal_mask', 'transformer.h.1.attn.causal_mask', 'transformer.h.19.attn.causal_mask', 'transformer.h.9.attn.causal_mask', 'transformer.h.15.attn.causal_mask', 'transformer.h.8.attn.causal_mask', 'transformer.h.18.attn.causal_mask', 'transformer.h.13.attn.causal_mask', 'transformer.h.7.attn.causal_mask', 'transformer.h.6.attn.causal_mask', 'transformer.h.11.attn.causal_mask', 'transformer.h.0.attn.causal_mask', 'transformer.h.5.attn.causal_mask', 'transformer.h.12.attn.causal_mask', 'transformer.h.10.attn.causal_mask', 'transformer.h.4.attn.causal_mask', 'transformer.h.2.attn.causal_mask', 'transformer.h.3.attn.causal_mask', 'transformer.h.16.attn.causal_mask', 'transformer.h.17.attn.causal_mask']
+- This IS expected if you are initializing CodeGenForCausalLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing CodeGenForCausalLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+  0%|                                                                                                                                                | 0/1 [00:00<?, ?it/s]Before calling model.generate()
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+After calling model.generate()
+# ****************************************************************************
+
+# In the Tower of Hanoi problem you have to move all the disks
+
+# from the left hand post to the right hand post.
+
+# You can only move the disks one at a time and you can never
+
+# place a bigger disk on a smaller disk.
+
+
+def TowerOfHanoi(n, from_rod, to_rod, aux_rod):
+    if n == 0:
+        return
+    TowerOfHanoi(n-1, from_rod, aux_rod, to_rod)
+    print("Move disk", n, "from rod", from_rod, "to rod", to_rod)
+    TowerOfHanoi(n-1, aux_rod, to_rod, from_rod)
+
+
+n = 4
+TowerOfHanoi(n, 'A', 'C', 'B')
+
+
+# Questions: How does the algorithm moves disks from the starting rod to the
+
+# ending rod?
+
+# Answer:
+# Move disk from rod A to rod B
+# Move disk from rod B to rod C
+# Move disk from rod C to rod D
+# Move disk from rod D to rod E
+# Move disk from rod E to rod F
+# Move disk from rod F to rod G
+# Move disk from rod G to rod H
+# Move disk from rod H to rod I
+# Move disk from rod I to rod J
+# Move disk from rod J to rod K
+Time taken to predict hannoi_Q1.py: 3.713372230529785 seconds
+Saving attention matrix for hannoi_Q1.py
+Time taken to store attention matrix hannoi_Q1.py: 0.10624933242797852 seconds
+Before calling model.generate()
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+After calling model.generate()
+# ****************************************************************************
+
+# In the Tower of Hanoi problem you have to move all the disks
+
+# from the left hand post to the right hand post.
+
+# You can only move the disks one at a time and you can never
+
+# place a bigger disk on a smaller disk.
+
+
+def TowerOfHanoi(n, from_rod, to_rod, aux_rod):
+    if n == 0:
+        return
+    TowerOfHanoi(n-1, from_rod, aux_rod, to_rod)
+    print("Move disk", n, "from rod", from_rod, "to rod", to_rod)
+    TowerOfHanoi(n-1, aux_rod, to_rod, from_rod)
+
+
+n = 4
+TowerOfHanoi(n, 'A', 'C', 'B')
+
+
+# Questions: How does the algorithm moves disks from the starting rod to the
+
+# ending rod?
+
+# Answer:
+# Move disk 1 from rod A to rod B
+# Move disk 2 from rod A to rod C
+# Move disk 3 from rod A to rod D
+# Move disk 4 from rod A to rod E
+# Move disk 5 from rod A to rod F
+# Move disk 6 from rod A to rod G
+# Move disk 7 from rod A to rod H
+# Move disk 8 from rod A to rod I
+# Move disk 9 from rod A to rod J
+
+Time taken to predict hannoi_Q1.py: 3.504570960998535 seconds
+Saving attention matrix for hannoi_Q1.py
+Time taken to store attention matrix hannoi_Q1.py: 0.1072089672088623 seconds
+Before calling model.generate()
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+After calling model.generate()
+# ****************************************************************************
+
+# In the Tower of Hanoi problem you have to move all the disks
+
+# from the left hand post to the right hand post.
+
+# You can only move the disks one at a time and you can never
+
+# place a bigger disk on a smaller disk.
+
+
+def TowerOfHanoi(n, from_rod, to_rod, aux_rod):
+    if n == 0:
+        return
+    TowerOfHanoi(n-1, from_rod, aux_rod, to_rod)
+    print("Move disk", n, "from rod", from_rod, "to rod", to_rod)
+    TowerOfHanoi(n-1, aux_rod, to_rod, from_rod)
+
+
+n = 4
+TowerOfHanoi(n, 'A', 'C', 'B')
+
+
+# Questions: How does the algorithm moves disks from the starting rod to the
+
+# ending rod?
+
+# Answer:
+# Move disk 4 from the starting rod to the ending rod.
+# Move disk 3 from the starting rod to the ending rod.
+# Move disk 2 from the starting rod to the ending rod.
+# Move disk 1 from the starting rod to the ending rod.
+# Move disk 0 from the starting rod to the ending rod.
+# Move disk -1 from the starting rod to the ending rod.
+# Move disk -2 from the starting rod to the ending rod.
+Time taken to predict hannoi_Q1.py: 3.500166893005371 seconds
+Saving attention matrix for hannoi_Q1.py
+Time taken to store attention matrix hannoi_Q1.py: 0.10653018951416016 seconds
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:20<00:00, 20.63s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:20<00:00, 20.63s/it]
+Using config file information.
+n of data read:  3
+Using config file information.
+n of data read:  3
+Using config file information.
+Processing analysis pass: followup
+Found 3 files to process.
+Found 3 files already processed. Skippign them.
+Removing hannoi_Q1.py_1_Salesforce_codegen-350M-mono.npy from the list of files to process.
+Removing hannoi_Q1.py_0_Salesforce_codegen-350M-mono.npy from the list of files to process.
+Removing hannoi_Q1.py_2_Salesforce_codegen-350M-mono.npy from the list of files to process.
+Processing 0 files.
+Starting to derive attention for 0 files...
+Args: []
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+n of data transformed:  0
+Processing analysis pass: naive_max
+Found 3 files to process.
+Found 3 files already processed. Skippign them.
+Removing hannoi_Q1.py_1_Salesforce_codegen-350M-mono.npy from the list of files to process.
+Removing hannoi_Q1.py_0_Salesforce_codegen-350M-mono.npy from the list of files to process.
+Removing hannoi_Q1.py_2_Salesforce_codegen-350M-mono.npy from the list of files to process.
+Processing 0 files.
+Starting to derive attention for 0 files...
+Args: []
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+n of data transformed:  0
+Processing analysis pass: vector_naive_max_plus_mean_of_followers
+Found 3 files to process.
+Found 3 files already processed. Skippign them.
+Removing hannoi_Q1.py_1_Salesforce_codegen-350M-mono.npy from the list of files to process.
+Removing hannoi_Q1.py_0_Salesforce_codegen-350M-mono.npy from the list of files to process.
+Removing hannoi_Q1.py_2_Salesforce_codegen-350M-mono.npy from the list of files to process.
+Processing 0 files.
+Starting to derive attention for 0 files...
+Args: []
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+n of data transformed:  0
+Processing analysis pass: raw_weights_last_layer
+Found 3 files to process.
+Found 0 files already processed. Skippign them.
+Processing 3 files.
+Starting to derive attention for 3 files...
+Args: [('hannoi_Q1.py_0_Salesforce_codegen-350M-mono.npy', 'data/model_output/exp_vXX_test/codegen350mono/att_tensor', 'data/model_output/exp_vXX_test/codegen350mono/metadata', './data/model_output/exp_vXX_test/codegen350mono/raw_weights_last_layer', {}, <function raw_weights_last_layer at 0x7f499871be50>), ('hannoi_Q1.py_1_Salesforce_codegen-350M-mono.npy', 'data/model_output/exp_vXX_test/codegen350mono/att_tensor', 'data/model_output/exp_vXX_test/codegen350mono/metadata', './data/model_output/exp_vXX_test/codegen350mono/raw_weights_last_layer', {}, <function raw_weights_last_layer at 0x7f499871be50>), ('hannoi_Q1.py_2_Salesforce_codegen-350M-mono.npy', 'data/model_output/exp_vXX_test/codegen350mono/att_tensor', 'data/model_output/exp_vXX_test/codegen350mono/metadata', './data/model_output/exp_vXX_test/codegen350mono/raw_weights_last_layer', {}, <function raw_weights_last_layer at 0x7f499871be50>)]
+  0%|                                                                                                                                                | 0/3 [00:00<?, ?it/s] 67%|██████████████████████████████████████████████████████████████████████████████████████████▋                                             | 2/3 [00:00<00:00, 13.36it/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.70it/s]
+n of data transformed:  3
+Processing analysis pass: raw_weights_first_layer
+Found 3 files to process.
+Found 0 files already processed. Skippign them.
+Processing 3 files.
+Starting to derive attention for 3 files...
+Args: [('hannoi_Q1.py_0_Salesforce_codegen-350M-mono.npy', 'data/model_output/exp_vXX_test/codegen350mono/att_tensor', 'data/model_output/exp_vXX_test/codegen350mono/metadata', './data/model_output/exp_vXX_test/codegen350mono/raw_weights_first_layer', {}, <function raw_weights_first_layer at 0x7f499871bee0>), ('hannoi_Q1.py_1_Salesforce_codegen-350M-mono.npy', 'data/model_output/exp_vXX_test/codegen350mono/att_tensor', 'data/model_output/exp_vXX_test/codegen350mono/metadata', './data/model_output/exp_vXX_test/codegen350mono/raw_weights_first_layer', {}, <function raw_weights_first_layer at 0x7f499871bee0>), ('hannoi_Q1.py_2_Salesforce_codegen-350M-mono.npy', 'data/model_output/exp_vXX_test/codegen350mono/att_tensor', 'data/model_output/exp_vXX_test/codegen350mono/metadata', './data/model_output/exp_vXX_test/codegen350mono/raw_weights_first_layer', {}, <function raw_weights_first_layer at 0x7f499871bee0>)]
+  0%|                                                                                                                                                | 0/3 [00:00<?, ?it/s] 67%|██████████████████████████████████████████████████████████████████████████████████████████▋                                             | 2/3 [00:00<00:00, 12.70it/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 12.95it/s]
+n of data transformed:  3

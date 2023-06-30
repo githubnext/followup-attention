@@ -1,0 +1,135 @@
+# This config decsribe how human and models are compared and on what
+
+
+human_att_folder: ./data/eye_tracking_attention/eye_v10
+machine_att_folder: ./data/model_output/exp_v08
+output_comparison_folder: ./data/comparisons/cmp_v01
+
+
+comparisons:
+# the type can be:
+# - vectors: if we compare vectors of N elements as the tokens in the prompt
+# - matrix: if we compare matrices of size N x N where N are the promt tokens
+# - transform_functions: the functions to apply to the data before they are
+#   compared. Note that if more than one transformation is there they are
+#   applied sequentially in the given order.
+#   Note that, beside a name, each transformation can have also a "kwargs" key
+#   with the additional argument that the function might take.
+  # - name: plain_weights
+  #   type: vector
+  #   comparison_function: spearman_rank
+  #   transformations:
+  #     - name: convert_to_char_level
+  #       kwargs:
+  #         mapping_from_token_to_char: equal_share
+  #     - name: convert_vect_to_probabilities
+  #   human:
+  #     subfolder: att_weights
+  #     file_extension: '.npy'
+  #   machine:
+  #     subfolder: vector_naive_max_plus_mean_of_followers
+  #     file_extension: '.npy'
+
+  # MSE MATRIX
+  # - name: followup_matrix
+  #   type: matrix
+  #   comparison_function: mse_line_by_line
+  #   transformations:
+  #     - name: keep_only_tokens_seen_by_model
+  #     - name: normalize_both_matrices_by_line
+  #   human:
+  #     subfolder: decay_0.1/data_followup_tokens_tokens_model
+  #     file_extension: '.npy'
+  #   machine:
+  #     subfolder: followup
+  #     file_extension: '.npy'
+  # - name: naive_max_matrix
+  #   type: matrix
+  #   comparison_function: mse_line_by_line
+  #   transformations:
+  #     - name: keep_only_tokens_seen_by_model
+  #     - name: normalize_both_matrices_by_line
+  #   human:
+  #     subfolder: decay_0.1/data_followup_tokens_tokens_model
+  #     file_extension: '.npy'
+  #   machine:
+  #     subfolder: naive_max
+  #     file_extension: '.npy'
+
+  # # JSD MATRIX
+  # - name: followup_matrix_jsd
+  #   type: matrix
+  #   comparison_function: jsd_line_by_line
+  #   transformations:
+  #     - name: keep_only_tokens_seen_by_model
+  #     - name: normalize_both_matrices_by_line
+  #   human:
+  #     subfolder: decay_0.1/data_followup_tokens_tokens_model
+  #     file_extension: '.npy'
+  #   machine:
+  #     subfolder: followup
+  #     file_extension: '.npy'
+  # - name: naive_max_matrix_jsd
+  #   type: matrix
+  #   comparison_function: jsd_line_by_line
+  #   transformations:
+  #     - name: keep_only_tokens_seen_by_model
+  #     - name: normalize_both_matrices_by_line
+  #   human:
+  #     subfolder: decay_0.1/data_followup_tokens_tokens_model
+  #     file_extension: '.npy'
+  #   machine:
+  #     subfolder: naive_max
+  #     file_extension: '.npy'
+
+
+
+  # # MEAN RECIPROCAL RANK
+  # - name: followup_matrix_mrr
+  #   type: matrix
+  #   comparison_function: compare_mean_reciprocal_rank
+  #   transformations:
+  #     - name: keep_only_tokens_seen_by_model
+  #   human:
+  #     subfolder: decay_0.1/data_followup_tokens_tokens_model
+  #     file_extension: '.npy'
+  #   machine:
+  #     subfolder: followup
+  #     file_extension: '.npy'
+  # - name: naive_max_matrix_mrr
+  #   type: matrix
+  #   comparison_function: compare_mean_reciprocal_rank
+  #   transformations:
+  #     - name: keep_only_tokens_seen_by_model
+  #   human:
+  #     subfolder: decay_0.1/data_followup_tokens_tokens_model
+  #     file_extension: '.npy'
+  #   machine:
+  #     subfolder: naive_max
+  #     file_extension: '.npy'
+
+
+
+  # HARMONIC RANK
+  - name: followup_matrix_harmonic_rank
+    type: matrix
+    comparison_function: compare_harmonic_rank
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens_model
+      file_extension: '.npy'
+    machine:
+      subfolder: followup
+      file_extension: '.npy'
+  - name: naive_max_matrix_harmonic_rank
+    type: matrix
+    comparison_function: compare_harmonic_rank
+    transformations:
+      - name: keep_only_tokens_seen_by_model
+    human:
+      subfolder: decay_0.1/data_followup_tokens_tokens_model
+      file_extension: '.npy'
+    machine:
+      subfolder: naive_max
+      file_extension: '.npy'

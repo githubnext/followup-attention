@@ -1,0 +1,33 @@
+def decimal_to_binary(decimal):
+    """You will be given a number in decimal form and your task is to convert it to
+    binary format. The function should return a string, with each character representing a binary
+    number. Each character in the string will be '0' or '1'.
+
+    There will be an extra couple of characters 'db' at the beginning and at the end of the string.
+    The extra characters are there to help with the format.
+
+    """
+    return "db" + bin(decimal)[2:] + "db"
+
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    """
+    result = []
+    for word in s.split():
+        n_consonants = 0
+        for i in range(0, len(word)):
+            if word[i].lower() not in ["a","e","i","o","u"]:
+                n_consonants += 1 
+        if n_consonants == n:
+            result.append(word)
+    return result
+
+
+
+# Write a test for the function decimal_to_binary below
+assert decimal_to_binary(
