@@ -1,5 +1,5 @@
 
-# Extracting Meaningful Attention on Source Code: An Empirical Study of Developer and Neural Model Code Exploration
+# Follow-up Attention: An Empirical Study of Developer and Neural Model Code Exploration
 
 This project showcase some possible uses of the attention signal of neural model of code, in particular we focus on generative GPT-like model, thus we extract the attention from the transformer units.
 Note that GPT-like models are decoder only, thus we get masked attention (i.e. only the previous tokens get attended) and the attention matrix is triangular.
