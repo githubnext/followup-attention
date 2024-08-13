@@ -118,7 +118,7 @@ tqdm==4.64.0
 traitlets==5.3.0
 transformers @ git+https://github.com/huggingface/transformers.git@8581a798c0a48fca07b29ce2ca2ef55adcae8c7e
 typing_extensions==4.3.0
-urllib3==1.26.10
+urllib3==1.26.19
 wcwidth==0.2.5
 webencodings==0.5.1
 Werkzeug==2.2.2

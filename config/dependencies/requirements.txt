@@ -293,7 +293,7 @@ tzlocal==2.1
 ua-parser==0.10.0
 ujson==4.0.2
 uritemplate==3.0.1
-urllib3==1.26.9
+urllib3==1.26.19
 user-agents==2.2.0
 virtualenv==20.2.1
 vscode-ext==1.5.4
