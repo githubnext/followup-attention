@@ -12,10 +12,9 @@ We study the models and developers when performing the sense-making task: given 
 
 ## Data
 
-- `post-processed eye tracking data and ready-to-plot experimental data`: contains the post processed data from the raw data, including the ground truth visual attention vectors, the interaction matrix, and the anntation on the answer correctness. Available [here](https://figshare.com/s/c11c1ad03dcf4e0126c5)
-- `raw eye tracking data`: contains the raw data from 25 developers over 92 valid code exploration sessions divided in two batches. Available [here](https://figshare.com/s/08a8b67349f18007376e). Place the content at the path: `data/eye_tracking_studies/dataset_human_sessions`.
+- `post-processed eye tracking data and ready-to-plot experimental data`: contains the post processed data from the raw data, including the ground truth visual attention vectors, the interaction matrix, and the anntation on the answer correctness. Available [here](https://doi.org/10.6084/m9.figshare.23599233)
+- `raw eye tracking data`: contains the raw data from 25 developers over 92 valid code exploration sessions divided in two batches. Available [here](https://doi.org/10.6084/m9.figshare.23599251). Place the content at the path: `data/eye_tracking_studies/dataset_human_sessions`.
 - `sensemaking code snippets`: list of files used for the eye tracking study and to be processed by the neural models. Available [here in the repo](data/prompts_collection/sensemaking).
-
 
 ## Installation
 
