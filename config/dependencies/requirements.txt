@@ -39,7 +39,7 @@ colorama==0.4.4
 combo==0.1.2
 coreapi==2.3.3
 coreschema==0.0.4
-cryptography==37.0.1
+cryptography==43.0.1
 cycler==0.10.0
 Cython==0.29.24
 debugpy==1.5.1
