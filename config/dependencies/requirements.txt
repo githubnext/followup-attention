@@ -105,7 +105,7 @@ iniconfig==1.1.1
 ipykernel==5.3.4
 ipympl==0.6.3
 ipytest==0.9.1
-ipython==7.19.0
+ipython==8.10.0
 ipython-genutils==0.2.0
 ipywidgets==7.6.3
 isodate==0.6.0
